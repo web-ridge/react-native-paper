@@ -5,6 +5,7 @@ import {
   StyleProp,
   ViewStyle,
   TextStyle,
+  ColorValue,
   GestureResponderEvent,
 } from 'react-native';
 import { withTheme } from '../../core/theming';
@@ -40,11 +41,11 @@ export type Props = {
   /**
    * Custom color for unchecked radio.
    */
-  uncheckedColor?: string;
+  uncheckedColor?: ColorValue;
   /**
    * Custom color for radio.
    */
-  color?: string;
+  color?: ColorValue;
   /**
    * Status of radio button.
    */

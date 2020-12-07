@@ -18,15 +18,19 @@ exports[`renders menu with content styles 1`] = `
     }
   >
     <View
+      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
-      focusable={false}
+      focusable={true}
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -35,6 +39,9 @@ exports[`renders menu with content styles 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },
@@ -118,15 +125,19 @@ exports[`renders not visible menu 1`] = `
     }
   >
     <View
+      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
-      focusable={false}
+      focusable={true}
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -135,6 +146,9 @@ exports[`renders not visible menu 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },
@@ -218,15 +232,19 @@ exports[`renders visible menu 1`] = `
     }
   >
     <View
+      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
-      focusable={false}
+      focusable={true}
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -235,6 +253,9 @@ exports[`renders visible menu 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },

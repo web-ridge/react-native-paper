@@ -2,6 +2,7 @@
 
 exports[`renders Checkbox with custom testID 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -10,9 +11,12 @@ exports[`renders Checkbox with custom testID 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -21,6 +25,9 @@ exports[`renders Checkbox with custom testID 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -81,6 +88,7 @@ exports[`renders Checkbox with custom testID 1`] = `
 
 exports[`renders checked Checkbox with color 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -89,9 +97,13 @@ exports[`renders checked Checkbox with color 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  color="red"
+  focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -100,6 +112,9 @@ exports[`renders checked Checkbox with color 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -159,6 +174,7 @@ exports[`renders checked Checkbox with color 1`] = `
 
 exports[`renders checked Checkbox with onPress 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -167,9 +183,12 @@ exports[`renders checked Checkbox with onPress 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
   focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -178,6 +197,9 @@ exports[`renders checked Checkbox with onPress 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -237,6 +259,7 @@ exports[`renders checked Checkbox with onPress 1`] = `
 
 exports[`renders indeterminate Checkbox 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -245,9 +268,12 @@ exports[`renders indeterminate Checkbox 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
   focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -256,6 +282,9 @@ exports[`renders indeterminate Checkbox 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -315,6 +344,7 @@ exports[`renders indeterminate Checkbox 1`] = `
 
 exports[`renders indeterminate Checkbox with color 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -323,9 +353,13 @@ exports[`renders indeterminate Checkbox with color 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  color="red"
+  focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -334,6 +368,9 @@ exports[`renders indeterminate Checkbox with color 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -393,6 +430,7 @@ exports[`renders indeterminate Checkbox with color 1`] = `
 
 exports[`renders unchecked Checkbox with color 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -401,9 +439,13 @@ exports[`renders unchecked Checkbox with color 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  color="red"
+  focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -412,6 +454,9 @@ exports[`renders unchecked Checkbox with color 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -471,6 +516,7 @@ exports[`renders unchecked Checkbox with color 1`] = `
 
 exports[`renders unchecked Checkbox with onPress 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -479,9 +525,12 @@ exports[`renders unchecked Checkbox with onPress 1`] = `
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
   focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -490,6 +539,9 @@ exports[`renders unchecked Checkbox with onPress 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },

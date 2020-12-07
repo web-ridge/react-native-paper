@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import {
+  ColorValue,
   GestureResponderEvent,
   StyleProp,
   StyleSheet,
@@ -36,11 +37,11 @@ type Props = {
   /**
    * Custom color for unchecked checkbox.
    */
-  uncheckedColor?: string;
+  uncheckedColor?: ColorValue;
   /**
    * Custom color for checkbox.
    */
-  color?: string;
+  color?: ColorValue;
   /**
    * Additional styles for container View.
    */

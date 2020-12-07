@@ -4,6 +4,7 @@ import {
   View,
   StyleSheet,
   GestureResponderEvent,
+  ColorValue,
 } from 'react-native';
 import color from 'color';
 import { RadioButtonContext, RadioButtonContextType } from './RadioButtonGroup';
@@ -32,11 +33,11 @@ type Props = $RemoveChildren<typeof TouchableRipple> & {
   /**
    * Custom color for unchecked radio.
    */
-  uncheckedColor?: string;
+  uncheckedColor?: ColorValue;
   /**
    * Custom color for radio.
    */
-  color?: string;
+  color?: ColorValue;
   /**
    * @optional
    */
@@ -120,7 +121,7 @@ const RadioButtonAndroid = ({
       .rgb()
       .string();
 
-  let rippleColor: string, radioColor: string;
+  let rippleColor: ColorValue, radioColor: ColorValue;
 
   return (
     <RadioButtonContext.Consumer>
@@ -136,7 +137,10 @@ const RadioButtonAndroid = ({
           rippleColor = color(theme.colors.text).alpha(0.16).rgb().string();
           radioColor = theme.colors.disabled;
         } else {
-          rippleColor = color(checkedColor).fade(0.32).rgb().string();
+          rippleColor = color(checkedColor as string)
+            .fade(0.32)
+            .rgb()
+            .string();
           radioColor = checked ? checkedColor : uncheckedColor;
         }
 

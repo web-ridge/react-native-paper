@@ -525,7 +525,7 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
         "left": 12,
         "opacity": 1,
         "position": "absolute",
-        "top": null,
+        "top": undefined,
       }
     }
   >
@@ -567,13 +567,16 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
     }
   >
     <View
+      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
+      centered={true}
       focusable={true}
       hitSlop={
         Object {
@@ -583,7 +586,9 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
           "top": 6,
         }
       }
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -592,6 +597,9 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },
@@ -848,13 +856,16 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
     }
   >
     <View
+      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
+      centered={true}
       focusable={true}
       hitSlop={
         Object {
@@ -864,7 +875,9 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
           "top": 6,
         }
       }
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -873,6 +886,9 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },
@@ -945,7 +961,7 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
         "opacity": 1,
         "position": "absolute",
         "right": 12,
-        "top": null,
+        "top": undefined,
       }
     }
   >

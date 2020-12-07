@@ -2,6 +2,7 @@
 
 exports[`renders disabled toggle button 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
@@ -9,7 +10,14 @@ exports[`renders disabled toggle button 1`] = `
       "selected": true,
     }
   }
+  accessibilityTraits={
+    Array [
+      "button",
+      "disabled",
+    ]
+  }
   accessible={true}
+  centered={true}
   focusable={true}
   hitSlop={
     Object {
@@ -19,15 +27,21 @@ exports[`renders disabled toggle button 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  onValueChange={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       Array [
         Object {
@@ -104,6 +118,7 @@ exports[`renders disabled toggle button 1`] = `
 
 exports[`renders toggle button 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
@@ -111,7 +126,9 @@ exports[`renders toggle button 1`] = `
       "selected": true,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
+  centered={true}
   focusable={true}
   hitSlop={
     Object {
@@ -121,7 +138,9 @@ exports[`renders toggle button 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -130,6 +149,9 @@ exports[`renders toggle button 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       Array [
         Object {
@@ -204,6 +226,7 @@ exports[`renders toggle button 1`] = `
 
 exports[`renders unchecked toggle button 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
@@ -211,7 +234,14 @@ exports[`renders unchecked toggle button 1`] = `
       "selected": false,
     }
   }
+  accessibilityTraits={
+    Array [
+      "button",
+      "disabled",
+    ]
+  }
   accessible={true}
+  centered={true}
   focusable={true}
   hitSlop={
     Object {
@@ -221,15 +251,21 @@ exports[`renders unchecked toggle button 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
+  onValueChange={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       Array [
         Object {

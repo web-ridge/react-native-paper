@@ -6,6 +6,7 @@ import {
   ViewStyle,
   StyleSheet,
   StyleProp,
+  ColorValue,
   GestureResponderEvent,
 } from 'react-native';
 import ActivityIndicator from '../ActivityIndicator';
@@ -55,7 +56,7 @@ type Props = $RemoveChildren<typeof Surface> & {
   /**
    * Custom color for the icon and label of the `FAB`.
    */
-  color?: string;
+  color?: ColorValue;
   /**
    * Whether `FAB` is disabled. A disabled button is greyed out and `onPress` is not called on touch.
    */
@@ -171,20 +172,25 @@ const FAB = ({
 
   let foregroundColor;
 
-  if (typeof customColor !== 'undefined') {
-    foregroundColor = customColor;
-  } else if (disabled) {
-    foregroundColor = color(theme.dark ? white : black)
+
+    if (typeof customColor !== 'undefined') {
+      foregroundColor = customColor;
+    } else if (disabled) {
+      foregroundColor = color(theme.dark ? white : black)
+        .alpha(0.32)
+        .rgb()
+        .string();
+    } else {
+      foregroundColor = !color(backgroundColor as string).isLight()
+        ? white
+        : 'rgba(0, 0, 0, .54)';
+    }
+
+    const rippleColor = color(foregroundColor as string)
       .alpha(0.32)
       .rgb()
       .string();
-  } else {
-    foregroundColor = !color(backgroundColor).isLight()
-      ? white
-      : 'rgba(0, 0, 0, .54)';
-  }
 
-  const rippleColor = color(foregroundColor).alpha(0.32).rgb().string();
 
   return (
     <Surface

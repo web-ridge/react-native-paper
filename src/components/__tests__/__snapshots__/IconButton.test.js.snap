@@ -2,14 +2,22 @@
 
 exports[`renders disabled icon button 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": true,
     }
   }
+  accessibilityTraits={
+    Array [
+      "button",
+      "disabled",
+    ]
+  }
   accessible={true}
-  focusable={false}
+  centered={true}
+  focusable={true}
   hitSlop={
     Object {
       "bottom": 6,
@@ -18,7 +26,9 @@ exports[`renders disabled icon button 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -27,6 +37,9 @@ exports[`renders disabled icon button 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -93,14 +106,17 @@ exports[`renders disabled icon button 1`] = `
 
 exports[`renders icon button by default 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  centered={true}
+  focusable={true}
   hitSlop={
     Object {
       "bottom": 6,
@@ -109,7 +125,9 @@ exports[`renders icon button by default 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -118,6 +136,9 @@ exports[`renders icon button by default 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -182,14 +203,17 @@ exports[`renders icon button by default 1`] = `
 
 exports[`renders icon button with color 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  centered={true}
+  focusable={true}
   hitSlop={
     Object {
       "bottom": 6,
@@ -198,7 +222,9 @@ exports[`renders icon button with color 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -207,6 +233,9 @@ exports[`renders icon button with color 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -271,14 +300,17 @@ exports[`renders icon button with color 1`] = `
 
 exports[`renders icon button with size 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  centered={true}
+  focusable={true}
   hitSlop={
     Object {
       "bottom": 6,
@@ -287,7 +319,9 @@ exports[`renders icon button with size 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -296,6 +330,9 @@ exports[`renders icon button with size 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },
@@ -360,14 +397,17 @@ exports[`renders icon button with size 1`] = `
 
 exports[`renders icon change animated 1`] = `
 <View
+  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
+  accessibilityTraits="button"
   accessible={true}
-  focusable={false}
+  centered={true}
+  focusable={true}
   hitSlop={
     Object {
       "bottom": 6,
@@ -376,7 +416,9 @@ exports[`renders icon change animated 1`] = `
       "top": 6,
     }
   }
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -385,6 +427,9 @@ exports[`renders icon change animated 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       Object {
         "overflow": "hidden",
       },

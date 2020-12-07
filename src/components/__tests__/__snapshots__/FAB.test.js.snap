@@ -25,15 +25,19 @@ exports[`renders custom color for the icon and label of the FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -42,6 +46,9 @@ exports[`renders custom color for the icon and label of the FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -159,15 +166,24 @@ exports[`renders disabled FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": true,
       }
     }
+    accessibilityTraits={
+      Array [
+        "button",
+        "disabled",
+      ]
+    }
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -176,6 +192,9 @@ exports[`renders disabled FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -300,6 +319,7 @@ exports[`renders extended FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityLabel="Add items"
     accessibilityRole="button"
     accessibilityState={
@@ -307,9 +327,12 @@ exports[`renders extended FAB 1`] = `
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -318,6 +341,9 @@ exports[`renders extended FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -470,15 +496,19 @@ exports[`renders loading FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -487,6 +517,9 @@ exports[`renders loading FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -724,15 +757,19 @@ exports[`renders normal FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -741,6 +778,9 @@ exports[`renders normal FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -865,15 +905,19 @@ exports[`renders not visible FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -882,6 +926,9 @@ exports[`renders not visible FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -1006,15 +1053,19 @@ exports[`renders small FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -1023,6 +1074,9 @@ exports[`renders small FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -1147,15 +1201,19 @@ exports[`renders visible FAB 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -1164,6 +1222,9 @@ exports[`renders visible FAB 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },

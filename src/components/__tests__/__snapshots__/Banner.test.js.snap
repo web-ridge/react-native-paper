@@ -191,15 +191,19 @@ exports[`renders visible banner, with action buttons and with image 1`] = `
           }
         >
           <View
+            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityState={
               Object {
                 "disabled": undefined,
               }
             }
+            accessibilityTraits="button"
             accessible={true}
             focusable={true}
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -208,6 +212,9 @@ exports[`renders visible banner, with action buttons and with image 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Array [
+                Object {
+                  "position": "relative",
+                },
                 Object {
                   "overflow": "hidden",
                 },
@@ -372,15 +379,19 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
           }
         >
           <View
+            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityState={
               Object {
                 "disabled": undefined,
               }
             }
+            accessibilityTraits="button"
             accessible={true}
             focusable={true}
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -389,6 +400,9 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Array [
+                Object {
+                  "position": "relative",
+                },
                 Object {
                   "overflow": "hidden",
                 },
@@ -468,15 +482,19 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
           }
         >
           <View
+            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityState={
               Object {
                 "disabled": undefined,
               }
             }
+            accessibilityTraits="button"
             accessible={true}
             focusable={true}
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
             onResponderRelease={[Function]}
@@ -485,6 +503,9 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Array [
+                Object {
+                  "position": "relative",
+                },
                 Object {
                   "overflow": "hidden",
                 },

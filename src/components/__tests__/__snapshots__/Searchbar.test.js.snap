@@ -20,6 +20,7 @@ exports[`renders with placeholder 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityLabel="search"
     accessibilityRole="button"
     accessibilityState={
@@ -27,8 +28,10 @@ exports[`renders with placeholder 1`] = `
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
-    focusable={false}
+    centered={true}
+    focusable={true}
     hitSlop={
       Object {
         "bottom": 6,
@@ -37,7 +40,9 @@ exports[`renders with placeholder 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -46,6 +51,9 @@ exports[`renders with placeholder 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -137,6 +145,7 @@ exports[`renders with placeholder 1`] = `
     underlineColorAndroid="transparent"
   />
   <View
+    accessibilityComponentType="button"
     accessibilityLabel="clear"
     accessibilityRole="button"
     accessibilityState={
@@ -144,7 +153,9 @@ exports[`renders with placeholder 1`] = `
         "disabled": true,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
+    centered={true}
     focusable={true}
     hitSlop={
       Object {
@@ -154,7 +165,9 @@ exports[`renders with placeholder 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -163,6 +176,9 @@ exports[`renders with placeholder 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -248,6 +264,7 @@ exports[`renders with text 1`] = `
   }
 >
   <View
+    accessibilityComponentType="button"
     accessibilityLabel="search"
     accessibilityRole="button"
     accessibilityState={
@@ -255,8 +272,10 @@ exports[`renders with text 1`] = `
         "disabled": undefined,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
-    focusable={false}
+    centered={true}
+    focusable={true}
     hitSlop={
       Object {
         "bottom": 6,
@@ -265,7 +284,9 @@ exports[`renders with text 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -274,6 +295,9 @@ exports[`renders with text 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -366,6 +390,7 @@ exports[`renders with text 1`] = `
     value="query"
   />
   <View
+    accessibilityComponentType="button"
     accessibilityLabel="clear"
     accessibilityRole="button"
     accessibilityState={
@@ -373,7 +398,9 @@ exports[`renders with text 1`] = `
         "disabled": false,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
+    centered={true}
     focusable={true}
     hitSlop={
       Object {
@@ -383,7 +410,9 @@ exports[`renders with text 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -392,6 +421,9 @@ exports[`renders with text 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },

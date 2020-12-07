@@ -3,8 +3,10 @@
 exports[`renders data table cell 1`] = `
 <View
   accessible={true}
-  focusable={false}
+  focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -13,6 +15,9 @@ exports[`renders data table cell 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       Array [
         Object {
@@ -204,13 +209,16 @@ exports[`renders data table pagination 1`] = `
     }
   />
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
+    centered={true}
     focusable={true}
     hitSlop={
       Object {
@@ -220,7 +228,9 @@ exports[`renders data table pagination 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -229,6 +239,9 @@ exports[`renders data table pagination 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -290,13 +303,16 @@ exports[`renders data table pagination 1`] = `
     </View>
   </View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
+    centered={true}
     focusable={true}
     hitSlop={
       Object {
@@ -306,7 +322,9 @@ exports[`renders data table pagination 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -315,6 +333,9 @@ exports[`renders data table pagination 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -417,13 +438,16 @@ exports[`renders data table pagination with label 1`] = `
     11-20 of 150
   </Text>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
+    centered={true}
     focusable={true}
     hitSlop={
       Object {
@@ -433,7 +457,9 @@ exports[`renders data table pagination with label 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -442,6 +468,9 @@ exports[`renders data table pagination with label 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -503,13 +532,16 @@ exports[`renders data table pagination with label 1`] = `
     </View>
   </View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
       }
     }
+    accessibilityTraits="button"
     accessible={true}
+    centered={true}
     focusable={true}
     hitSlop={
       Object {
@@ -519,7 +551,9 @@ exports[`renders data table pagination with label 1`] = `
         "top": 6,
       }
     }
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -528,6 +562,9 @@ exports[`renders data table pagination with label 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Array [
+        Object {
+          "position": "relative",
+        },
         Object {
           "overflow": "hidden",
         },
@@ -802,8 +839,10 @@ exports[`renders data table title with sort icon 1`] = `
 exports[`renders right aligned data table cell 1`] = `
 <View
   accessible={true}
-  focusable={false}
+  focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -812,6 +851,9 @@ exports[`renders right aligned data table cell 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       Array [
         Object {

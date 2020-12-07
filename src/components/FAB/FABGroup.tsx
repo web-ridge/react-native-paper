@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   View,
   ViewStyle,
+  ColorValue,
   GestureResponderEvent,
 } from 'react-native';
 import color from 'color';
@@ -30,7 +31,7 @@ type Props = {
   actions: Array<{
     icon: IconSource;
     label?: string;
-    color?: string;
+    color?: ColorValue;
     accessibilityLabel?: string;
     style?: StyleProp<ViewStyle>;
     onPress: (event: GestureResponderEvent) => void;
@@ -48,7 +49,7 @@ type Props = {
   /**
    * Custom color for the `FAB`.
    */
-  color?: string;
+  color?: ColorValue;
   /**
    * Function to execute on pressing the `FAB`.
    */
