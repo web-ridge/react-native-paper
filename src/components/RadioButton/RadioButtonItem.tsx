@@ -121,10 +121,13 @@ const RadioButtonItem = ({
   let radioButton: any;
 
   if (mode === 'android') {
+    //@ts-ignore
     radioButton = <RadioButtonAndroid {...radioButtonProps} />;
   } else if (mode === 'ios') {
+    //@ts-ignore
     radioButton = <RadioButtonIOS {...radioButtonProps} />;
   } else {
+    //@ts-ignore
     radioButton = <RadioButton {...radioButtonProps} />;
   }
 

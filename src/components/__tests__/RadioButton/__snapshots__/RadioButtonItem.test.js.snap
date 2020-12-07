@@ -4,7 +4,9 @@ exports[`can render the Android radio button on different platforms 1`] = `
 <View
   accessible={true}
   focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -13,6 +15,9 @@ exports[`can render the Android radio button on different platforms 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       undefined,
     ]
@@ -58,6 +63,7 @@ exports[`can render the Android radio button on different platforms 1`] = `
       iOS Checkbox
     </Text>
     <View
+      accessibilityComponentType="radiobutton_unchecked"
       accessibilityLiveRegion="polite"
       accessibilityRole="radio"
       accessibilityState={
@@ -66,9 +72,12 @@ exports[`can render the Android radio button on different platforms 1`] = `
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
       focusable={true}
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -77,6 +86,9 @@ exports[`can render the Android radio button on different platforms 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },
@@ -107,7 +119,9 @@ exports[`can render the iOS radio button on different platforms 1`] = `
 <View
   accessible={true}
   focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -116,6 +130,9 @@ exports[`can render the iOS radio button on different platforms 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       undefined,
     ]
@@ -161,6 +178,7 @@ exports[`can render the iOS radio button on different platforms 1`] = `
       iOS Radio button
     </Text>
     <View
+      accessibilityComponentType="radiobutton_unchecked"
       accessibilityLiveRegion="polite"
       accessibilityRole="radio"
       accessibilityState={
@@ -169,9 +187,12 @@ exports[`can render the iOS radio button on different platforms 1`] = `
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
       focusable={true}
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -180,6 +201,9 @@ exports[`can render the iOS radio button on different platforms 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },
@@ -243,7 +267,9 @@ exports[`renders unchecked 1`] = `
 <View
   accessible={true}
   focusable={true}
+  onBlur={[Function]}
   onClick={[Function]}
+  onFocus={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -252,6 +278,9 @@ exports[`renders unchecked 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Array [
+      Object {
+        "position": "relative",
+      },
       false,
       undefined,
     ]
@@ -297,6 +326,7 @@ exports[`renders unchecked 1`] = `
       Unchecked Button
     </Text>
     <View
+      accessibilityComponentType="radiobutton_unchecked"
       accessibilityLiveRegion="polite"
       accessibilityRole="radio"
       accessibilityState={
@@ -305,9 +335,12 @@ exports[`renders unchecked 1`] = `
           "disabled": undefined,
         }
       }
+      accessibilityTraits="button"
       accessible={true}
       focusable={true}
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -316,6 +349,9 @@ exports[`renders unchecked 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Array [
+          Object {
+            "position": "relative",
+          },
           Object {
             "overflow": "hidden",
           },

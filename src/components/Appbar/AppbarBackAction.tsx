@@ -2,8 +2,12 @@ import * as React from 'react';
 import type { $Omit } from './../../types';
 import AppbarAction from './AppbarAction';
 import AppbarBackIcon from './AppbarBackIcon';
-import type { ColorValue, StyleProp, ViewStyle, GestureResponderEvent } from 'react-native';
-
+import type {
+  ColorValue,
+  StyleProp,
+  ViewStyle,
+  GestureResponderEvent,
+} from 'react-native';
 
 type Props = $Omit<
   React.ComponentPropsWithoutRef<typeof AppbarAction>,

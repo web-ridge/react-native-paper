@@ -20,9 +20,9 @@ type ToggleButtonContextType = {
   onValueChange: (item: string) => void;
 };
 
-export const ToggleButtonGroupContext = React.createContext<
-  ToggleButtonContextType
->(null as any);
+export const ToggleButtonGroupContext = React.createContext<ToggleButtonContextType>(
+  null as any
+);
 
 /**
  * Toggle group allows to control a group of toggle buttons.</br>

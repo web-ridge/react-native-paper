@@ -3,8 +3,8 @@ import color from 'color';
 import type {
   StyleProp,
   ViewStyle,
-  TouchableWithoutFeedback,
   GestureResponderEvent,
+  View,
 } from 'react-native';
 import { black } from '../../styles/colors';
 import IconButton from '../IconButton';
@@ -37,7 +37,7 @@ type Props = React.ComponentPropsWithoutRef<typeof IconButton> & {
    */
   onPress?: (event: GestureResponderEvent) => void;
   style?: StyleProp<ViewStyle>;
-  ref?: React.RefObject<TouchableWithoutFeedback>;
+  ref?: React.RefObject<View>;
 };
 
 /**

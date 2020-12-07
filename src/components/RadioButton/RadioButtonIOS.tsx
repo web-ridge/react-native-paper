@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { ColorValue, GestureResponderEvent, StyleSheet, View } from 'react-native';
+import {
+  ColorValue,
+  GestureResponderEvent,
+  StyleSheet,
+  View,
+} from 'react-native';
 import color from 'color';
 import { RadioButtonContext, RadioButtonContextType } from './RadioButtonGroup';
 import { handlePress, isChecked } from './utils';

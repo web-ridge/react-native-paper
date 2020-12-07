@@ -62,7 +62,7 @@
     "@types/jest": "^24.0.13",
     "@types/node": "^13.1.0",
     "@types/react-dom": "^16.9.9",
-    "@types/react-native": "^0.63.30",
+    "@types/react-native": "^0.63.37",
     "@types/react-native-vector-icons": "^6.4.1",
     "@typescript-eslint/eslint-plugin": "^2.12.0",
     "@typescript-eslint/parser": "^2.12.0",
@@ -85,7 +85,7 @@
     "jest": "^26.1.0",
     "jest-file-snapshot": "^0.3.2",
     "metro-react-native-babel-preset": "^0.59.0",
-    "prettier": "^2.0.5",
+    "prettier": "^2.2.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "^0.63.3",
@@ -94,7 +94,7 @@
     "react-test-renderer": "16.13.1",
     "release-it": "^13.4.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.2"
   },
   "peerDependencies": {
     "react": "*",
@@ -103,7 +103,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint && yarn typescript && yarn test"
     }
   },

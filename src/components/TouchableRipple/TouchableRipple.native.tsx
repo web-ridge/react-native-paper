@@ -7,15 +7,14 @@ import {
   ColorValue,
   ViewStyle,
   GestureResponderEvent,
+  StyleProp,
 } from 'react-native';
 import color from 'color';
 import { withTheme } from '../../core/theming';
 import {
   getInteractionChildren,
   getInteractionStyle,
-  InteractionChildrenType,
   InteractionState,
-  InteractionStyleType,
   useRadiusStyles,
 } from './utils';
 

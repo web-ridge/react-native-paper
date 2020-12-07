@@ -18,6 +18,7 @@ import Icon from '../Icon';
 import Text from '../Typography/Text';
 import TouchableRipple from '../TouchableRipple/TouchableRipple';
 import { black, white } from '../../styles/colors';
+
 import { withTheme } from '../../core/theming';
 import type { $RemoveChildren } from '../../types';
 import type { IconSource } from './../Icon';
@@ -172,25 +173,23 @@ const FAB = ({
 
   let foregroundColor;
 
-
-    if (typeof customColor !== 'undefined') {
-      foregroundColor = customColor;
-    } else if (disabled) {
-      foregroundColor = color(theme.dark ? white : black)
-        .alpha(0.32)
-        .rgb()
-        .string();
-    } else {
-      foregroundColor = !color(backgroundColor as string).isLight()
-        ? white
-        : 'rgba(0, 0, 0, .54)';
-    }
-
-    const rippleColor = color(foregroundColor as string)
+  if (typeof customColor !== 'undefined') {
+    foregroundColor = customColor;
+  } else if (disabled) {
+    foregroundColor = color(theme.dark ? white : black)
       .alpha(0.32)
       .rgb()
       .string();
+  } else {
+    foregroundColor = !color(backgroundColor as string).isLight()
+      ? white
+      : 'rgba(0, 0, 0, .54)';
+  }
 
+  const rippleColor = color(foregroundColor as string)
+    .alpha(0.32)
+    .rgb()
+    .string();
 
   return (
     <Surface

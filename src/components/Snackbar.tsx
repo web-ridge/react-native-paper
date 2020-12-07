@@ -121,7 +121,9 @@ const Snackbar = ({
   );
   const [hidden, setHidden] = React.useState<boolean>(!visible);
 
-  const hideTimeout = React.useRef<NodeJS.Timeout | undefined>(undefined);
+  const hideTimeout = React.useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined
+  );
 
   const { scale } = theme.animation;
 

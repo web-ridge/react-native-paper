@@ -170,7 +170,7 @@ const FABGroup = ({
     | {
         icon: IconSource;
         label?: string;
-        color?: string;
+        color?: ColorValue;
         accessibilityLabel?: string;
         style?: StyleProp<ViewStyle>;
         onPress: (event: GestureResponderEvent) => void;
