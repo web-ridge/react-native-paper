@@ -6,8 +6,8 @@ import {
   Platform,
   ColorValue,
   ViewStyle,
-  GestureResponderEvent,
   StyleProp,
+  GestureResponderEvent,
 } from 'react-native';
 import color from 'color';
 import { withTheme } from '../../core/theming';

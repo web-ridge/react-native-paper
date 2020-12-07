@@ -195,12 +195,20 @@ function TouchableRipple({
 
   const disabled = disabledProp || !rest.onPress;
   const rippleContainerStyle = useRadiusStyles(style);
+  const {
+    delayLongPress,
+    hitSlop,
+    pressRetentionOffset,
+    ...innerViewProps
+  } = rest;
   return (
     <Pressable
-      {...rest}
+      delayLongPress={delayLongPress}
+      disabled={disabled}
+      hitSlop={hitSlop}
+      pressRetentionOffset={pressRetentionOffset}
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}
-      disabled={disabled}
       style={(interactionState: InteractionState) => [
         styles.touchable,
         borderless && styles.overflowHidden,
@@ -209,8 +217,12 @@ function TouchableRipple({
     >
       {(interactionState: InteractionState) => (
         <>
-          {React.Children.only(
-            getInteractionChildren(interactionState, children)
+          {React.cloneElement(
+            React.Children.only(
+              getInteractionChildren(interactionState, children)
+            ),
+            innerViewProps,
+            null
           )}
           <View
             style={[

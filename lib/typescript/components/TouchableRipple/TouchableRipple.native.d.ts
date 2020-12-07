@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Pressable, ColorValue, ViewStyle, GestureResponderEvent, StyleProp } from 'react-native';
+import { Pressable, ColorValue, ViewStyle, StyleProp, GestureResponderEvent } from 'react-native';
 declare type Props = React.ComponentProps<typeof Pressable> & {
     borderless?: boolean;
     background?: string;
