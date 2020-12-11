@@ -68,6 +68,14 @@ type Props = React.ComponentProps<typeof Surface> & {
    */
   onPress?: (event: GestureResponderEvent) => void;
   /**
+   * Function to execute on pressOut.
+   */
+  onPressOut?: (event: GestureResponderEvent) => void;
+  /**
+   * Function to execute on pressIn.
+   */
+  onPressIn?: (event: GestureResponderEvent) => void;
+  /**
    * Function to execute on long press.
    */
   onLongPress?: (event: GestureResponderEvent) => void;
@@ -136,6 +144,8 @@ const Button = ({
   accessibilityLabel,
   onPress,
   onLongPress,
+  onPressIn,
+  onPressOut,
   style,
   theme,
   contentStyle,
@@ -147,7 +157,8 @@ const Button = ({
     new Animated.Value(mode === 'contained' ? 2 : 0)
   );
 
-  const handlePressIn = () => {
+  const handlePressIn = (e: GestureResponderEvent) => {
+    onPressIn?.(e);
     if (mode === 'contained') {
       const { scale } = theme.animation;
       Animated.timing(elevation, {
@@ -158,7 +169,8 @@ const Button = ({
     }
   };
 
-  const handlePressOut = () => {
+  const handlePressOut = (e: GestureResponderEvent) => {
+    onPressOut?.(e);
     if (mode === 'contained') {
       const { scale } = theme.animation;
       Animated.timing(elevation, {
@@ -253,7 +265,6 @@ const Button = ({
 
   return (
     <Surface
-      {...rest}
       style={[
         styles.button,
         compact && styles.compact,
@@ -277,6 +288,7 @@ const Button = ({
         rippleColor={rippleColor}
         style={touchableStyle}
         testID={testID}
+        {...rest}
       >
         <View style={[styles.content, contentStyle]}>
           {icon && loading !== true ? (
