@@ -175,8 +175,6 @@ const ListAccordion = ({
       <TouchableRipple
         style={[styles.container, style]}
         onPress={handlePress}
-        accessibilityTraits="button"
-        accessibilityComponentType="button"
         accessibilityRole="button"
         testID={testID}
       >

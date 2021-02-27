@@ -15,18 +15,12 @@ exports[`renders chip with close button 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
         "selected": false,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
     }
     accessible={true}
     focusable={true}
@@ -241,18 +235,12 @@ exports[`renders chip with icon 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
         "selected": false,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
     }
     accessible={true}
     focusable={true}
@@ -394,18 +382,12 @@ exports[`renders chip with onPress 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
         "selected": false,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
     }
     accessible={true}
     focusable={true}
@@ -499,19 +481,12 @@ exports[`renders outlined disabled chip 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": true,
         "selected": false,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-        "disabled",
-      ]
     }
     accessible={true}
     focusable={true}
@@ -605,19 +580,12 @@ exports[`renders selected chip 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": false,
         "selected": true,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-        "selected",
-      ]
     }
     accessible={true}
     focusable={true}

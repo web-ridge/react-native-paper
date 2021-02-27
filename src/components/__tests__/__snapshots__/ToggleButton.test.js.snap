@@ -2,19 +2,12 @@
 
 exports[`renders disabled toggle button 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": true,
       "selected": true,
     }
-  }
-  accessibilityTraits={
-    Array [
-      "button",
-      "disabled",
-    ]
   }
   accessible={true}
   centered={true}
@@ -118,7 +111,6 @@ exports[`renders disabled toggle button 1`] = `
 
 exports[`renders toggle button 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
@@ -126,7 +118,6 @@ exports[`renders toggle button 1`] = `
       "selected": true,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   centered={true}
   focusable={true}
@@ -226,19 +217,12 @@ exports[`renders toggle button 1`] = `
 
 exports[`renders unchecked toggle button 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": true,
       "selected": false,
     }
-  }
-  accessibilityTraits={
-    Array [
-      "button",
-      "disabled",
-    ]
   }
   accessible={true}
   centered={true}

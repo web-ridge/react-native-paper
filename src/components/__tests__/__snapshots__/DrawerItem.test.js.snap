@@ -17,14 +17,12 @@ exports[`renders DrawerItem with icon 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "selected": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -144,18 +142,11 @@ exports[`renders active DrawerItem 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "selected": true,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-        "selected",
-      ]
     }
     accessible={true}
     focusable={true}
@@ -276,14 +267,12 @@ exports[`renders basic DrawerItem 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "selected": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}

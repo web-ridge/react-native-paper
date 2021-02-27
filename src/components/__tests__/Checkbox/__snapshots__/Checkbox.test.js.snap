@@ -2,7 +2,6 @@
 
 exports[`renders Checkbox with custom testID 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -11,7 +10,6 @@ exports[`renders Checkbox with custom testID 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   focusable={true}
   onBlur={[Function]}
@@ -88,7 +86,6 @@ exports[`renders Checkbox with custom testID 1`] = `
 
 exports[`renders checked Checkbox with color 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -97,7 +94,6 @@ exports[`renders checked Checkbox with color 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   color="red"
   focusable={true}
@@ -174,7 +170,6 @@ exports[`renders checked Checkbox with color 1`] = `
 
 exports[`renders checked Checkbox with onPress 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -183,7 +178,6 @@ exports[`renders checked Checkbox with onPress 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   focusable={true}
   onBlur={[Function]}
@@ -259,7 +253,6 @@ exports[`renders checked Checkbox with onPress 1`] = `
 
 exports[`renders indeterminate Checkbox 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -268,7 +261,6 @@ exports[`renders indeterminate Checkbox 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   focusable={true}
   onBlur={[Function]}
@@ -344,7 +336,6 @@ exports[`renders indeterminate Checkbox 1`] = `
 
 exports[`renders indeterminate Checkbox with color 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -353,7 +344,6 @@ exports[`renders indeterminate Checkbox with color 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   color="red"
   focusable={true}
@@ -430,7 +420,6 @@ exports[`renders indeterminate Checkbox with color 1`] = `
 
 exports[`renders unchecked Checkbox with color 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -439,7 +428,6 @@ exports[`renders unchecked Checkbox with color 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   color="red"
   focusable={true}
@@ -516,7 +504,6 @@ exports[`renders unchecked Checkbox with color 1`] = `
 
 exports[`renders unchecked Checkbox with onPress 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityLiveRegion="polite"
   accessibilityRole="checkbox"
   accessibilityState={
@@ -525,7 +512,6 @@ exports[`renders unchecked Checkbox with onPress 1`] = `
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   focusable={true}
   onBlur={[Function]}

@@ -69,7 +69,7 @@ declare const CheckboxItem: {
     ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
     displayName: string;
 };
-declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "disabled" | "labelStyle" | "status" | "mode" | "uncheckedColor"> & {
+declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
@@ -77,7 +77,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "c
 }) | (React.FunctionComponent<Props> & {
     ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
     displayName: string;
-}), {}>) | (React.FunctionComponent<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "disabled" | "labelStyle" | "status" | "mode" | "uncheckedColor"> & {
+}), {}>) | (React.FunctionComponent<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;

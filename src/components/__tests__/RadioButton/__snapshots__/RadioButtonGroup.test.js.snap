@@ -6,7 +6,6 @@ exports[`RadioButtonGroup renders properly 1`] = `
   accessible={true}
 >
   <View
-    accessibilityComponentType="radiobutton_checked"
     accessibilityLiveRegion="polite"
     accessibilityRole="radio"
     accessibilityState={
@@ -15,7 +14,6 @@ exports[`RadioButtonGroup renders properly 1`] = `
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}

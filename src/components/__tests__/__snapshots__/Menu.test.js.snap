@@ -18,14 +18,12 @@ exports[`renders menu with content styles 1`] = `
     }
   >
     <View
-      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
-      accessibilityTraits="button"
       accessible={true}
       focusable={true}
       onBlur={[Function]}
@@ -125,14 +123,12 @@ exports[`renders not visible menu 1`] = `
     }
   >
     <View
-      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
-      accessibilityTraits="button"
       accessible={true}
       focusable={true}
       onBlur={[Function]}
@@ -232,14 +228,12 @@ exports[`renders visible menu 1`] = `
     }
   >
     <View
-      accessibilityComponentType="button"
       accessibilityRole="button"
       accessibilityState={
         Object {
           "disabled": undefined,
         }
       }
-      accessibilityTraits="button"
       accessible={true}
       focusable={true}
       onBlur={[Function]}

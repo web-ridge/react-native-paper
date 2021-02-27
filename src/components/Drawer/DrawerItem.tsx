@@ -98,8 +98,6 @@ const DrawerItem = ({
         borderless
         onPress={onPress}
         style={{ borderRadius: roundness }}
-        accessibilityTraits={active ? ['button', 'selected'] : 'button'}
-        accessibilityComponentType="button"
         accessibilityRole="button"
         accessibilityState={{ selected: active }}
         accessibilityLabel={accessibilityLabel}

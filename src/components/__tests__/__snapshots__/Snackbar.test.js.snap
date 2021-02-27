@@ -162,14 +162,12 @@ exports[`renders snackbar with action button 1`] = `
       }
     >
       <View
-        accessibilityComponentType="button"
         accessibilityRole="button"
         accessibilityState={
           Object {
             "disabled": undefined,
           }
         }
-        accessibilityTraits="button"
         accessible={true}
         focusable={true}
         onBlur={[Function]}

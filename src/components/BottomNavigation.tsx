@@ -825,7 +825,6 @@ class BottomNavigation extends React.Component<Props, State> {
                 />
               ) : null}
               {routes.map((route, index) => {
-                const focused = navigationState.index === index;
                 const active = tabs[index];
 
                 // Scale the label up
@@ -867,10 +866,6 @@ class BottomNavigation extends React.Component<Props, State> {
                   onPress: () => this.handleTabPress(index),
                   testID: getTestID({ route }),
                   accessibilityLabel: getAccessibilityLabel({ route }),
-                  accessibilityTraits: focused
-                    ? ['button', 'selected']
-                    : 'button',
-                  accessibilityComponentType: 'button',
                   accessibilityRole: 'button',
                   accessibilityState: { selected: true },
                   style: styles.item,

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   AccessibilityState,
-  AccessibilityTrait,
   Animated,
   ColorValue,
   GestureResponderEvent,
@@ -214,19 +213,10 @@ const Chip = ({
         .string()
     : selectedBackgroundColor;
 
-  const accessibilityTraits: AccessibilityTrait[] = ['button'];
   const accessibilityState: AccessibilityState = {
     selected,
     disabled,
   };
-
-  if (selected) {
-    accessibilityTraits.push('selected');
-  }
-
-  if (disabled) {
-    accessibilityTraits.push('disabled');
-  }
 
   return (
     <Surface
@@ -256,8 +246,6 @@ const Chip = ({
         underlayColor={underlayColor}
         disabled={disabled}
         accessibilityLabel={accessibilityLabel}
-        accessibilityTraits={accessibilityTraits}
-        accessibilityComponentType="button"
         accessibilityRole="button"
         accessibilityState={accessibilityState}
         testID={testID}
@@ -318,8 +306,6 @@ const Chip = ({
         <View style={styles.closeButtonStyle}>
           <TouchableWithoutFeedback
             onPress={onClose}
-            accessibilityTraits="button"
-            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityLabel={closeIconAccessibilityLabel}
           >

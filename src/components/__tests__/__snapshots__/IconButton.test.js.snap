@@ -2,18 +2,11 @@
 
 exports[`renders disabled icon button 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": true,
     }
-  }
-  accessibilityTraits={
-    Array [
-      "button",
-      "disabled",
-    ]
   }
   accessible={true}
   centered={true}
@@ -106,14 +99,12 @@ exports[`renders disabled icon button 1`] = `
 
 exports[`renders icon button by default 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   centered={true}
   focusable={true}
@@ -203,14 +194,12 @@ exports[`renders icon button by default 1`] = `
 
 exports[`renders icon button with color 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   centered={true}
   focusable={true}
@@ -300,14 +289,12 @@ exports[`renders icon button with color 1`] = `
 
 exports[`renders icon button with size 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   centered={true}
   focusable={true}
@@ -397,14 +384,12 @@ exports[`renders icon button with size 1`] = `
 
 exports[`renders icon change animated 1`] = `
 <View
-  accessibilityComponentType="button"
   accessibilityRole="button"
   accessibilityState={
     Object {
       "disabled": undefined,
     }
   }
-  accessibilityTraits="button"
   accessible={true}
   centered={true}
   focusable={true}

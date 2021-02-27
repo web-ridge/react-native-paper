@@ -191,14 +191,12 @@ exports[`renders visible banner, with action buttons and with image 1`] = `
           }
         >
           <View
-            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityState={
               Object {
                 "disabled": undefined,
               }
             }
-            accessibilityTraits="button"
             accessible={true}
             focusable={true}
             onBlur={[Function]}
@@ -379,14 +377,12 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
           }
         >
           <View
-            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityState={
               Object {
                 "disabled": undefined,
               }
             }
-            accessibilityTraits="button"
             accessible={true}
             focusable={true}
             onBlur={[Function]}
@@ -482,14 +478,12 @@ exports[`renders visible banner, with action buttons and without image 1`] = `
           }
         >
           <View
-            accessibilityComponentType="button"
             accessibilityRole="button"
             accessibilityState={
               Object {
                 "disabled": undefined,
               }
             }
-            accessibilityTraits="button"
             accessible={true}
             focusable={true}
             onBlur={[Function]}

@@ -15,14 +15,12 @@ exports[`renders button with color 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -118,14 +116,12 @@ exports[`renders button with custom testID 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -222,14 +218,12 @@ exports[`renders button with icon 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -370,14 +364,12 @@ exports[`renders button with icon in reverse order 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -527,14 +519,12 @@ exports[`renders contained contained with mode 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -630,18 +620,11 @@ exports[`renders disabled button 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": true,
       }
-    }
-    accessibilityTraits={
-      Array [
-        "button",
-        "disabled",
-      ]
     }
     accessible={true}
     focusable={true}
@@ -738,14 +721,12 @@ exports[`renders loading button 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -1026,14 +1007,12 @@ exports[`renders outlined button with mode 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -1129,14 +1108,12 @@ exports[`renders text button by default 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -1232,14 +1209,12 @@ exports[`renders text button with mode 1`] = `
   }
 >
   <View
-    accessibilityComponentType="button"
     accessibilityRole="button"
     accessibilityState={
       Object {
         "disabled": undefined,
       }
     }
-    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}

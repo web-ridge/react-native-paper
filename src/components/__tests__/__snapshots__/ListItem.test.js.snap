@@ -101,18 +101,12 @@ exports[`renders list item with custom description 1`] = `
             }
           >
             <View
-              accessibilityComponentType="button"
               accessibilityRole="button"
               accessibilityState={
                 Object {
                   "disabled": false,
                   "selected": false,
                 }
-              }
-              accessibilityTraits={
-                Array [
-                  "button",
-                ]
               }
               accessible={true}
               focusable={true}
