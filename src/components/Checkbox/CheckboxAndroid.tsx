@@ -197,4 +197,6 @@ const styles = StyleSheet.create({
 export default withTheme(CheckboxAndroid);
 
 // @component-docs ignore-next-line
-export { CheckboxAndroid };
+const CheckboxAndroidWithTheme = withTheme(CheckboxAndroid);
+// @component-docs ignore-next-line
+export { CheckboxAndroidWithTheme as CheckboxAndroid };

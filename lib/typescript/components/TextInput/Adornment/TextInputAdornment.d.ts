@@ -1,17 +1,18 @@
 import React from 'react';
-import { LayoutChangeEvent, TextStyle, StyleProp, Animated } from 'react-native';
+import type { LayoutChangeEvent, TextStyle, StyleProp, Animated } from 'react-native';
 import type { AdornmentConfig, AdornmentStyleAdjustmentForNativeInput } from './types';
 import { AdornmentSide, AdornmentType } from './enums';
 export declare function getAdornmentConfig({ left, right, }: {
     left?: React.ReactNode;
     right?: React.ReactNode;
 }): Array<AdornmentConfig>;
-export declare function getAdornmentStyleAdjustmentForNativeInput({ adornmentConfig, leftAffixWidth, rightAffixWidth, inputOffset, mode, }: {
+export declare function getAdornmentStyleAdjustmentForNativeInput({ adornmentConfig, leftAffixWidth, rightAffixWidth, paddingHorizontal, inputOffset, mode, }: {
     inputOffset?: number;
     adornmentConfig: AdornmentConfig[];
     leftAffixWidth: number;
     rightAffixWidth: number;
     mode?: 'outlined' | 'flat';
+    paddingHorizontal?: number | string;
 }): AdornmentStyleAdjustmentForNativeInput | {};
 export interface TextInputAdornmentProps {
     forceFocus: () => void;
@@ -32,6 +33,7 @@ export interface TextInputAdornmentProps {
     textStyle?: StyleProp<TextStyle>;
     visible?: Animated.Value;
     isTextInputFocused: boolean;
+    paddingHorizontal?: number | string;
 }
 declare const TextInputAdornment: React.FunctionComponent<TextInputAdornmentProps>;
 export default TextInputAdornment;

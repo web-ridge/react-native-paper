@@ -151,6 +151,7 @@ const Button = ({
   contentStyle,
   labelStyle,
   testID,
+  accessible,
   ...rest
 }: Props) => {
   const { current: elevation } = React.useRef<Animated.Value>(
@@ -282,6 +283,7 @@ const Button = ({
         accessibilityLabel={accessibilityLabel}
         accessibilityRole="button"
         accessibilityState={{ disabled }}
+        accessible={accessible}
         disabled={disabled}
         rippleColor={rippleColor}
         style={touchableStyle}

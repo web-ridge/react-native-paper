@@ -38,7 +38,11 @@ declare type Props = React.ComponentPropsWithRef<typeof Image> & {
  * export default MyComponent;
  * ```
  *
+<<<<<<< HEAD
  * @extends Image props https://reactnative.dev/docs/image.html#props
+=======
+ * @extends Image props https://reactnative.dev/docs/image#props
+>>>>>>> 6b72d3e921217f600be45210bf15ee57674f95ac
  */
 declare const CardCover: {
     ({ index, total, style, theme, ...rest }: Props): JSX.Element;

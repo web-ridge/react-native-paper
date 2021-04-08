@@ -63,3 +63,4 @@ declare const RadioButtonGroup: {
     displayName: string;
 };
 export default RadioButtonGroup;
+export { RadioButtonGroup };

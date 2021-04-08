@@ -53,7 +53,7 @@ exports[`can render the Android checkbox on different platforms 1`] = `
               "fontSize": 16,
             },
             Object {
-              "color": "#6200ee",
+              "color": "#000000",
             },
             undefined,
           ],
@@ -233,7 +233,7 @@ exports[`can render the iOS checkbox on different platforms 1`] = `
               "fontSize": 16,
             },
             Object {
-              "color": "#6200ee",
+              "color": "#000000",
             },
             undefined,
           ],
@@ -379,7 +379,7 @@ exports[`renders unchecked 1`] = `
               "fontSize": 16,
             },
             Object {
-              "color": "#6200ee",
+              "color": "#000000",
             },
             undefined,
           ],

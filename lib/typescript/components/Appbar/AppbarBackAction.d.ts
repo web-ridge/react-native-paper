@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { $Omit } from './../../types';
-import AppbarAction from './AppbarAction';
-import type { ColorValue, StyleProp, ViewStyle, GestureResponderEvent } from 'react-native';
+import { AppbarAction } from './AppbarElements';
+import type { ColorValue, GestureResponderEvent, StyleProp, ViewStyle } from 'react-native';
 declare type Props = $Omit<React.ComponentPropsWithoutRef<typeof AppbarAction>, 'icon'> & {
     /**
      *  Custom color for back icon.
@@ -62,3 +62,4 @@ declare const AppbarBackAction: {
     displayName: string;
 };
 export default AppbarBackAction;
+export { AppbarBackAction };

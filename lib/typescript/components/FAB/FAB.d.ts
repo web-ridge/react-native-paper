@@ -71,15 +71,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
     Group: (React.ComponentClass<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -87,7 +90,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -98,15 +103,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -114,7 +122,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -124,15 +134,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -140,7 +153,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -151,15 +166,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -167,7 +185,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -177,15 +197,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -193,7 +216,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -204,15 +229,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -220,7 +248,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -231,15 +261,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -247,7 +280,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -257,15 +292,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -273,7 +311,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -284,15 +324,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -300,7 +343,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -310,15 +355,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -326,7 +374,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -340,15 +390,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
     Group: (React.ComponentClass<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -356,7 +409,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -367,15 +422,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -383,7 +441,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -393,15 +453,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -409,7 +472,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -420,15 +485,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -436,7 +504,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -446,15 +516,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -462,7 +535,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -473,15 +548,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -489,7 +567,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -500,15 +580,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -516,7 +599,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -526,15 +611,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -542,7 +630,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -553,15 +643,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -569,7 +662,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -579,15 +674,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -595,7 +693,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -611,15 +711,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
     Group: (React.ComponentClass<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -627,7 +730,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -638,15 +743,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -654,7 +762,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -664,15 +774,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -680,7 +793,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -691,15 +806,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -707,7 +825,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -717,15 +837,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -733,7 +856,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -744,15 +869,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -760,7 +888,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -771,15 +901,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -787,7 +920,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -797,15 +932,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -813,7 +951,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -824,15 +964,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -840,7 +983,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -850,15 +995,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -866,7 +1014,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -880,15 +1030,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
     Group: (React.ComponentClass<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -896,7 +1049,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -907,15 +1062,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -923,7 +1081,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -933,15 +1093,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -949,7 +1112,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -960,15 +1125,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -976,7 +1144,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -986,15 +1156,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -1002,7 +1175,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -1013,15 +1188,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -1029,7 +1207,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -1040,15 +1220,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -1056,7 +1239,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -1066,15 +1251,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }, any> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -1082,7 +1270,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -1093,15 +1283,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         displayName: string;
     }) | (React.FunctionComponent<{
         actions: {
-            icon: IconSource;
-            label?: string | undefined; /**
-             * Make the label text uppercased.
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
              */
+            label?: string | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             accessibilityLabel?: string | undefined;
             style?: StyleProp<ViewStyle>;
             onPress: (event: GestureResponderEvent) => void;
-            testID?: string | undefined;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
         }[];
         icon: IconSource;
         accessibilityLabel?: string | undefined;
@@ -1109,7 +1302,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         open: boolean;
         onStateChange: (state: {
-            open: boolean;
+            open: boolean; /**
+             * Function to execute on press.
+             */
         }) => void;
         visible: boolean;
         style?: StyleProp<ViewStyle>;
@@ -1119,15 +1314,18 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }> & {
         ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
             actions: {
-                icon: IconSource;
-                label?: string | undefined; /**
-                 * Make the label text uppercased.
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
                  */
+                label?: string | undefined;
                 color?: string | typeof import("react-native").OpaqueColorValue | undefined;
                 accessibilityLabel?: string | undefined;
                 style?: StyleProp<ViewStyle>;
                 onPress: (event: GestureResponderEvent) => void;
-                testID?: string | undefined;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
             }[];
             icon: IconSource;
             accessibilityLabel?: string | undefined;
@@ -1135,7 +1333,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             open: boolean;
             onStateChange: (state: {
-                open: boolean;
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
             }) => void;
             visible: boolean;
             style?: StyleProp<ViewStyle>;
@@ -1147,3 +1347,1285 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "small" | "s
     }), {}>);
 }), {}>);
 export default _default;
+declare const FABWithTheme: (React.ComponentClass<Pick<Props, "label" | "small" | "style" | "color" | "icon" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "visible" | "disabled" | "uppercase" | "loading" | "animated"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
+    Group: (React.ComponentClass<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}) | (React.FunctionComponent<Props> & {
+    ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
+    Group: (React.ComponentClass<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}), {}>) | (React.FunctionComponent<Pick<Props, "label" | "small" | "style" | "color" | "icon" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "visible" | "disabled" | "uppercase" | "loading" | "animated"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
+    Group: (React.ComponentClass<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}) | (React.FunctionComponent<Props> & {
+    ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
+    Group: (React.ComponentClass<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        actions: {
+            icon: IconSource; /**
+             * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+             * Uses `label` by default if specified.
+             */
+            label?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            accessibilityLabel?: string | undefined;
+            style?: StyleProp<ViewStyle>;
+            onPress: (event: GestureResponderEvent) => void;
+            testID?: string | undefined; /**
+             * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+             */
+        }[];
+        icon: IconSource;
+        accessibilityLabel?: string | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        open: boolean;
+        onStateChange: (state: {
+            open: boolean; /**
+             * Function to execute on press.
+             */
+        }) => void;
+        visible: boolean;
+        style?: StyleProp<ViewStyle>;
+        fabStyle?: StyleProp<ViewStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: {
+            actions: {
+                icon: IconSource; /**
+                 * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
+                 * Uses `label` by default if specified.
+                 */
+                label?: string | undefined;
+                color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+                accessibilityLabel?: string | undefined;
+                style?: StyleProp<ViewStyle>;
+                onPress: (event: GestureResponderEvent) => void;
+                testID?: string | undefined; /**
+                 * Accessibility state for the FAB. This is read by the screen reader when the user taps the FAB.
+                 */
+            }[];
+            icon: IconSource;
+            accessibilityLabel?: string | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            open: boolean;
+            onStateChange: (state: {
+                open: boolean; /**
+                 * Function to execute on press.
+                 */
+            }) => void;
+            visible: boolean;
+            style?: StyleProp<ViewStyle>;
+            fabStyle?: StyleProp<ViewStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}), {}>);
+export { FABWithTheme as FAB };

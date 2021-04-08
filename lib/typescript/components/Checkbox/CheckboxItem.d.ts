@@ -47,28 +47,6 @@ declare type Props = {
      */
     mode?: 'android' | 'ios';
 };
-/**
- * Checkbox.Item allows you to press the whole row (item) instead of only the Checkbox.
- *
- * ## Usage
- * ```js
- * import * as React from 'react';
- * import { View } from 'react-native';
- * import { Checkbox } from 'react-native-paper';
- *
- * const MyComponent = () => (
- *   <View>
- *     <Checkbox.Item label="Item" status="checked" />
- *   </View>
- * );
- *
- * export default MyComponent;
- *```
- */
-declare const CheckboxItem: {
-    ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
-    displayName: string;
-};
 declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
@@ -87,4 +65,21 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "c
     displayName: string;
 }), {}>);
 export default _default;
-export { CheckboxItem };
+declare const CheckboxItemWithTheme: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
+    displayName: string;
+}) | (React.FunctionComponent<Props> & {
+    ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
+    displayName: string;
+}), {}>) | (React.FunctionComponent<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
+    displayName: string;
+}) | (React.FunctionComponent<Props> & {
+    ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: Props): JSX.Element;
+    displayName: string;
+}), {}>);
+export { CheckboxItemWithTheme as CheckboxItem };

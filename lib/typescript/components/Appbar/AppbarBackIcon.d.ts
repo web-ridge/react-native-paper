@@ -5,3 +5,4 @@ declare const AppbarBackIcon: ({ size, color }: {
     color: ColorValue;
 }) => JSX.Element;
 export default AppbarBackIcon;
+export { AppbarBackIcon };

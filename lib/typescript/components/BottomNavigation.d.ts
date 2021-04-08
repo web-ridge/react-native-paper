@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, TouchableWithoutFeedbackProps, StyleProp, ViewStyle, ColorValue } from 'react-native';
+import { TouchableWithoutFeedbackProps, StyleProp, ViewStyle, ColorValue } from 'react-native';
 import { IconSource } from './Icon';
 declare type Route = {
     key: string;
@@ -139,7 +139,7 @@ declare type Props = {
      */
     getLabelText?: (props: {
         route: Route;
-    }) => string;
+    }) => string | undefined;
     /**
      * Get accessibility label for the tab button. This is read by the screen reader when the user taps the tab.
      * Uses `route.accessibilityLabel` by default.
@@ -164,7 +164,7 @@ declare type Props = {
      */
     getColor?: (props: {
         route: Route;
-    }) => string | undefined;
+    }) => ColorValue | undefined;
     /**
      * Function to execute on tab press. It receives the route for the pressed tab, useful for things like scroll to top.
      */
@@ -205,112 +205,16 @@ declare type Props = {
      */
     theme: ReactNativePaper.Theme;
 };
-declare type State = {
-    /**
-     * Visibility of the navigation bar, visible state is 1 and invisible is 0.
-     */
-    visible: Animated.Value;
-    /**
-     * Active state of individual tab items, active state is 1 and inactive state is 0.
-     */
-    tabs: Animated.Value[];
-    /**
-     * The top offset for each tab item to position it offscreen.
-     * Placing items offscreen helps to save memory usage for inactive screens with removeClippedSubviews.
-     * We use animated values for this to prevent unnecessary re-renders.
-     */
-    offsets: Animated.Value[];
-    /**
-     * Index of the currently active tab. Used for setting the background color.
-     * Use don't use the color as an animated value directly, because `setValue` seems to be buggy with colors.
-     */
-    index: Animated.Value;
-    /**
-     * Animation for the touch, used to determine it's scale and opacity.
-     */
-    touch: Animated.Value;
-    /**
-     * Animation for the background color ripple, used to determine it's scale and opacity.
-     */
-    ripple: Animated.Value;
-    /**
-     * Layout of the navigation bar. The width is used to determine the size and position of the ripple.
-     */
-    layout: {
-        height: number;
-        width: number;
-        measured: boolean;
-    };
-    /**
-     * key of the currently active route. Used only for getDerivedStateFromProps.
-     */
-    current: string;
-    /**
-     * List of keys of the loaded tabs, tabs will be loaded when navigated to.
-     */
-    loaded: string[];
-    /**
-     * Track whether the keyboard is visible to show and hide the navigation bar.
-     */
-    keyboard: boolean;
-};
-/**
- * Bottom navigation provides quick navigation between top-level views of an app with a bottom navigation bar.
- * It is primarily designed for use on mobile.
- *
- * For integration with React Navigation, you can use [react-navigation-material-bottom-tab-navigator](https://github.com/react-navigation/react-navigation-material-bottom-tab-navigator).
- *
- * By default Bottom navigation uses primary color as a background, in dark theme with `adaptive` mode it will use surface colour instead.
- * See [Dark Theme](https://callstack.github.io/react-native-paper/theming.html#dark-theme) for more information.
- *
- * <div class="screenshots">
- *   <img class="medium" src="screenshots/bottom-navigation.gif" />
- * </div>
- *
- * ## Usage
- * ```js
- * import * as React from 'react';
- * import { BottomNavigation, Text } from 'react-native-paper';
- *
- * const MusicRoute = () => <Text>Music</Text>;
- *
- * const AlbumsRoute = () => <Text>Albums</Text>;
- *
- * const RecentsRoute = () => <Text>Recents</Text>;
- *
- * const MyComponent = () => {
- *   const [index, setIndex] = React.useState(0);
- *   const [routes] = React.useState([
- *     { key: 'music', title: 'Music', icon: 'queue-music' },
- *     { key: 'albums', title: 'Albums', icon: 'album' },
- *     { key: 'recents', title: 'Recents', icon: 'history' },
- *   ]);
- *
- *   const renderScene = BottomNavigation.SceneMap({
- *     music: MusicRoute,
- *     albums: AlbumsRoute,
- *     recents: RecentsRoute,
- *   });
- *
- *   return (
- *     <BottomNavigation
- *       navigationState={{ index, routes }}
- *       onIndexChange={setIndex}
- *       renderScene={renderScene}
- *     />
- *   );
- * };
- *
- * export default MyComponent;
- * ```
- */
-declare class BottomNavigation extends React.Component<Props, State> {
+declare const _default: (React.ComponentClass<Pick<Props, "style" | "navigationState" | "renderScene" | "renderIcon" | "renderLabel" | "renderTouchable" | "getLabelText" | "getBadge" | "getColor" | "getAccessibilityLabel" | "getTestID" | "activeColor" | "inactiveColor" | "keyboardHidesNavigationBar" | "barStyle" | "labeled" | "sceneAnimationEnabled" | "onTabPress" | "onIndexChange" | "shifting"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ navigationState, renderScene, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, barStyle, labeled, style, theme, sceneAnimationEnabled, onTabPress, onIndexChange, shifting, }: Props): JSX.Element;
     /**
      * Function which takes a map of route keys to components.
      * Pure components are used to minimize re-rendering of the pages.
      * This drastically improves the animation performance.
      */
-    static SceneMap(scenes: {
+    SceneMap(scenes: {
         [key: string]: React.ComponentType<{
             route: Route;
             jumpTo: (key: string) => void;
@@ -319,28 +223,55 @@ declare class BottomNavigation extends React.Component<Props, State> {
         route: Route;
         jumpTo: (key: string) => void;
     }) => JSX.Element;
-    static defaultProps: {
-        labeled: boolean;
-        keyboardHidesNavigationBar: boolean;
-        sceneAnimationEnabled: boolean;
-    };
-    static getDerivedStateFromProps(nextProps: Props, prevState: State): Partial<State>;
-    constructor(props: Props);
-    componentDidMount(): void;
-    componentDidUpdate(prevProps: Props): void;
-    componentWillUnmount(): void;
-    private handleKeyboardShow;
-    private handleKeyboardHide;
-    private animateToCurrentIndex;
-    private handleLayout;
-    private handleTabPress;
-    private jumpTo;
-    private isShifting;
-    render(): JSX.Element;
-}
-declare const _default: (React.ComponentClass<Pick<Props, "style" | "shifting" | "labeled" | "navigationState" | "onIndexChange" | "renderScene" | "renderIcon" | "renderLabel" | "renderTouchable" | "getLabelText" | "getAccessibilityLabel" | "getTestID" | "getBadge" | "getColor" | "onTabPress" | "activeColor" | "inactiveColor" | "sceneAnimationEnabled" | "keyboardHidesNavigationBar" | "barStyle"> & {
+}) | (React.FunctionComponent<Props> & {
+    ({ navigationState, renderScene, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, barStyle, labeled, style, theme, sceneAnimationEnabled, onTabPress, onIndexChange, shifting, }: Props): JSX.Element;
+    /**
+     * Function which takes a map of route keys to components.
+     * Pure components are used to minimize re-rendering of the pages.
+     * This drastically improves the animation performance.
+     */
+    SceneMap(scenes: {
+        [key: string]: React.ComponentType<{
+            route: Route;
+            jumpTo: (key: string) => void;
+        }>;
+    }): ({ route, jumpTo, }: {
+        route: Route;
+        jumpTo: (key: string) => void;
+    }) => JSX.Element;
+}), {}>) | (React.FunctionComponent<Pick<Props, "style" | "navigationState" | "renderScene" | "renderIcon" | "renderLabel" | "renderTouchable" | "getLabelText" | "getBadge" | "getColor" | "getAccessibilityLabel" | "getTestID" | "activeColor" | "inactiveColor" | "keyboardHidesNavigationBar" | "barStyle" | "labeled" | "sceneAnimationEnabled" | "onTabPress" | "onIndexChange" | "shifting"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
-}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & typeof BottomNavigation) | (React.FunctionComponent<Props> & typeof BottomNavigation), {}>) | (React.FunctionComponent<Pick<Props, "style" | "shifting" | "labeled" | "navigationState" | "onIndexChange" | "renderScene" | "renderIcon" | "renderLabel" | "renderTouchable" | "getLabelText" | "getAccessibilityLabel" | "getTestID" | "getBadge" | "getColor" | "onTabPress" | "activeColor" | "inactiveColor" | "sceneAnimationEnabled" | "keyboardHidesNavigationBar" | "barStyle"> & {
-    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
-}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & typeof BottomNavigation) | (React.FunctionComponent<Props> & typeof BottomNavigation), {}>);
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ navigationState, renderScene, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, barStyle, labeled, style, theme, sceneAnimationEnabled, onTabPress, onIndexChange, shifting, }: Props): JSX.Element;
+    /**
+     * Function which takes a map of route keys to components.
+     * Pure components are used to minimize re-rendering of the pages.
+     * This drastically improves the animation performance.
+     */
+    SceneMap(scenes: {
+        [key: string]: React.ComponentType<{
+            route: Route;
+            jumpTo: (key: string) => void;
+        }>;
+    }): ({ route, jumpTo, }: {
+        route: Route;
+        jumpTo: (key: string) => void;
+    }) => JSX.Element;
+}) | (React.FunctionComponent<Props> & {
+    ({ navigationState, renderScene, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, barStyle, labeled, style, theme, sceneAnimationEnabled, onTabPress, onIndexChange, shifting, }: Props): JSX.Element;
+    /**
+     * Function which takes a map of route keys to components.
+     * Pure components are used to minimize re-rendering of the pages.
+     * This drastically improves the animation performance.
+     */
+    SceneMap(scenes: {
+        [key: string]: React.ComponentType<{
+            route: Route;
+            jumpTo: (key: string) => void;
+        }>;
+    }): ({ route, jumpTo, }: {
+        route: Route;
+        jumpTo: (key: string) => void;
+    }) => JSX.Element;
+}), {}>);
 export default _default;

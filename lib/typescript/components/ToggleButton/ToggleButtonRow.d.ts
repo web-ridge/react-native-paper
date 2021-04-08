@@ -49,3 +49,4 @@ declare const ToggleButtonRow: {
     displayName: string;
 };
 export default ToggleButtonRow;
+export { ToggleButtonRow };

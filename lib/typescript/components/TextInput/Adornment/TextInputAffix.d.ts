@@ -16,6 +16,7 @@ declare type ContextState = {
     visible?: Animated.Value;
     textStyle?: StyleProp<TextStyle>;
     side: AdornmentSide;
+    paddingHorizontal?: number | string;
 };
 declare const AffixAdornment: React.FunctionComponent<{
     affix: React.ReactNode;

@@ -99,3 +99,6 @@ const AppbarAction = ({
 AppbarAction.displayName = 'Appbar.Action';
 
 export default AppbarAction;
+
+// @component-docs ignore-next-line
+export { AppbarAction };

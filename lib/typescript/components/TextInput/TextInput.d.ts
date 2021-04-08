@@ -143,7 +143,11 @@ export declare type TextInputProps = React.ComponentPropsWithRef<typeof NativeTe
  * export default MyComponent;
  * ```
  *
+<<<<<<< HEAD
  * @extends TextInput props https://reactnative.dev/docs/textinput.html#props
+=======
+ * @extends TextInput props https://reactnative.dev/docs/textinput#props
+>>>>>>> 6b72d3e921217f600be45210bf15ee57674f95ac
  */
 declare class TextInput extends React.Component<TextInputProps, State> {
     static Icon: {
@@ -155,9 +159,7 @@ declare class TextInput extends React.Component<TextInputProps, State> {
             onPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             onLongPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined; /**
-             * Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler.
-             */
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             children: import("../TouchableRipple/utils").InteractionChildrenType;
             style?: import("../TouchableRipple/utils").InteractionStyleType;
             theme: ReactNativePaper.Theme;
@@ -171,9 +173,7 @@ declare class TextInput extends React.Component<TextInputProps, State> {
             onPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             onLongPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined; /**
-             * Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler.
-             */
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             children: import("../TouchableRipple/utils").InteractionChildrenType;
             style?: import("../TouchableRipple/utils").InteractionStyleType;
             theme: ReactNativePaper.Theme;
@@ -200,9 +200,7 @@ declare class TextInput extends React.Component<TextInputProps, State> {
             onPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             onLongPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined; /**
-             * Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler.
-             */
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             children: import("../TouchableRipple/utils").InteractionChildrenType;
             style?: import("../TouchableRipple/utils").InteractionStyleType;
             theme: ReactNativePaper.Theme;
@@ -216,9 +214,7 @@ declare class TextInput extends React.Component<TextInputProps, State> {
             onPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             onLongPress?: ((e: import("react-native").GestureResponderEvent) => void) | undefined;
             rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined; /**
-             * Callback that is called when the text input's text changes. Changed text is passed as an argument to the callback handler.
-             */
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             children: import("../TouchableRipple/utils").InteractionChildrenType;
             style?: import("../TouchableRipple/utils").InteractionStyleType;
             theme: ReactNativePaper.Theme;

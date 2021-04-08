@@ -10,7 +10,7 @@ declare type Props = React.ComponentPropsWithRef<typeof Animated.Text> & {
 /**
  * Text component which follows styles from the theme.
  *
- * @extends Text props https://reactnative.dev/docs/text.html#props
+ * @extends Text props https://reactnative.dev/docs/text#props
  */
 declare function AnimatedText({ style, theme, ...rest }: Props): JSX.Element;
 declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import("react-native").TextProps & React.RefAttributes<import("react-native").Text>> & {

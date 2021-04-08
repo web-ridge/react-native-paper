@@ -122,3 +122,85 @@ declare const _default: (React.ComponentClass<Pick<Props, "style" | "color" | "s
     };
 }), {}>);
 export default _default;
+declare const ToggleButtonWithTheme: (React.ComponentClass<Pick<Props, "style" | "color" | "size" | "icon" | "onPress" | "accessibilityLabel" | "status" | "disabled" | "value"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ icon, size, theme, accessibilityLabel, disabled, style, value, status, onPress, ...rest }: Props): JSX.Element;
+    Group: {
+        ({ value, onValueChange, children }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+        }): JSX.Element;
+        displayName: string;
+    };
+    Row: {
+        ({ value, onValueChange, children, style }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+            style?: StyleProp<ViewStyle>;
+        }): JSX.Element;
+        displayName: string;
+    };
+}) | (React.FunctionComponent<Props> & {
+    ({ icon, size, theme, accessibilityLabel, disabled, style, value, status, onPress, ...rest }: Props): JSX.Element;
+    Group: {
+        ({ value, onValueChange, children }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+        }): JSX.Element;
+        displayName: string;
+    };
+    Row: {
+        ({ value, onValueChange, children, style }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+            style?: StyleProp<ViewStyle>;
+        }): JSX.Element;
+        displayName: string;
+    };
+}), {}>) | (React.FunctionComponent<Pick<Props, "style" | "color" | "size" | "icon" | "onPress" | "accessibilityLabel" | "status" | "disabled" | "value"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ icon, size, theme, accessibilityLabel, disabled, style, value, status, onPress, ...rest }: Props): JSX.Element;
+    Group: {
+        ({ value, onValueChange, children }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+        }): JSX.Element;
+        displayName: string;
+    };
+    Row: {
+        ({ value, onValueChange, children, style }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+            style?: StyleProp<ViewStyle>;
+        }): JSX.Element;
+        displayName: string;
+    };
+}) | (React.FunctionComponent<Props> & {
+    ({ icon, size, theme, accessibilityLabel, disabled, style, value, status, onPress, ...rest }: Props): JSX.Element;
+    Group: {
+        ({ value, onValueChange, children }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+        }): JSX.Element;
+        displayName: string;
+    };
+    Row: {
+        ({ value, onValueChange, children, style }: {
+            onValueChange: (value: string) => void;
+            value: string;
+            children: React.ReactNode;
+            style?: StyleProp<ViewStyle>;
+        }): JSX.Element;
+        displayName: string;
+    };
+}), {}>);
+export { ToggleButtonWithTheme as ToggleButton };

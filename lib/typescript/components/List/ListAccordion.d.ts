@@ -26,6 +26,10 @@ declare type Props = {
      */
     onPress?: (event: GestureResponderEvent) => void;
     /**
+     * Function to execute on long press.
+     */
+    onLongPress?: () => void;
+    /**
      * Content of the section.
      */
     children: React.ReactNode;
@@ -64,21 +68,21 @@ declare type Props = {
      */
     testID?: string;
 };
-declare const _default: (React.ComponentClass<Pick<Props, "style" | "title" | "children" | "onPress" | "testID" | "left" | "description" | "titleStyle" | "descriptionStyle" | "titleNumberOfLines" | "descriptionNumberOfLines" | "id" | "expanded"> & {
+declare const _default: (React.ComponentClass<Pick<Props, "style" | "title" | "children" | "onPress" | "onLongPress" | "testID" | "left" | "description" | "titleStyle" | "descriptionStyle" | "titleNumberOfLines" | "descriptionNumberOfLines" | "id" | "expanded"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
-    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, expanded: expandedProp, }: Props): JSX.Element;
+    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, onLongPress, expanded: expandedProp, }: Props): JSX.Element;
     displayName: string;
 }) | (React.FunctionComponent<Props> & {
-    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, expanded: expandedProp, }: Props): JSX.Element;
+    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, onLongPress, expanded: expandedProp, }: Props): JSX.Element;
     displayName: string;
-}), {}>) | (React.FunctionComponent<Pick<Props, "style" | "title" | "children" | "onPress" | "testID" | "left" | "description" | "titleStyle" | "descriptionStyle" | "titleNumberOfLines" | "descriptionNumberOfLines" | "id" | "expanded"> & {
+}), {}>) | (React.FunctionComponent<Pick<Props, "style" | "title" | "children" | "onPress" | "onLongPress" | "testID" | "left" | "description" | "titleStyle" | "descriptionStyle" | "titleNumberOfLines" | "descriptionNumberOfLines" | "id" | "expanded"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
-    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, expanded: expandedProp, }: Props): JSX.Element;
+    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, onLongPress, expanded: expandedProp, }: Props): JSX.Element;
     displayName: string;
 }) | (React.FunctionComponent<Props> & {
-    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, expanded: expandedProp, }: Props): JSX.Element;
+    ({ left, title, description, children, theme, titleStyle, descriptionStyle, titleNumberOfLines, descriptionNumberOfLines, style, id, testID, onPress, onLongPress, expanded: expandedProp, }: Props): JSX.Element;
     displayName: string;
 }), {}>);
 export default _default;

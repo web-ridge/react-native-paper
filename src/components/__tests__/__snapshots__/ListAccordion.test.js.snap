@@ -3,7 +3,9 @@
 exports[`renders expanded accordion 1`] = `
 <View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -209,7 +211,9 @@ exports[`renders expanded accordion 1`] = `
 exports[`renders list accordion with children 1`] = `
 <View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -391,7 +395,9 @@ exports[`renders list accordion with children 1`] = `
 exports[`renders list accordion with custom title and description styles 1`] = `
 <View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -554,7 +560,9 @@ exports[`renders list accordion with custom title and description styles 1`] = `
 exports[`renders list accordion with left items 1`] = `
 <View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}
@@ -736,7 +744,9 @@ exports[`renders list accordion with left items 1`] = `
 exports[`renders multiline list accordion 1`] = `
 <View>
   <View
+    accessibilityComponentType="button"
     accessibilityRole="button"
+    accessibilityTraits="button"
     accessible={true}
     focusable={true}
     onBlur={[Function]}

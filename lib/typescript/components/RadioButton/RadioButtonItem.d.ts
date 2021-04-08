@@ -55,39 +55,6 @@ export declare type Props = {
      */
     mode?: 'android' | 'ios';
 };
-/**
- * RadioButton.Item allows you to press the whole row (item) instead of only the RadioButton.
- *
- * <div class="screenshots">
- *   <figure>
- *     <img class="medium" src="screenshots/radio-item.ios.png" />
- *     <figcaption>Pressed</figcaption>
- *   </figure>
- * </div>
- *
- * ## Usage
- * ```js
- * import * as React from 'react';
- * import { RadioButton } from 'react-native-paper';
- *
- * const MyComponent = () => {
- *   const [value, setValue] = React.useState('first');
- *
- *   return (
- *     <RadioButton.Group onValueChange={value => setValue(value)} value={value}>
- *       <RadioButton.Item label="First item" value="first" />
- *       <RadioButton.Item label="Second item" value="second" />
- *     </RadioButton.Group>
- *   );
- * };
- *
- * export default MyComponent;
- *```
- */
-declare const RadioButtonItem: {
-    ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
-    displayName: string;
-};
 declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "status" | "disabled" | "value" | "mode" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
@@ -106,4 +73,21 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "c
     displayName: string;
 }), {}>);
 export default _default;
-export { RadioButtonItem };
+declare const RadioButtonItemWithTheme: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "status" | "disabled" | "value" | "mode" | "uncheckedColor"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
+    displayName: string;
+}) | (React.FunctionComponent<Props> & {
+    ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
+    displayName: string;
+}), {}>) | (React.FunctionComponent<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "status" | "disabled" | "value" | "mode" | "uncheckedColor"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
+    displayName: string;
+}) | (React.FunctionComponent<Props> & {
+    ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
+    displayName: string;
+}), {}>);
+export { RadioButtonItemWithTheme as RadioButtonItem };

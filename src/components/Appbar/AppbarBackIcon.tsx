@@ -48,3 +48,6 @@ const styles = StyleSheet.create({
 });
 
 export default AppbarBackIcon;
+
+// @component-docs ignore-next-line
+export { AppbarBackIcon };

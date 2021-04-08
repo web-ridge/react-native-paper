@@ -16,7 +16,7 @@ type Props = React.ComponentProps<typeof Animated.Text> & {
   /**
    * Whether the badge is visible
    */
-  visible: boolean;
+  visible?: boolean;
   /**
    * Content of the `Badge`.
    */
@@ -71,12 +71,19 @@ const Badge = ({
   const { current: opacity } = React.useRef<Animated.Value>(
     new Animated.Value(visible ? 1 : 0)
   );
+  const isFirstRendering = React.useRef<boolean>(true);
 
   const {
     animation: { scale },
   } = theme;
 
   React.useEffect(() => {
+    // Do not run animation on very first rendering
+    if (isFirstRendering.current) {
+      isFirstRendering.current = false;
+      return;
+    }
+
     Animated.timing(opacity, {
       toValue: visible ? 1 : 0,
       duration: 150 * scale,

@@ -214,7 +214,7 @@ declare class Menu extends React.Component<Props, State> {
         testID?: string | undefined;
     }> & typeof _MenuItem), {}>);
     static defaultProps: {
-        statusBarHeight: any;
+        statusBarHeight: number;
         overlayAccessibilityLabel: string;
     };
     static getDerivedStateFromProps(nextProps: Props, prevState: State): {

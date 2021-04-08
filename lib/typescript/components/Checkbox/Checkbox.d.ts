@@ -35,6 +35,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     (props: Props): JSX.Element;
     Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -49,6 +52,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -62,6 +68,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -76,6 +85,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -89,6 +101,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -103,6 +118,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -117,6 +135,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -130,6 +151,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -144,6 +168,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -157,6 +184,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -205,9 +235,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -245,9 +273,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -284,9 +310,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -324,9 +348,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -363,9 +385,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -403,9 +423,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -443,9 +461,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -482,9 +498,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -522,9 +536,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -561,9 +573,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -598,7 +608,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -635,7 +647,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -671,7 +685,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -708,7 +724,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -744,7 +762,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -781,7 +801,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -818,7 +840,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -854,7 +878,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -891,7 +917,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -927,7 +955,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -938,6 +968,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
 }) | (React.FunctionComponent<Props> & {
     (props: Props): JSX.Element;
     Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -952,6 +985,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -965,6 +1001,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -979,6 +1018,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -992,6 +1034,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -1006,6 +1051,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1020,6 +1068,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1033,6 +1084,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -1047,6 +1101,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1060,6 +1117,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -1108,9 +1168,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -1148,9 +1206,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -1187,9 +1243,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -1227,9 +1281,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -1266,9 +1318,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -1306,9 +1356,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -1346,9 +1394,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -1385,9 +1431,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -1425,9 +1469,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -1464,9 +1506,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -1501,7 +1541,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -1538,7 +1580,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -1574,7 +1618,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -1611,7 +1657,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -1647,7 +1695,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -1684,7 +1734,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -1721,7 +1773,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -1757,7 +1811,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -1794,7 +1850,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -1830,7 +1888,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -1843,6 +1903,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     (props: Props): JSX.Element;
     Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1857,6 +1920,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1870,6 +1936,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -1884,6 +1953,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1897,6 +1969,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -1911,6 +1986,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1925,6 +2003,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1938,6 +2019,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -1952,6 +2036,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -1965,6 +2052,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -2013,9 +2103,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -2053,9 +2141,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -2092,9 +2178,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -2132,9 +2216,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -2171,9 +2253,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -2211,9 +2291,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -2251,9 +2329,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -2290,9 +2366,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -2330,9 +2404,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -2369,9 +2441,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -2406,7 +2476,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -2443,7 +2515,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -2479,7 +2553,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -2516,7 +2592,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -2552,7 +2630,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -2589,7 +2669,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -2626,7 +2708,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -2662,7 +2746,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -2699,7 +2785,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -2735,7 +2823,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
-            disabled?: boolean | undefined;
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -2746,6 +2836,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
 }) | (React.FunctionComponent<Props> & {
     (props: Props): JSX.Element;
     Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -2760,6 +2853,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -2773,6 +2869,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -2787,6 +2886,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -2800,6 +2902,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -2814,6 +2919,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -2828,6 +2936,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -2841,6 +2952,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }, any> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -2855,6 +2969,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         label: string;
@@ -2868,6 +2985,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         mode?: "ios" | "android" | undefined;
     }> & {
         ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             label: string;
@@ -2916,9 +3036,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -2956,9 +3074,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -2995,9 +3111,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -3035,9 +3149,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -3074,9 +3186,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -3114,9 +3224,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
@@ -3154,9 +3262,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -3193,9 +3299,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -3233,9 +3337,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-        theme: ReactNativePaper.Theme; /**
-         * @optional
-         */
+        theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
         ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
@@ -3272,9 +3374,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
-            theme: ReactNativePaper.Theme; /**
-             * @optional
-             */
+            theme: ReactNativePaper.Theme;
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
@@ -3309,7 +3409,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -3346,7 +3448,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
         status: "checked" | "unchecked" | "indeterminate";
-        disabled?: boolean | undefined;
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
@@ -3382,8 +3486,567 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}), {}>);
+export default _default;
+declare const CheckboxWithTheme: (React.ComponentClass<Pick<Props, "color" | "onPress" | "testID" | "status" | "disabled" | "uncheckedColor"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    (props: Props): JSX.Element;
+    Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    Android: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
             testID?: string | undefined;
@@ -3421,11 +4084,12 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }> & {
-        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
             borderless?: boolean | undefined;
             background?: Object | undefined;
             centered?: boolean | undefined;
@@ -3457,6 +4121,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
             testID?: string | undefined;
@@ -3494,10 +4159,11 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
         testID?: string | undefined;
-    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
         borderless?: boolean | undefined;
@@ -3531,11 +4197,12 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
         testID?: string | undefined;
     }, any> & {
-        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
             borderless?: boolean | undefined;
             background?: Object | undefined;
             centered?: boolean | undefined;
@@ -3567,6 +4234,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
             testID?: string | undefined;
@@ -3604,6 +4272,200 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         status: "checked" | "unchecked" | "indeterminate";
         disabled?: boolean | undefined;
         onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    IOS: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
         color?: string | typeof import("react-native").OpaqueColorValue | undefined;
         theme: ReactNativePaper.Theme;
         testID?: string | undefined;
@@ -3638,7 +4500,3003 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
             theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
         }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
             status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}) | (React.FunctionComponent<Props> & {
+    (props: Props): JSX.Element;
+    Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
             disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    Android: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    IOS: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}), {}>) | (React.FunctionComponent<Pick<Props, "color" | "onPress" | "testID" | "status" | "disabled" | "uncheckedColor"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
+    (props: Props): JSX.Element;
+    Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    Android: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    IOS: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+}) | (React.FunctionComponent<Props> & {
+    (props: Props): JSX.Element;
+    Item: (React.ComponentClass<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, "label" | "style" | "color" | "onPress" | "testID" | "labelStyle" | "status" | "disabled" | "mode" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }, any> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<{
+        /**
+         * Function to execute on press.
+         */
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        label: string;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+        labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+        mode?: "ios" | "android" | undefined;
+    }> & {
+        ({ style, status, label, onPress, labelStyle, theme, testID, mode, ...props }: {
+            /**
+             * Function to execute on press.
+             */
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            label: string;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            style?: import("react-native").StyleProp<import("react-native").ViewStyle>;
+            labelStyle?: import("react-native").StyleProp<import("react-native").TextStyle>;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+            mode?: "ios" | "android" | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    Android: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered" | "uncheckedColor"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined;
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, theme, disabled, onPress, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined;
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            uncheckedColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>);
+    IOS: (React.ComponentClass<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }), {}>) | (React.FunctionComponent<Pick<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, "style" | "color" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "status" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }, any> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
+            onPress?: ((event: GestureResponderEvent) => void) | undefined;
+            color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            theme: ReactNativePaper.Theme;
+            testID?: string | undefined;
+        }): JSX.Element;
+        displayName: string;
+    }) | (React.FunctionComponent<Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+        borderless?: boolean | undefined;
+        background?: Object | undefined;
+        centered?: boolean | undefined;
+        disabled?: boolean | null | undefined;
+        onPress?: ((e: GestureResponderEvent) => void) | undefined;
+        onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+        rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        children: import("../TouchableRipple/utils").InteractionChildrenType;
+        style?: import("../TouchableRipple/utils").InteractionStyleType;
+        theme: ReactNativePaper.Theme;
+    }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+    }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+        status: "checked" | "unchecked" | "indeterminate";
+        disabled?: boolean | undefined; /**
+         * Custom color for checkbox.
+         */
+        onPress?: ((event: GestureResponderEvent) => void) | undefined;
+        color?: string | typeof import("react-native").OpaqueColorValue | undefined;
+        theme: ReactNativePaper.Theme;
+        testID?: string | undefined;
+    }> & {
+        ({ status, disabled, onPress, theme, testID, ...rest }: Pick<Pick<(Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }) | React.PropsWithChildren<Pick<import("react-native").PressableProps & React.RefAttributes<import("react-native").View> & {
+            borderless?: boolean | undefined;
+            background?: Object | undefined;
+            centered?: boolean | undefined;
+            disabled?: boolean | null | undefined;
+            onPress?: ((e: GestureResponderEvent) => void) | undefined;
+            onLongPress?: ((e: GestureResponderEvent) => void) | undefined;
+            rippleColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            underlayColor?: string | typeof import("react-native").OpaqueColorValue | undefined;
+            children: import("../TouchableRipple/utils").InteractionChildrenType;
+            style?: import("../TouchableRipple/utils").InteractionStyleType;
+            theme: ReactNativePaper.Theme;
+        }, "ref" | "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
+        }>, "style" | "children" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered">, "style" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "theme" | "onPressIn" | "onPressOut" | "delayLongPress" | "disabled" | "pressRetentionOffset" | "android_disableSound" | "android_ripple" | "testOnly_pressed" | "background" | "borderless" | "rippleColor" | "underlayColor" | "centered"> & {
+            status: "checked" | "unchecked" | "indeterminate";
+            disabled?: boolean | undefined; /**
+             * Custom color for checkbox.
+             */
             onPress?: ((event: GestureResponderEvent) => void) | undefined;
             color?: string | typeof import("react-native").OpaqueColorValue | undefined;
             theme: ReactNativePaper.Theme;
@@ -3647,4 +7505,4 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         displayName: string;
     }), {}>);
 }), {}>);
-export default _default;
+export { CheckboxWithTheme as Checkbox };

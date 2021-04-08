@@ -40,6 +40,10 @@ type Props = {
    */
   onPress?: (event: GestureResponderEvent) => void;
   /**
+   * Function to execute on long press.
+   */
+  onLongPress?: () => void;
+  /**
    * Content of the section.
    */
   children: React.ReactNode;
@@ -136,6 +140,7 @@ const ListAccordion = ({
   id,
   testID,
   onPress,
+  onLongPress,
   expanded: expandedProp,
 }: Props) => {
   const [expanded, setExpanded] = React.useState<boolean>(
@@ -175,6 +180,10 @@ const ListAccordion = ({
       <TouchableRipple
         style={[styles.container, style]}
         onPress={handlePress}
+        onLongPress={onLongPress}
+        // @ts-ignore
+        accessibilityTraits="button"
+        accessibilityComponentType="button"
         accessibilityRole="button"
         testID={testID}
       >

@@ -15,7 +15,11 @@ type Props = React.ComponentProps<typeof NativeText> & {
 /**
  * Text component which follows styles from the theme.
  *
+<<<<<<< HEAD
  * @extends Text props https://reactnative.dev/docs/text.html#props
+=======
+ * @extends Text props https://reactnative.dev/docs/text#props
+>>>>>>> 6b72d3e921217f600be45210bf15ee57674f95ac
  */
 const Text: React.RefForwardingComponent<{}, Props> = (
   { style, theme, ...rest }: Props,

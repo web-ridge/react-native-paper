@@ -71,3 +71,4 @@ declare const AppbarAction: {
     displayName: string;
 };
 export default AppbarAction;
+export { AppbarAction };

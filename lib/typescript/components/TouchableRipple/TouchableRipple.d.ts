@@ -7,8 +7,13 @@ declare type Props = React.ComponentPropsWithRef<typeof Pressable> & {
      */
     borderless?: boolean;
     /**
+  <<<<<<< HEAD
      * Type of background drawable to display the feedback (Android).
      * https://reactnative.dev/docs/touchablenativefeedback.html#background
+  =======
+     * Type of background drawabale to display the feedback (Android).
+     * https://reactnative.dev/docs/touchablenativefeedback#background
+  >>>>>>> 6b72d3e921217f600be45210bf15ee57674f95ac
      */
     background?: Object;
     /**

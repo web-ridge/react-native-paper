@@ -4,7 +4,7 @@ declare type Props = React.ComponentProps<typeof Animated.Text> & {
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean;
     /**
      * Content of the `Badge`.
      */
@@ -24,7 +24,7 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean | undefined;
     /**
      * Content of the `Badge`.
      */
@@ -57,7 +57,7 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean | undefined;
     /**
      * Content of the `Badge`.
      */
@@ -88,7 +88,7 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean | undefined;
     /**
      * Content of the `Badge`.
      */
@@ -119,7 +119,7 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean | undefined;
     /**
      * Content of the `Badge`.
      */
@@ -152,7 +152,7 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean | undefined;
     /**
      * Content of the `Badge`.
      */
@@ -183,7 +183,7 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
     /**
      * Whether the badge is visible
      */
-    visible: boolean;
+    visible?: boolean | undefined;
     /**
      * Content of the `Badge`.
      */
