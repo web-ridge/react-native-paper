@@ -220,9 +220,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(RadioButtonAndroid);
+export default React.memo(withTheme(RadioButtonAndroid));
 
 // @component-docs ignore-next-line
-const RadioButtonAndroidWithTheme = withTheme(RadioButtonAndroid);
+const RadioButtonAndroidWithTheme = React.memo(withTheme(RadioButtonAndroid));
 // @component-docs ignore-next-line
 export { RadioButtonAndroidWithTheme as RadioButtonAndroid };

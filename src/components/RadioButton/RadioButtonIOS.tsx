@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(RadioButtonIOS);
+export default React.memo(withTheme(RadioButtonIOS));
 
 // @component-docs ignore-next-line
 const RadioButtonIOSWithTheme = withTheme(RadioButtonIOS);

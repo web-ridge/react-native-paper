@@ -135,68 +135,81 @@ function TouchableRipple({
   theme,
   ...rest
 }: Props) {
-  const calculatedRippleColor =
-    rippleColor ||
-    color(theme.colors.text)
-      .alpha(theme.dark ? 0.32 : 0.2)
-      .rgb()
-      .string();
+  const calculatedRippleColor = React.useMemo(
+    () =>
+      rippleColor ||
+      color(theme.colors.text)
+        .alpha(theme.dark ? 0.32 : 0.2)
+        .rgb()
+        .string(),
+    [rippleColor, theme.colors.text, theme.dark]
+  );
+
   const [rippleArray, setRippleArray] = React.useState<RippleType[]>([]);
 
-  const handlePressIn = (e: GestureResponderEvent) => {
-    rest.onPressIn?.(e);
-    const button = e.currentTarget;
+  const handlePressIn = React.useCallback(
+    (e: GestureResponderEvent) => {
+      rest.onPressIn?.(e);
+      const button = e.currentTarget;
 
-    const dimensions = (button as any).getBoundingClientRect();
+      const dimensions = (button as any).getBoundingClientRect();
 
-    let touchX;
-    let touchY;
+      let touchX;
+      let touchY;
 
-    const { changedTouches, touches } = e.nativeEvent;
-    const touch = touches?.[0] ?? changedTouches?.[0];
-    // If centered or it was pressed using keyboard - enter or space
-    if (centered || !touch) {
-      touchX = dimensions.width / 2;
-      touchY = dimensions.height / 2;
-    } else {
-      touchX = touch.locationX ?? (e as any).pageX;
-      touchY = touch.locationY ?? (e as any).pageY;
-    }
+      const { changedTouches, touches } = e.nativeEvent;
+      const touch = touches?.[0] ?? changedTouches?.[0];
+      // If centered or it was pressed using keyboard - enter or space
+      if (centered || !touch) {
+        touchX = dimensions.width / 2;
+        touchY = dimensions.height / 2;
+      } else {
+        touchX = touch.locationX ?? (e as any).pageX;
+        touchY = touch.locationY ?? (e as any).pageY;
+      }
 
-    const size = centered
-      ? // If ripple is always centered, we don't need to make it too big
-        Math.min(dimensions.width, dimensions.height) * 1.25
-      : // Otherwise make it twice as big so clicking on one end spreads ripple to other
-        Math.max(dimensions.width, dimensions.height) * 2;
+      const size = centered
+        ? // If ripple is always centered, we don't need to make it too big
+          Math.min(dimensions.width, dimensions.height) * 1.25
+        : // Otherwise make it twice as big so clicking on one end spreads ripple to other
+          Math.max(dimensions.width, dimensions.height) * 2;
 
-    const newRipple: RippleType = {
-      style: {
-        backgroundColor: calculatedRippleColor,
-        left: touchX,
-        top: touchY,
-        width: size,
-        height: size,
-      },
-      animationDuration: Math.min(size * 1.5, 350),
-      status: RippleStatus.Pressed,
-    };
+      const newRipple: RippleType = {
+        style: {
+          backgroundColor: calculatedRippleColor,
+          left: touchX,
+          top: touchY,
+          width: size,
+          height: size,
+        },
+        animationDuration: Math.min(size * 1.5, 350),
+        status: RippleStatus.Pressed,
+      };
 
-    setRippleArray([...rippleArray, newRipple]);
-  };
+      setRippleArray((prev) => [...prev, newRipple]);
+    },
+    [calculatedRippleColor, centered, rest.onPressIn]
+  );
 
-  const onRemove = (ripple: RippleType) => {
-    setRippleArray((prev) => prev.filter((p) => p !== ripple));
-  };
+  const onRemove = React.useCallback(
+    (ripple: RippleType) => {
+      setRippleArray((prev) => prev.filter((p) => p !== ripple));
+    },
+    [setRippleArray]
+  );
 
-  const handlePressOut = (e: GestureResponderEvent) => {
-    rest.onPressOut?.(e);
+  const handlePressOut = React.useCallback(
+    (e: GestureResponderEvent) => {
+      rest.onPressOut?.(e);
 
-    setRippleArray((prev) =>
-      prev.map((p, i) =>
-        i === prev.length - 1 ? { ...p, status: RippleStatus.NotPressed } : p
-      )
-    );
-  };
+      setRippleArray((prev) =>
+        prev.map((p, i) =>
+          i === prev.length - 1 ? { ...p, status: RippleStatus.NotPressed } : p
+        )
+      );
+    },
+    [rest.onPressOut]
+  );
 
   const disabled = disabledProp || !rest.onPress;
   const rippleContainerStyle = useRadiusStyles(style);
@@ -246,12 +259,9 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
 });
-
-/**
- * Whether ripple effect is supported.
- */
-TouchableRipple.supported = true;
-
-const TouchableRippleMemo = React.memo(withTheme(TouchableRipple));
-(TouchableRippleMemo as any).supported = true;
+const TouchableRippleWithTheme = withTheme(TouchableRipple);
+const TouchableRippleMemo: typeof TouchableRippleWithTheme & {
+  supported: boolean;
+} = React.memo(TouchableRippleWithTheme) as any;
+TouchableRippleMemo.supported = true;
 export default TouchableRippleMemo;
