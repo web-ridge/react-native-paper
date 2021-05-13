@@ -71,7 +71,7 @@ declare type Props = {
      */
     testID?: string;
 };
-declare const _default: (React.ComponentClass<Pick<Props, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Props, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: Props): JSX.Element;
@@ -87,9 +87,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "style" | "color" | "i
 }) | (React.FunctionComponent<Props> & {
     ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: Props): JSX.Element;
     displayName: string;
-}), {}>);
+}), {}>)>;
 export default _default;
-declare const FABGroupWithTheme: (React.ComponentClass<Pick<Props, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
+declare const FABGroupWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick<Props, "style" | "color" | "icon" | "onPress" | "testID" | "accessibilityLabel" | "visible" | "actions" | "open" | "fabStyle" | "onStateChange"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: Props): JSX.Element;
@@ -105,5 +105,5 @@ declare const FABGroupWithTheme: (React.ComponentClass<Pick<Props, "style" | "co
 }) | (React.FunctionComponent<Props> & {
     ({ actions, icon, open, onPress, accessibilityLabel, theme, style, fabStyle, visible, testID, onStateChange, color: colorProp, }: Props): JSX.Element;
     displayName: string;
-}), {}>);
+}), {}>)>;
 export { FABGroupWithTheme as FABGroup };

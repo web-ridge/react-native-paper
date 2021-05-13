@@ -69,7 +69,7 @@ declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Pro
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -385,10 +385,10 @@ declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Pro
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -704,12 +704,12 @@ declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Pro
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>) | (React.FunctionComponent<Pick<Props, "label" | "small" | "style" | "color" | "icon" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "visible" | "disabled" | "uppercase" | "loading" | "animated"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -1025,10 +1025,10 @@ declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Pro
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -1344,14 +1344,14 @@ declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Pro
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>)>;
 export default _default;
 declare const FABWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick<Props, "label" | "small" | "style" | "color" | "icon" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "visible" | "disabled" | "uppercase" | "loading" | "animated"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -1667,10 +1667,10 @@ declare const FABWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -1986,12 +1986,12 @@ declare const FABWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>) | (React.FunctionComponent<Pick<Props, "label" | "small" | "style" | "color" | "icon" | "onLayout" | "onPress" | "onLongPress" | "testID" | "nativeID" | "accessible" | "accessibilityActions" | "accessibilityLabel" | "accessibilityRole" | "accessibilityState" | "accessibilityHint" | "accessibilityValue" | "onAccessibilityAction" | "accessibilityLiveRegion" | "importantForAccessibility" | "accessibilityElementsHidden" | "accessibilityViewIsModal" | "onAccessibilityEscape" | "onAccessibilityTap" | "onMagicTap" | "accessibilityIgnoresInvertColors" | "pointerEvents" | "key" | "hitSlop" | "removeClippedSubviews" | "collapsable" | "needsOffscreenAlphaCompositing" | "renderToHardwareTextureAndroid" | "focusable" | "shouldRasterizeIOS" | "isTVSelectable" | "hasTVPreferredFocus" | "tvParallaxProperties" | "tvParallaxShiftDistanceX" | "tvParallaxShiftDistanceY" | "tvParallaxTiltAngle" | "tvParallaxMagnification" | "onStartShouldSetResponder" | "onMoveShouldSetResponder" | "onResponderEnd" | "onResponderGrant" | "onResponderReject" | "onResponderMove" | "onResponderRelease" | "onResponderStart" | "onResponderTerminationRequest" | "onResponderTerminate" | "onStartShouldSetResponderCapture" | "onMoveShouldSetResponderCapture" | "onTouchStart" | "onTouchMove" | "onTouchEnd" | "onTouchCancel" | "onTouchEndCapture" | "visible" | "disabled" | "uppercase" | "loading" | "animated"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -2307,10 +2307,10 @@ declare const FABWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     ({ small, icon, label, accessibilityLabel, accessibilityState, animated, color: customColor, disabled, onPress, onLongPress, theme, style, visible, uppercase, loading, testID, ...rest }: Props): JSX.Element;
-    Group: (React.ComponentClass<Pick<{
+    Group: React.MemoExoticComponent<(React.ComponentClass<Pick<{
         actions: {
             icon: IconSource; /**
              * Accessibility label for the FAB. This is read by the screen reader when the user taps the FAB.
@@ -2626,6 +2626,6 @@ declare const FABWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick
             testID?: string | undefined;
         }): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>)>;
 export { FABWithTheme as FAB };
