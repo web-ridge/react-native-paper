@@ -82,7 +82,10 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
       ...rest
     } = this.props;
 
-    const adornmentConfig = getAdornmentConfig({ left, right });
+    const adornmentConfig = React.useMemo(
+      () => getAdornmentConfig({ left, right }),
+      [left, right]
+    );
 
     const { colors, fonts } = theme;
     const font = fonts.regular;
@@ -98,20 +101,40 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
     } = (StyleSheet.flatten(style) || {}) as TextStyle;
     const fontSize = fontSizeStyle || MAXIMIZED_LABEL_FONT_SIZE;
 
-    let inputTextColor, activeColor, outlineColor, placeholderColor, errorColor;
-
-    if (disabled) {
-      inputTextColor = activeColor = color(colors.text)
-        .alpha(0.54)
-        .rgb()
-        .string();
-      placeholderColor = outlineColor = colors.disabled;
-    } else {
-      inputTextColor = colors.text;
-      activeColor = error ? colors.error : colors.primary;
-      placeholderColor = outlineColor = colors.placeholder;
-      errorColor = colors.error;
-    }
+    const {
+      activeColor,
+      errorColor,
+      inputTextColor,
+      placeholderColor,
+      outlineColor,
+    } = React.useMemo(() => {
+      if (disabled) {
+        const cc = color(colors.text).alpha(0.54).rgb().string();
+        return {
+          activeColor: cc,
+          inputTextColor: cc,
+          placeholderColor: colors.disabled,
+          outlineColor: colors.disabled,
+          errorColor: colors.error,
+        };
+      } else {
+        return {
+          inputTextColor: colors.text,
+          placeholderColor: colors.placeholder,
+          outlineColor: colors.placeholder,
+          errorColor: colors.error,
+          activeColor: error ? colors.error : colors.primary,
+        };
+      }
+    }, [
+      colors.disabled,
+      colors.error,
+      colors.placeholder,
+      colors.primary,
+      colors.text,
+      disabled,
+      error,
+    ]);
 
     const labelScale = MINIMIZED_LABEL_FONT_SIZE / fontSize;
     const fontScale = MAXIMIZED_LABEL_FONT_SIZE / fontSize;
@@ -140,16 +163,15 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
     const minInputHeight =
       (dense ? MIN_DENSE_HEIGHT : MIN_HEIGHT) - LABEL_PADDING_TOP;
 
-    const inputHeight = calculateInputHeight(
-      labelHeight,
-      height,
-      minInputHeight
+    const inputHeight = React.useMemo(
+      () => calculateInputHeight(labelHeight, height, minInputHeight),
+      [height, labelHeight, minInputHeight]
     );
 
-    const topPosition = calculateLabelTopPosition(
-      labelHeight,
-      inputHeight,
-      LABEL_PADDING_TOP
+    const topPosition = React.useMemo(
+      () =>
+        calculateLabelTopPosition(labelHeight, inputHeight, LABEL_PADDING_TOP),
+      [inputHeight, labelHeight]
     );
 
     if (height && typeof height !== 'number') {
@@ -157,25 +179,40 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
       console.warn('Currently we support only numbers in height prop');
     }
 
-    const paddingSettings = {
-      height: height ? +height : null,
-      labelHalfHeight,
-      offset: LABEL_PADDING_TOP,
-      multiline: multiline ? multiline : null,
-      dense: dense ? dense : null,
-      topPosition,
-      fontSize,
-      label,
-      scale: fontScale,
-      isAndroid: Platform.OS === 'android',
-      styles: StyleSheet.flatten(
-        dense ? styles.inputOutlinedDense : styles.inputOutlined
-      ) as Padding,
-    };
+    const paddingSettings = React.useMemo(
+      () => ({
+        height: height ? +height : null,
+        labelHalfHeight,
+        offset: LABEL_PADDING_TOP,
+        multiline: multiline ? multiline : null,
+        dense: dense ? dense : null,
+        topPosition,
+        fontSize,
+        label,
+        scale: fontScale,
+        isAndroid: Platform.OS === 'android',
+        styles: StyleSheet.flatten(
+          dense ? styles.inputOutlinedDense : styles.inputOutlined
+        ) as Padding,
+      }),
+      [
+        dense,
+        fontScale,
+        fontSize,
+        height,
+        label,
+        labelHalfHeight,
+        multiline,
+        topPosition,
+      ]
+    );
 
     const pad = calculatePadding(paddingSettings);
 
-    const paddingOut = adjustPaddingOut({ ...paddingSettings, pad });
+    const paddingOut = React.useMemo(
+      () => adjustPaddingOut({ ...paddingSettings, pad }),
+      [pad, paddingSettings]
+    );
 
     const baseLabelTranslateY =
       -labelHalfHeight - (topPosition + OUTLINE_MINIMIZED_LABEL_Y_OFFSET);
@@ -186,27 +223,48 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
       ? 1
       : 0;
 
-    const labelProps: LabelProps = {
-      label,
-      onLayoutAnimatedText,
-      placeholderOpacity,
-      error,
-      placeholderStyle: styles.placeholder,
-      baseLabelTranslateY,
-      baseLabelTranslateX,
-      font,
-      fontSize,
-      fontWeight,
-      labelScale,
-      wiggleOffsetX: LABEL_WIGGLE_X_OFFSET,
-      topPosition,
-      hasActiveOutline,
-      activeColor,
-      placeholderColor,
-      backgroundColor,
-      errorColor,
-      labelTranslationXOffset,
-    };
+    const labelProps: LabelProps = React.useMemo(
+      () => ({
+        label,
+        onLayoutAnimatedText,
+        placeholderOpacity,
+        error,
+        placeholderStyle: styles.placeholder,
+        baseLabelTranslateY,
+        baseLabelTranslateX,
+        font,
+        fontSize,
+        fontWeight,
+        labelScale,
+        wiggleOffsetX: LABEL_WIGGLE_X_OFFSET,
+        topPosition,
+        hasActiveOutline,
+        activeColor,
+        placeholderColor,
+        backgroundColor,
+        errorColor,
+        labelTranslationXOffset,
+      }),
+      [
+        activeColor,
+        backgroundColor,
+        baseLabelTranslateX,
+        baseLabelTranslateY,
+        error,
+        errorColor,
+        font,
+        fontSize,
+        fontWeight,
+        hasActiveOutline,
+        label,
+        labelScale,
+        labelTranslationXOffset,
+        onLayoutAnimatedText,
+        placeholderColor,
+        placeholderOpacity,
+        topPosition,
+      ]
+    );
 
     const minHeight = (height ||
       (dense ? MIN_DENSE_HEIGHT : MIN_HEIGHT)) as number;
@@ -238,13 +296,15 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
       ? leftLayout.width || ADORNMENT_SIZE
       : ADORNMENT_SIZE;
 
-    const adornmentStyleAdjustmentForNativeInput = getAdornmentStyleAdjustmentForNativeInput(
-      {
-        adornmentConfig,
-        rightAffixWidth,
-        leftAffixWidth,
-        mode: 'outlined',
-      }
+    const adornmentStyleAdjustmentForNativeInput = React.useMemo(
+      () =>
+        getAdornmentStyleAdjustmentForNativeInput({
+          adornmentConfig,
+          rightAffixWidth,
+          leftAffixWidth,
+          mode: 'outlined',
+        }),
+      [adornmentConfig, leftAffixWidth, rightAffixWidth]
     );
     const affixTopPosition = {
       [AdornmentSide.Left]: leftAffixTopPosition,
@@ -274,6 +334,39 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
         visible: this.props.parentState.labeled,
       };
     }
+
+    const textInputStyle = React.useMemo(
+      () => [
+        styles.input,
+        !multiline || (multiline && height) ? { height: inputHeight } : {},
+        paddingOut,
+        {
+          ...font,
+          fontSize,
+          fontWeight,
+          color: inputTextColor,
+          textAlignVertical: multiline ? 'top' : 'center',
+          textAlign: textAlign
+            ? textAlign
+            : I18nManager.isRTL
+            ? 'right'
+            : 'left',
+        },
+        adornmentStyleAdjustmentForNativeInput,
+      ],
+      [
+        adornmentStyleAdjustmentForNativeInput,
+        font,
+        fontSize,
+        fontWeight,
+        height,
+        inputHeight,
+        inputTextColor,
+        multiline,
+        paddingOut,
+        textAlign,
+      ]
+    );
 
     return (
       <View style={viewStyle}>
@@ -319,26 +412,7 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
               onBlur,
               underlineColorAndroid: 'transparent',
               multiline,
-              style: [
-                styles.input,
-                !multiline || (multiline && height)
-                  ? { height: inputHeight }
-                  : {},
-                paddingOut,
-                {
-                  ...font,
-                  fontSize,
-                  fontWeight,
-                  color: inputTextColor,
-                  textAlignVertical: multiline ? 'top' : 'center',
-                  textAlign: textAlign
-                    ? textAlign
-                    : I18nManager.isRTL
-                    ? 'right'
-                    : 'left',
-                },
-                adornmentStyleAdjustmentForNativeInput,
-              ],
+              style: textInputStyle,
             } as RenderProps)}
           </View>
           <TextInputAdornment {...adornmentProps} />
