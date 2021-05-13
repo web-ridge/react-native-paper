@@ -191,16 +191,21 @@ const styles = StyleSheet.create({
   },
 });
 
-const AppbarWithTheme = React.memo(withTheme(Appbar));
+let AppbarWithTheme: typeof Appbar & {
+  Content: typeof AppbarContent;
+  Action: typeof AppbarAction;
+  BackAction: typeof AppbarBackAction;
+  Header: typeof AppbarHeader;
+} = React.memo(withTheme(Appbar)) as any;
 
 // @component ./AppbarContent.tsx
-(AppbarWithTheme as any).Content = AppbarContent;
+AppbarWithTheme.Content = AppbarContent;
 // @component ./AppbarAction.tsx
-(AppbarWithTheme as any).Action = AppbarAction;
+AppbarWithTheme.Action = AppbarAction;
 // @component ./AppbarBackAction.tsx
-(AppbarWithTheme as any).BackAction = AppbarBackAction;
+AppbarWithTheme.BackAction = AppbarBackAction;
 // @component ./AppbarHeader.tsx
-(AppbarWithTheme as any).Header = AppbarHeader;
+AppbarWithTheme.Header = AppbarHeader;
 // @component-docs ignore-next-line
 
 // @component-docs ignore-next-line
