@@ -37,7 +37,7 @@ const Caption = (props: Props) => (
   />
 );
 
-export default Caption;
+export default React.memo(Caption);
 
 const styles = StyleSheet.create({
   text: {

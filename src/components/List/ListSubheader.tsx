@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(ListSubheader);
+export default React.memo(withTheme(ListSubheader));

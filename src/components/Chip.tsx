@@ -372,4 +372,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(Chip);
+export default React.memo(withTheme(Chip));

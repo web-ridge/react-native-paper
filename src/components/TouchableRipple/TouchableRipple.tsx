@@ -252,4 +252,6 @@ const styles = StyleSheet.create({
  */
 TouchableRipple.supported = true;
 
-export default withTheme(TouchableRipple);
+const TouchableRippleMemo = React.memo(withTheme(TouchableRipple));
+(TouchableRippleMemo as any).supported = true;
+export default TouchableRippleMemo;

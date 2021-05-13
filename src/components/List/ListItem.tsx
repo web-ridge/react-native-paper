@@ -245,4 +245,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(ListItem);
+export default React.memo(withTheme(ListItem));

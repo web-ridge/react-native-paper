@@ -238,7 +238,7 @@ const Touchable = ({
   rippleColor,
   ...rest
 }: TouchableProps) =>
-  TouchableRipple.supported ? (
+  (TouchableRipple as any).supported ? (
     <TouchableRipple
       {...rest}
       borderless={borderless}

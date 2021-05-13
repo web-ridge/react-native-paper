@@ -145,9 +145,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(AppbarContent);
+export default React.memo(withTheme(AppbarContent));
 
 // @component-docs ignore-next-line
-const AppbarContentWithTheme = withTheme(AppbarContent);
+const AppbarContentWithTheme = React.memo(withTheme(AppbarContent));
 // @component-docs ignore-next-line
 export { AppbarContentWithTheme as AppbarContent };

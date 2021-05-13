@@ -39,7 +39,7 @@ const AffixContext = React.createContext<ContextState>({
   side: AdornmentSide.Left,
 });
 
-const AffixAdornment: React.FunctionComponent<
+const AffixAdornmentPure: React.FunctionComponent<
   {
     affix: React.ReactNode;
     testID: string;
@@ -68,6 +68,8 @@ const AffixAdornment: React.FunctionComponent<
     </AffixContext.Provider>
   );
 };
+
+const AffixAdornment = React.memo(AffixAdornmentPure);
 
 const TextInputAffix = ({ text, textStyle: labelStyle, theme }: Props) => {
   const {
@@ -120,7 +122,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(TextInputAffix);
+export default React.memo(withTheme(TextInputAffix));
 
 // @component-docs ignore-next-line
 export { TextInputAffix, AffixAdornment };

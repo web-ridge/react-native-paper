@@ -78,6 +78,7 @@ const TextInputIcon = ({
 
   return (
     <View style={[styles.container, style]}>
+      {/*// @ts-ignore*/}
       <IconButton
         icon={name}
         style={styles.iconButton}

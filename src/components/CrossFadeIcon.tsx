@@ -109,7 +109,7 @@ const CrossFadeIcon = ({ color, size, source, theme }: Props) => {
   );
 };
 
-export default withTheme(CrossFadeIcon);
+export default React.memo(withTheme(CrossFadeIcon));
 
 const styles = StyleSheet.create({
   content: {

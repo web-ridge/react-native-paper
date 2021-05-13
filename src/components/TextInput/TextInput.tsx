@@ -172,12 +172,6 @@ export type TextInputProps = React.ComponentPropsWithRef<
  */
 
 class TextInput extends React.Component<TextInputProps, State> {
-  // @component ./Adornment/TextInputIcon.tsx
-  static Icon = TextInputIcon;
-
-  // @component ./Adornment/TextInputAffix.tsx
-  static Affix = TextInputAffix;
-
   static defaultProps: Partial<TextInputProps> = {
     mode: 'flat',
     dense: false,
@@ -488,4 +482,11 @@ class TextInput extends React.Component<TextInputProps, State> {
   }
 }
 
-export default withTheme(TextInput);
+const TextInputExport = React.memo(withTheme(TextInput));
+// @component ./Adornment/TextInputIcon.tsx
+(TextInputExport as any).Icon = TextInputIcon;
+
+// @component ./Adornment/TextInputAffix.tsx
+(TextInputExport as any).Affix = TextInputAffix;
+
+export default TextInputExport;

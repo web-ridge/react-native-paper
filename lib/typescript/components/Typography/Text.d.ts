@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TextStyle, StyleProp } from 'react-native';
-declare const _default: (React.ComponentClass<Pick<import("react-native").TextProps & {
+declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<import("react-native").TextProps & {
     style?: StyleProp<TextStyle>;
     /**
      * @optional
@@ -64,5 +64,5 @@ declare const _default: (React.ComponentClass<Pick<import("react-native").TextPr
      * @optional
      */
     theme: ReactNativePaper.Theme;
-} & React.RefAttributes<{}>>), {}>);
+} & React.RefAttributes<{}>>), {}>)>;
 export default _default;

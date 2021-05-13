@@ -35,4 +35,4 @@ function AnimatedText({ style, theme, ...rest }: Props) {
   );
 }
 
-export default withTheme(AnimatedText);
+export default React.memo(withTheme(AnimatedText));

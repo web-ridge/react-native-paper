@@ -1,5 +1,5 @@
-/// <reference types="react" />
 import { ColorValue } from 'react-native';
+import * as React from 'react';
 declare type RippleStatusType = 'pressed' | 'not_pressed';
 export declare type RippleType = {
     style: {
@@ -15,8 +15,9 @@ export declare type RippleType = {
 export declare const RippleStatus: {
     [key: string]: RippleStatusType;
 };
-export default function Ripple({ onRemove, ripple, ripple: { status, animationDuration, style }, }: {
+declare function Ripple({ onRemove, ripple, ripple: { status, animationDuration, style }, }: {
     ripple: RippleType;
     onRemove: (ripple: RippleType) => any;
 }): JSX.Element;
-export {};
+declare const _default: React.MemoExoticComponent<typeof Ripple>;
+export default _default;

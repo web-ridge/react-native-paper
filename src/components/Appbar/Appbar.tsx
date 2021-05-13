@@ -178,15 +178,6 @@ const Appbar = ({ children, dark, style, theme, ...rest }: Props) => {
   );
 };
 
-// @component ./AppbarContent.tsx
-Appbar.Content = AppbarContent;
-// @component ./AppbarAction.tsx
-Appbar.Action = AppbarAction;
-// @component ./AppbarBackAction.tsx
-Appbar.BackAction = AppbarBackAction;
-// @component ./AppbarHeader.tsx
-Appbar.Header = AppbarHeader;
-
 const styles = StyleSheet.create({
   appbar: {
     height: DEFAULT_APPBAR_HEIGHT,
@@ -200,9 +191,18 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(Appbar);
+const AppbarWithTheme = React.memo(withTheme(Appbar));
+
+// @component ./AppbarContent.tsx
+(AppbarWithTheme as any).Content = AppbarContent;
+// @component ./AppbarAction.tsx
+(AppbarWithTheme as any).Action = AppbarAction;
+// @component ./AppbarBackAction.tsx
+(AppbarWithTheme as any).BackAction = AppbarBackAction;
+// @component ./AppbarHeader.tsx
+(AppbarWithTheme as any).Header = AppbarHeader;
+// @component-docs ignore-next-line
 
 // @component-docs ignore-next-line
-const AppbarWithTheme = withTheme(Appbar);
-// @component-docs ignore-next-line
 export { AppbarWithTheme as Appbar };
+export default AppbarWithTheme;

@@ -293,9 +293,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(FAB);
+export default React.memo(withTheme(FAB));
 
 // @component-docs ignore-next-line
-const FABWithTheme = withTheme(FAB);
+const FABWithTheme = React.memo(withTheme(FAB));
 // @component-docs ignore-next-line
 export { FABWithTheme as FAB };

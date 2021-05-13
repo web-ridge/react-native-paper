@@ -10,4 +10,5 @@ declare class TextInputOutlined extends React.Component<ChildTextInputProps> {
     };
     render(): JSX.Element;
 }
-export default TextInputOutlined;
+declare const _default: React.MemoExoticComponent<typeof TextInputOutlined>;
+export default _default;

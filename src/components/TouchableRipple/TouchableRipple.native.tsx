@@ -93,4 +93,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(TouchableRipple);
+export default React.memo(withTheme(TouchableRipple));

@@ -90,4 +90,4 @@ const ListAccordionGroup = ({
 
 ListAccordionGroup.displayName = 'List.AccordionGroup';
 
-export default ListAccordionGroup;
+export default React.memo(ListAccordionGroup);

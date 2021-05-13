@@ -371,7 +371,7 @@ class TextInputFlat extends React.Component<ChildTextInputProps> {
   }
 }
 
-export default TextInputFlat;
+export default React.memo(TextInputFlat);
 
 type UnderlineProps = {
   parentState: {

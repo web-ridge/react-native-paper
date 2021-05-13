@@ -47,4 +47,4 @@ const Text: React.RefForwardingComponent<{}, Props> = (
   );
 };
 
-export default withTheme(React.forwardRef(Text));
+export default React.memo(withTheme(React.forwardRef(Text)));

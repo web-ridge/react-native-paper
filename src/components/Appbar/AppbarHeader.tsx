@@ -132,9 +132,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(AppbarHeader);
+export default React.memo(withTheme(AppbarHeader));
 
 // @component-docs ignore-next-line
-const AppbarHeaderWithTheme = withTheme(AppbarHeader);
+const AppbarHeaderWithTheme = React.memo(withTheme(AppbarHeader));
 // @component-docs ignore-next-line
 export { AppbarHeaderWithTheme as AppbarHeader };

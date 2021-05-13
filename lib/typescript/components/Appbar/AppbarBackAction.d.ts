@@ -61,5 +61,9 @@ declare const AppbarBackAction: {
     ({ accessibilityLabel, ...rest }: Props): JSX.Element;
     displayName: string;
 };
-export default AppbarBackAction;
+declare const _default: React.MemoExoticComponent<{
+    ({ accessibilityLabel, ...rest }: Props): JSX.Element;
+    displayName: string;
+}>;
+export default _default;
 export { AppbarBackAction };

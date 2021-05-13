@@ -70,5 +70,9 @@ declare const AppbarAction: {
     ({ size, color: iconColor, icon, disabled, onPress, accessibilityLabel, ...rest }: Props): JSX.Element;
     displayName: string;
 };
-export default AppbarAction;
+declare const _default: React.MemoExoticComponent<{
+    ({ size, color: iconColor, icon, disabled, onPress, accessibilityLabel, ...rest }: Props): JSX.Element;
+    displayName: string;
+}>;
+export default _default;
 export { AppbarAction };

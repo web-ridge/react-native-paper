@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
 
 ListIcon.displayName = 'List.Icon';
 
-export default ListIcon;
+export default React.memo(ListIcon);

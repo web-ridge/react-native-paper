@@ -98,7 +98,7 @@ const AppbarAction = ({
 
 AppbarAction.displayName = 'Appbar.Action';
 
-export default AppbarAction;
+export default React.memo(AppbarAction);
 
 // @component-docs ignore-next-line
 export { AppbarAction };

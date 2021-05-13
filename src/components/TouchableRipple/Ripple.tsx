@@ -35,7 +35,7 @@ export const RippleStatus: { [key: string]: RippleStatusType } = {
   NotPressed: 'not_pressed',
 };
 
-export default function Ripple({
+function Ripple({
   onRemove,
   ripple,
   ripple: { status, animationDuration, style },
@@ -117,3 +117,5 @@ const rippleStyles = StyleSheet.create({
     opacity: 0,
   },
 });
+
+export default React.memo(Ripple);

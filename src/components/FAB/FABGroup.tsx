@@ -351,10 +351,10 @@ const FABGroup = ({
 
 FABGroup.displayName = 'FAB.Group';
 
-export default withTheme(FABGroup);
+export default React.memo(withTheme(FABGroup));
 
 // @component-docs ignore-next-line
-const FABGroupWithTheme = withTheme(FABGroup);
+const FABGroupWithTheme = React.memo(withTheme(FABGroup));
 // @component-docs ignore-next-line
 export { FABGroupWithTheme as FABGroup };
 

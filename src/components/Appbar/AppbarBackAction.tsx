@@ -77,7 +77,7 @@ const AppbarBackAction = ({ accessibilityLabel = 'Back', ...rest }: Props) => (
 
 AppbarBackAction.displayName = 'Appbar.BackAction';
 
-export default AppbarBackAction;
+export default React.memo(AppbarBackAction);
 
 // @component-docs ignore-next-line
 export { AppbarBackAction };

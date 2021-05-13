@@ -36,7 +36,7 @@ const Title = (props: Props) => (
   />
 );
 
-export default Title;
+export default React.memo(Title);
 
 const styles = StyleSheet.create({
   text: {

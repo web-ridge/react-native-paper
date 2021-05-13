@@ -38,7 +38,7 @@ const Headline = (props: Props) => (
   />
 );
 
-export default Headline;
+export default React.memo(Headline);
 
 const styles = StyleSheet.create({
   text: {

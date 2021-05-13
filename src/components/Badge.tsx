@@ -122,7 +122,7 @@ const Badge = ({
   );
 };
 
-export default withTheme(Badge);
+export default React.memo(withTheme(Badge));
 
 const styles = StyleSheet.create({
   container: {

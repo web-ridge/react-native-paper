@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import * as React from 'react';
 import { ViewStyle, StyleProp, ColorValue } from 'react-native';
 import { IconSource } from '../Icon';
 declare type Props = {
@@ -12,33 +12,8 @@ declare type Props = {
     color?: ColorValue;
     style?: StyleProp<ViewStyle>;
 };
-/**
- * A component to show an icon in a list item.
- *
- * <div class="screenshots">
- *   <figure>
- *     <img class="medium" src="screenshots/list-icon.png" />
- *   </figure>
- * </div>
- *
- * ## Usage
- * ```js
- * import * as React from 'react';
- * import { List, Colors } from 'react-native-paper';
- *
- * const MyComponent = () => (
- *   <>
- *     <List.Icon color={Colors.blue500} icon="folder" />
- *     <List.Icon color={Colors.blue500} icon="equal" />
- *     <List.Icon color={Colors.blue500} icon="calendar" />
- *   </>
- * );
- *
- * export default MyComponent;
- * ```
- */
-declare const ListIcon: {
+declare const _default: React.MemoExoticComponent<{
     ({ icon, color: iconColor, style }: Props): JSX.Element;
     displayName: string;
-};
-export default ListIcon;
+}>;
+export default _default;

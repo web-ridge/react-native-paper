@@ -362,4 +362,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(Button);
+export default React.memo(withTheme(Button));

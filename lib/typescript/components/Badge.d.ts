@@ -20,7 +20,7 @@ declare type Props = React.ComponentProps<typeof Animated.Text> & {
      */
     theme: ReactNativePaper.Theme;
 };
-declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import("react-native").TextProps & React.RefAttributes<import("react-native").Text>> & {
+declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Animated.AnimatedProps<import("react-native").TextProps & React.RefAttributes<import("react-native").Text>> & {
     /**
      * Whether the badge is visible
      */
@@ -210,5 +210,5 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
      * @optional
      */
     theme: ReactNativePaper.Theme;
-}> & (({ children, size, style, theme, visible, ...rest }: Props) => JSX.Element)), {}>);
+}> & (({ children, size, style, theme, visible, ...rest }: Props) => JSX.Element)), {}>)>;
 export default _default;

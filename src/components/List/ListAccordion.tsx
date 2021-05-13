@@ -288,4 +288,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(ListAccordion);
+export default React.memo(withTheme(ListAccordion));

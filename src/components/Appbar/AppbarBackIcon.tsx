@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AppbarBackIcon;
+export default React.memo(AppbarBackIcon);
 
 // @component-docs ignore-next-line
 export { AppbarBackIcon };

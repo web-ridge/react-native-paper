@@ -136,4 +136,4 @@ const InputLabel = (props: InputLabelProps) => {
   ) : null;
 };
 
-export default InputLabel;
+export default React.memo(InputLabel);

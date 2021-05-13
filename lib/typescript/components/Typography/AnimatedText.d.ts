@@ -13,7 +13,7 @@ declare type Props = React.ComponentPropsWithRef<typeof Animated.Text> & {
  * @extends Text props https://reactnative.dev/docs/text#props
  */
 declare function AnimatedText({ style, theme, ...rest }: Props): JSX.Element;
-declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import("react-native").TextProps & React.RefAttributes<import("react-native").Text>> & {
+declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Animated.AnimatedProps<import("react-native").TextProps & React.RefAttributes<import("react-native").Text>> & {
     style?: StyleProp<TextStyle>;
     /**
      * @optional
@@ -53,5 +53,5 @@ declare const _default: (React.ComponentClass<Pick<Animated.AnimatedProps<import
      * @optional
      */
     theme: ReactNativePaper.Theme;
-}> & typeof AnimatedText), {}>);
+}> & typeof AnimatedText), {}>)>;
 export default _default;

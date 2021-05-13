@@ -10,4 +10,5 @@ declare class TextInputFlat extends React.Component<ChildTextInputProps> {
     };
     render(): JSX.Element;
 }
-export default TextInputFlat;
+declare const _default: React.MemoExoticComponent<typeof TextInputFlat>;
+export default _default;

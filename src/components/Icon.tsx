@@ -123,4 +123,4 @@ const Icon = ({ source, color, size, theme, ...rest }: Props) => {
   return null;
 };
 
-export default withTheme(Icon);
+export default React.memo(withTheme(Icon));

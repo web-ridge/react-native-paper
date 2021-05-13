@@ -35,5 +35,5 @@ export interface TextInputAdornmentProps {
     isTextInputFocused: boolean;
     paddingHorizontal?: number | string;
 }
-declare const TextInputAdornment: React.FunctionComponent<TextInputAdornmentProps>;
-export default TextInputAdornment;
+declare const _default: React.NamedExoticComponent<TextInputAdornmentProps>;
+export default _default;

@@ -38,7 +38,7 @@ const Subheading = (props: Props) => (
   />
 );
 
-export default Subheading;
+export default React.memo(Subheading);
 
 const styles = StyleSheet.create({
   text: {

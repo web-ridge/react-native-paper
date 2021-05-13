@@ -36,7 +36,7 @@ const Paragraph = (props: Props) => (
   />
 );
 
-export default Paragraph;
+export default React.memo(Paragraph);
 
 const styles = StyleSheet.create({
   text: {

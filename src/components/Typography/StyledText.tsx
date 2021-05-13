@@ -28,4 +28,4 @@ const StyledText = ({ theme, alpha, family, style, ...rest }: Props) => {
   );
 };
 
-export default withTheme(StyledText);
+export default React.memo(withTheme(StyledText));

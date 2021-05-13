@@ -348,7 +348,7 @@ class TextInputOutlined extends React.Component<ChildTextInputProps> {
   }
 }
 
-export default TextInputOutlined;
+export default React.memo(TextInputOutlined);
 
 type OutlineType = {
   activeColor: string;
@@ -358,7 +358,7 @@ type OutlineType = {
   theme: ReactNativePaper.Theme;
 };
 
-const Outline = ({
+const OutlinePure = ({
   theme,
   hasActiveOutline,
   activeColor,
@@ -379,6 +379,8 @@ const Outline = ({
     ]}
   />
 );
+
+const Outline = React.memo(OutlinePure);
 
 const styles = StyleSheet.create({
   placeholder: {

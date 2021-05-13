@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withTheme(ListSection);
+export default React.memo(withTheme(ListSection));

@@ -186,4 +186,4 @@ const TextInputAdornment: React.FunctionComponent<TextInputAdornmentProps> = ({
   }
 };
 
-export default TextInputAdornment;
+export default React.memo(TextInputAdornment);

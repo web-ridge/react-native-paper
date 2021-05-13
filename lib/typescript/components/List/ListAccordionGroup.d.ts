@@ -18,45 +18,8 @@ export declare type ListAccordionGroupContextType = {
     onAccordionPress: (expandedId: string | number) => void;
 } | null;
 export declare const ListAccordionGroupContext: React.Context<ListAccordionGroupContextType>;
-/**
- * List.AccordionGroup allows to control a group of List Accordions. `id` prop for List.Accordion is required in order for group to work.
- * List.AccordionGroup can be a controlled or uncontrolled component. The example shows the uncontrolled version.
- * At most one Accordion can be expanded at a given time.
- *
- * <div class="screenshots">
- *   <img class="medium" src="screenshots/list-accordion-group.png" />
- * </div>
- *
- * ## Usage
- * ```js
- * import * as React from 'react';
- * import { View, Text } from 'react-native';
- * import { List } from 'react-native-paper';
- *
- * const MyComponent = () => (
- *   <List.AccordionGroup>
- *     <List.Accordion title="Accordion 1" id="1">
- *       <List.Item title="Item 1" />
- *     </List.Accordion>
- *     <List.Accordion title="Accordion 2" id="2">
- *       <List.Item title="Item 2" />
- *     </List.Accordion>
- *     <View>
- *       <Text>
- *         List.Accordion can be wrapped because implementation uses React.Context.
- *       </Text>
- *       <List.Accordion title="Accordion 3" id="3">
- *         <List.Item title="Item 3" />
- *       </List.Accordion>
- *     </View>
- *   </List.AccordionGroup>
- * );
- *
- * export default MyComponent;
- *```
- */
-declare const ListAccordionGroup: {
+declare const _default: React.MemoExoticComponent<{
     ({ expandedId: expandedIdProp, onAccordionPress, children, }: Props): JSX.Element;
     displayName: string;
-};
-export default ListAccordionGroup;
+}>;
+export default _default;
