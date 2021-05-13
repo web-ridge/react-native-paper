@@ -65,13 +65,22 @@ export const RadioButtonContext = React.createContext<RadioButtonContextType>(
  * export default MyComponent;
  *```
  */
-const RadioButtonGroup = ({ value, onValueChange, children }: Props) => (
-  <RadioButtonContext.Provider value={{ value, onValueChange }}>
-    <View accessible accessibilityRole="radiogroup">
-      {children}
-    </View>
-  </RadioButtonContext.Provider>
-);
+const RadioButtonGroup = ({ value, onValueChange, children }: Props) => {
+  const memoValue = React.useMemo(
+    () => ({
+      value,
+      onValueChange,
+    }),
+    [value, onValueChange]
+  );
+  return (
+    <RadioButtonContext.Provider value={memoValue}>
+      <View accessible accessibilityRole="radiogroup">
+        {children}
+      </View>
+    </RadioButtonContext.Provider>
+  );
+};
 
 RadioButtonGroup.displayName = 'RadioButton.Group';
 export default RadioButtonGroup;
