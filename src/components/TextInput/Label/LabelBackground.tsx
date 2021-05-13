@@ -78,7 +78,7 @@ const LabelBackground = ({
     : null;
 };
 
-export default React.memo(LabelBackground as any);
+export default LabelBackground;
 
 const styles = StyleSheet.create({
   view: {
