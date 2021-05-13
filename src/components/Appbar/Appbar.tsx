@@ -191,12 +191,13 @@ const styles = StyleSheet.create({
   },
 });
 
-let AppbarWithTheme: typeof Appbar & {
+let AppbarWithThemeTheme = withTheme(Appbar);
+let AppbarWithTheme: typeof AppbarWithThemeTheme & {
   Content: typeof AppbarContent;
   Action: typeof AppbarAction;
   BackAction: typeof AppbarBackAction;
   Header: typeof AppbarHeader;
-} = React.memo(withTheme(Appbar)) as any;
+} = React.memo(AppbarWithThemeTheme) as any;
 
 // @component ./AppbarContent.tsx
 AppbarWithTheme.Content = AppbarContent;
