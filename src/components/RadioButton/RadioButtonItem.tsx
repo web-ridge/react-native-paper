@@ -168,10 +168,10 @@ const RadioButtonItem = ({
 
 RadioButtonItem.displayName = 'RadioButton.Item';
 
-export default withTheme(RadioButtonItem);
+export default React.memo(withTheme(RadioButtonItem));
 
 // @component-docs ignore-next-line
-const RadioButtonItemWithTheme = withTheme(RadioButtonItem);
+const RadioButtonItemWithTheme = React.memo(withTheme(RadioButtonItem));
 // @component-docs ignore-next-line
 export { RadioButtonItemWithTheme as RadioButtonItem };
 

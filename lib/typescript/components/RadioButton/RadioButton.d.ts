@@ -1090,7 +1090,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -1106,7 +1106,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     (props: Props): JSX.Element;
     Group: {
@@ -2161,7 +2161,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -2177,7 +2177,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>) | (React.FunctionComponent<Pick<Props, "color" | "onPress" | "testID" | "status" | "disabled" | "value" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
@@ -3234,7 +3234,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -3250,7 +3250,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     (props: Props): JSX.Element;
     Group: {
@@ -4305,7 +4305,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -4321,7 +4321,7 @@ declare const _default: (React.ComponentClass<Pick<Props, "color" | "onPress" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>);
 export default _default;
 declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | "onPress" | "testID" | "status" | "disabled" | "value" | "uncheckedColor"> & {
@@ -5380,7 +5380,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -5396,7 +5396,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     (props: Props): JSX.Element;
     Group: {
@@ -6451,7 +6451,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -6467,7 +6467,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>) | (React.FunctionComponent<Pick<Props, "color" | "onPress" | "testID" | "status" | "disabled" | "value" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
@@ -7524,7 +7524,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -7540,7 +7540,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }) | (React.FunctionComponent<Props> & {
     (props: Props): JSX.Element;
     Group: {
@@ -8595,7 +8595,7 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
         }): JSX.Element;
         displayName: string;
     }), {}>);
-    Item: (React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+    Item: React.MemoExoticComponent<(React.ComponentClass<Pick<import("./RadioButtonItem").Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
         theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
     }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<import("./RadioButtonItem").Props, any> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
@@ -8611,6 +8611,6 @@ declare const RadioButtonWithTheme: (React.ComponentClass<Pick<Props, "color" | 
     }) | (React.FunctionComponent<import("./RadioButtonItem").Props> & {
         ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: import("./RadioButtonItem").Props): JSX.Element;
         displayName: string;
-    }), {}>);
+    }), {}>)>;
 }), {}>);
 export { RadioButtonWithTheme as RadioButton };

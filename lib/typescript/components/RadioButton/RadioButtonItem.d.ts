@@ -55,7 +55,7 @@ export declare type Props = {
      */
     mode?: 'android' | 'ios';
 };
-declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+declare const _default: React.MemoExoticComponent<(React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
@@ -71,9 +71,9 @@ declare const _default: (React.ComponentClass<Pick<Props, "label" | "style" | "c
 }) | (React.FunctionComponent<Props> & {
     ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
     displayName: string;
-}), {}>);
+}), {}>)>;
 export default _default;
-declare const RadioButtonItemWithTheme: (React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
+declare const RadioButtonItemWithTheme: React.MemoExoticComponent<(React.ComponentClass<Pick<Props, "label" | "style" | "color" | "onPress" | "testID" | "accessibilityLabel" | "labelStyle" | "mode" | "status" | "disabled" | "value" | "uncheckedColor"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<ReactNativePaper.Theme> | undefined;
 }, any> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<(React.ComponentClass<Props, any> & {
     ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
@@ -89,5 +89,5 @@ declare const RadioButtonItemWithTheme: (React.ComponentClass<Pick<Props, "label
 }) | (React.FunctionComponent<Props> & {
     ({ value, label, style, labelStyle, onPress, disabled, color, uncheckedColor, status, theme: { colors }, accessibilityLabel, testID, mode, }: Props): JSX.Element;
     displayName: string;
-}), {}>);
+}), {}>)>;
 export { RadioButtonItemWithTheme as RadioButtonItem };
