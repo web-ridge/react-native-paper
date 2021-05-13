@@ -114,12 +114,15 @@ const RadioButtonAndroid = ({
   }, [status, borderAnim, radioAnim, scale]);
 
   const checkedColor = rest.color || theme.colors.accent;
-  const uncheckedColor =
-    rest.uncheckedColor ||
-    color(theme.colors.text)
-      .alpha(theme.dark ? 0.7 : 0.54)
-      .rgb()
-      .string();
+  const uncheckedColor = React.useMemo(
+    () =>
+      rest.uncheckedColor ||
+      color(theme.colors.text)
+        .alpha(theme.dark ? 0.7 : 0.54)
+        .rgb()
+        .string(),
+    [rest.uncheckedColor, theme.colors.text, theme.dark]
+  );
 
   let rippleColor: ColorValue, radioColor: ColorValue;
 
