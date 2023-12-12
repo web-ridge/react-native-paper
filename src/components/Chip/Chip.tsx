@@ -232,7 +232,7 @@ const Chip = ({
     Animated.timing(elevation, {
       toValue: isV3 ? (elevated ? 2 : 0) : 4,
       duration: 200 * scale,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start();
   });
 
@@ -243,7 +243,7 @@ const Chip = ({
     Animated.timing(elevation, {
       toValue: isV3 && elevated ? 1 : 0,
       duration: 150 * scale,
-      useNativeDriver: true,
+      useNativeDriver: false,
     }).start();
   });
 
