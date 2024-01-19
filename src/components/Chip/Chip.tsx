@@ -5,6 +5,7 @@ import {
   ColorValue,
   GestureResponderEvent,
   Platform,
+  PressableAndroidRippleConfig,
   StyleProp,
   StyleSheet,
   TextStyle,
@@ -80,6 +81,11 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
    * Whether the chip is disabled. A disabled chip is greyed out and `onPress` is not called on touch.
    */
   disabled?: boolean;
+  /**
+   * Type of background drawabale to display the feedback (Android).
+   * https://reactnative.dev/docs/pressable#rippleconfig
+   */
+  background?: PressableAndroidRippleConfig;
   /**
    * Accessibility label for the chip. This is read by the screen reader when the user taps the chip.
    */
@@ -184,6 +190,7 @@ const Chip = ({
   avatar,
   selected = false,
   disabled = false,
+  background,
   accessibilityLabel,
   closeIconAccessibilityLabel = 'Close',
   onPress,
@@ -210,7 +217,7 @@ const Chip = ({
   ...rest
 }: Props) => {
   const theme = useInternalTheme(themeOverrides);
-  const { isV3 } = theme;
+  const { isV3, roundness } = theme;
 
   const { current: elevation } = React.useRef<Animated.Value>(
     new Animated.Value(isV3 && elevated ? 1 : 0)
@@ -232,7 +239,9 @@ const Chip = ({
     Animated.timing(elevation, {
       toValue: isV3 ? (elevated ? 2 : 0) : 4,
       duration: 200 * scale,
-      useNativeDriver: false,
+      useNativeDriver:
+        Platform.OS === 'web' ||
+        Platform.constants.reactNativeVersion.minor <= 72,
     }).start();
   });
 
@@ -243,12 +252,14 @@ const Chip = ({
     Animated.timing(elevation, {
       toValue: isV3 && elevated ? 1 : 0,
       duration: 150 * scale,
-      useNativeDriver: false,
+      useNativeDriver:
+        Platform.OS === 'web' ||
+        Platform.constants.reactNativeVersion.minor <= 72,
     }).start();
   });
 
   const opacity = isV3 ? 0.38 : 0.26;
-  const defaultBorderRadius = isV3 ? 8 : 16;
+  const defaultBorderRadius = roundness * (isV3 ? 2 : 4);
   const iconSize = isV3 ? 18 : 16;
 
   const {
@@ -317,6 +328,7 @@ const Chip = ({
     >
       <TouchableRipple
         borderless
+        background={background}
         style={[{ borderRadius }, styles.touchable]}
         onPress={onPress}
         onLongPress={onLongPress}

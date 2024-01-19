@@ -1,8 +1,11 @@
 import * as React from 'react';
 import {
+  AccessibilityRole,
   Animated,
   ColorValue,
   GestureResponderEvent,
+  Platform,
+  PressableAndroidRippleConfig,
   StyleProp,
   StyleSheet,
   TextStyle,
@@ -84,6 +87,11 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
    */
   uppercase?: boolean;
   /**
+   * Type of background drawabale to display the feedback (Android).
+   * https://reactnative.dev/docs/pressable#rippleconfig
+   */
+  background?: PressableAndroidRippleConfig;
+  /**
    * Accessibility label for the button. This is read by the screen reader when the user taps the button.
    */
   accessibilityLabel?: string;
@@ -91,6 +99,10 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
    * Accessibility hint for the button. This is read by the screen reader when the user taps the button.
    */
   accessibilityHint?: string;
+  /**
+   * Accessibility role for the button. The "button" role is set by default.
+   */
+  accessibilityRole?: AccessibilityRole;
   /**
    * Function to execute on press.
    */
@@ -175,6 +187,7 @@ const Button = (
     children,
     accessibilityLabel,
     accessibilityHint,
+    accessibilityRole = 'button',
     onPress,
     onPressIn,
     onPressOut,
@@ -189,6 +202,7 @@ const Button = (
     labelStyle,
     testID = 'button',
     accessible,
+    background,
     maxFontSizeMultiplier,
     ...rest
   }: Props,
@@ -231,7 +245,9 @@ const Button = (
       Animated.timing(elevation, {
         toValue: activeElevation,
         duration: 200 * scale,
-        useNativeDriver: true,
+        useNativeDriver:
+          Platform.OS === 'web' ||
+          Platform.constants.reactNativeVersion.minor <= 72,
       }).start();
     }
   };
@@ -243,7 +259,9 @@ const Button = (
       Animated.timing(elevation, {
         toValue: initialElevation,
         duration: 150 * scale,
-        useNativeDriver: true,
+        useNativeDriver:
+          Platform.OS === 'web' ||
+          Platform.constants.reactNativeVersion.minor <= 72,
       }).start();
     }
   };
@@ -327,6 +345,7 @@ const Button = (
     >
       <TouchableRipple
         borderless
+        background={background}
         onPress={onPress}
         onLongPress={onLongPress}
         onPressIn={hasPassedTouchHandler ? handlePressIn : undefined}
@@ -336,7 +355,7 @@ const Button = (
         delayLongPress={delayLongPress}
         accessibilityLabel={accessibilityLabel}
         accessibilityHint={accessibilityHint}
-        accessibilityRole="button"
+        accessibilityRole={accessibilityRole}
         accessibilityState={{ disabled }}
         accessible={accessible}
         disabled={disabled}

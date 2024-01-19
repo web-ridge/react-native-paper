@@ -9,6 +9,9 @@ export declare type BaseRoute = {
     focusedIcon?: IconSource;
     unfocusedIcon?: IconSource;
     badge?: string | number | boolean;
+    /**
+     * @deprecated In v5.x works only with theme version 2.
+     */
     color?: string;
     accessibilityLabel?: string;
     testID?: string;
@@ -246,6 +249,7 @@ export declare type Props<Route extends BaseRoute> = {
      */
     labelMaxFontSizeMultiplier?: number;
     style?: StyleProp<ViewStyle>;
+    activeIndicatorStyle?: StyleProp<ViewStyle>;
     /**
      * @optional
      */
@@ -304,7 +308,7 @@ export declare type Props<Route extends BaseRoute> = {
  * ```
  */
 declare const BottomNavigation: {
-    <Route extends BaseRoute>({ navigationState, renderScene, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, barStyle, labeled, style, sceneAnimationEnabled, sceneAnimationType, sceneAnimationEasing, onTabPress, onTabLongPress, onIndexChange, shifting: shiftingProp, safeAreaInsets, labelMaxFontSizeMultiplier, compact: compactProp, testID, theme: themeOverrides, getLazy, }: Props<Route>): React.JSX.Element;
+    <Route extends BaseRoute>({ navigationState, renderScene, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, barStyle, labeled, style, activeIndicatorStyle, sceneAnimationEnabled, sceneAnimationType, sceneAnimationEasing, onTabPress, onTabLongPress, onIndexChange, shifting: shiftingProp, safeAreaInsets, labelMaxFontSizeMultiplier, compact: compactProp, testID, theme: themeOverrides, getLazy, }: Props<Route>): React.JSX.Element;
     /**
      * Function which takes a map of route keys to components.
      * Pure components are used to minimize re-rendering of the pages.
@@ -330,7 +334,7 @@ declare const BottomNavigation: {
             accessibilityLabel?: string | undefined;
             testID?: string | undefined;
             lazy?: boolean | undefined;
-        }>({ navigationState, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, style, labeled, animationEasing, onTabPress, onTabLongPress, shifting: shiftingProp, safeAreaInsets, labelMaxFontSizeMultiplier, compact: compactProp, testID, theme: themeOverrides, }: import("./BottomNavigationBar").Props<Route_2>): React.JSX.Element;
+        }>({ navigationState, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, style, activeIndicatorStyle, labeled, animationEasing, onTabPress, onTabLongPress, shifting: shiftingProp, safeAreaInsets, labelMaxFontSizeMultiplier, compact: compactProp, testID, theme: themeOverrides, }: import("./BottomNavigationBar").Props<Route_2>): React.JSX.Element;
         displayName: string;
     };
 };

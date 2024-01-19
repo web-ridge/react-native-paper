@@ -9,6 +9,9 @@ declare type BaseRoute = {
     focusedIcon?: IconSource;
     unfocusedIcon?: IconSource;
     badge?: string | number | boolean;
+    /**
+     * @deprecated In v5.x works only with theme version 2.
+     */
     color?: string;
     accessibilityLabel?: string;
     testID?: string;
@@ -59,7 +62,7 @@ export declare type Props<Route extends BaseRoute> = {
      * - `title`: title of the route to use as the tab label
      * - `focusedIcon`:  icon to use as the focused tab icon, can be a string, an image source or a react component @renamed Renamed from 'icon' to 'focusedIcon' in v5.x
      * - `unfocusedIcon`:  icon to use as the unfocused tab icon, can be a string, an image source or a react component @supported Available in v5.x with theme version 3
-     * - `color`: color to use as background color for shifting bottom navigation @deprecated Deprecated in v5.x
+     * - `color`: color to use as background color for shifting bottom navigation @deprecatedProperty In v5.x works only with theme version 2.
      * - `badge`: badge to show on the tab icon, can be `true` to show a dot, `string` or `number` to show text.
      * - `accessibilityLabel`: accessibility label for the tab button
      * - `testID`: test id for the tab button
@@ -177,6 +180,7 @@ export declare type Props<Route extends BaseRoute> = {
      */
     labelMaxFontSizeMultiplier?: number;
     style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;
+    activeIndicatorStyle?: StyleProp<ViewStyle>;
     /**
      * @optional
      */
@@ -298,7 +302,7 @@ export declare type Props<Route extends BaseRoute> = {
  * ```
  */
 declare const BottomNavigationBar: {
-    <Route extends BaseRoute>({ navigationState, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, style, labeled, animationEasing, onTabPress, onTabLongPress, shifting: shiftingProp, safeAreaInsets, labelMaxFontSizeMultiplier, compact: compactProp, testID, theme: themeOverrides, }: Props<Route>): React.JSX.Element;
+    <Route extends BaseRoute>({ navigationState, renderIcon, renderLabel, renderTouchable, getLabelText, getBadge, getColor, getAccessibilityLabel, getTestID, activeColor, inactiveColor, keyboardHidesNavigationBar, style, activeIndicatorStyle, labeled, animationEasing, onTabPress, onTabLongPress, shifting: shiftingProp, safeAreaInsets, labelMaxFontSizeMultiplier, compact: compactProp, testID, theme: themeOverrides, }: Props<Route>): React.JSX.Element;
     displayName: string;
 };
 export default BottomNavigationBar;
