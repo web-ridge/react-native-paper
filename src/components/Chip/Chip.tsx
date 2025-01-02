@@ -192,6 +192,7 @@ const Chip = ({
   disabled = false,
   background,
   accessibilityLabel,
+  accessibilityRole = 'button',
   closeIconAccessibilityLabel = 'Close',
   onPress,
   onPressIn,
@@ -340,7 +341,7 @@ const Chip = ({
         rippleColor={rippleColor}
         disabled={disabled}
         accessibilityLabel={accessibilityLabel}
-        accessibilityRole="button"
+        accessibilityRole={accessibilityRole}
         accessibilityState={accessibilityState}
         testID={testID}
         theme={theme}

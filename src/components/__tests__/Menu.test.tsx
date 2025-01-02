@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 
-import { render, waitFor, screen } from '@testing-library/react-native';
+import { act, render, screen, waitFor } from '@testing-library/react-native';
 
 import { getTheme } from '../../core/theming';
 import { MD3Elevation } from '../../types';
@@ -200,9 +200,58 @@ it('animated value changes correctly', () => {
     duration: 200,
   }).start();
 
-  jest.advanceTimersByTime(200);
-
+  act(() => {
+    jest.advanceTimersByTime(200);
+  });
   expect(getByTestId('menu-surface-outer-layer')).toHaveStyle({
     transform: [{ scale: 1.5 }],
   });
+});
+
+it('renders menu with mode "elevated"', () => {
+  const { getByTestId } = render(
+    <Portal.Host>
+      <Menu
+        visible
+        onDismiss={jest.fn()}
+        anchor={<Button mode="outlined">Open menu</Button>}
+        mode="elevated"
+      >
+        <Menu.Item onPress={jest.fn()} title="Undo" />
+        <Menu.Item onPress={jest.fn()} title="Redo" />
+      </Menu>
+    </Portal.Host>
+  );
+
+  const menuSurface = getByTestId('menu-surface');
+
+  // Get flattened styles
+  const styles = StyleSheet.flatten(menuSurface.props.style);
+
+  expect(styles).toHaveProperty('shadowColor');
+  expect(styles).toHaveProperty('shadowOpacity');
+});
+
+it('renders menu with mode "flat"', () => {
+  const { getByTestId } = render(
+    <Portal.Host>
+      <Menu
+        visible
+        onDismiss={jest.fn()}
+        anchor={<Button mode="outlined">Open menu</Button>}
+        mode="flat"
+      >
+        <Menu.Item onPress={jest.fn()} title="Undo" />
+        <Menu.Item onPress={jest.fn()} title="Redo" />
+      </Menu>
+    </Portal.Host>
+  );
+
+  const menuSurface = getByTestId('menu-surface');
+
+  // Get flattened styles
+  const styles = StyleSheet.flatten(menuSurface.props.style);
+
+  expect(styles).not.toHaveProperty('shadowColor');
+  expect(styles).not.toHaveProperty('shadowOpacity');
 });
