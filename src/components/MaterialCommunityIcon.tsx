@@ -23,54 +23,19 @@ type AccessibilityProps =
     };
 
 let MaterialCommunityIcons: React.ComponentType<
-  React.ComponentProps<
-    typeof import('react-native-vector-icons/MaterialCommunityIcons').default
-  > & {
-    color: string;
-    pointerEvents?: ViewProps['pointerEvents'];
-  }
->;
-
-try {
-  // Optionally require vector-icons
-  MaterialCommunityIcons =
-    require('react-native-vector-icons/MaterialCommunityIcons').default;
-} catch (e) {
-  let isErrorLogged = false;
-
-  // Fallback component for icons
-  MaterialCommunityIcons = ({ name, color, size, ...rest }) => {
-    /* eslint-disable no-console */
-    if (!isErrorLogged) {
-      if (
-        !/(Cannot find module|Module not found|Cannot resolve module)/.test(
-          (e as any).message
-        )
-      ) {
-        console.error(e);
-      }
-
-      console.warn(
-        `Tried to use the icon '${name}' in a component from 'react-native-paper', but 'react-native-vector-icons/MaterialCommunityIcons' could not be loaded.`,
-        `To remove this warning, try installing 'react-native-vector-icons' or use another method to specify icon: https://callstack.github.io/react-native-paper/docs/guides/icons`
-      );
-
-      isErrorLogged = true;
-    }
-
-    return (
-      <Text
-        {...rest}
-        style={[styles.icon, { color, fontSize: size }]}
-        // @ts-expect-error: Text doesn't support this, but it seems to affect TouchableNativeFeedback
-        pointerEvents="none"
-        selectable={false}
-      >
-        □
-      </Text>
-    );
-  };
-}
+  React.ComponentProps<any> = ({ name, color, size, ...rest }) => {
+  return (
+    <Text
+      {...rest}
+      style={[styles.icon, { color, fontSize: size }]}
+      // @ts-expect-error: Text doesn't support this, but it seems to affect TouchableNativeFeedback
+      pointerEvents="none"
+      selectable={false}
+    >
+      □
+    </Text>
+  );
+};
 
 export const accessibilityProps: AccessibilityProps =
   Platform.OS === 'web'
