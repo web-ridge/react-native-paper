@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, Platform, ViewProps, Role } from 'react-native';
+import { StyleSheet, Text, Platform, Role } from 'react-native';
 
 import { black } from '../styles/themes/v2/colors';
 
@@ -22,13 +22,11 @@ type AccessibilityProps =
       importantForAccessibility?: 'auto' | 'yes' | 'no' | 'no-hide-descendants';
     };
 
-let MaterialCommunityIcons: React.ComponentType<
-  React.ComponentProps<any> = ({ name, color, size, ...rest }) => {
+const MaterialCommunityIcons = ({ color, size, ...rest }: any) => {
   return (
     <Text
       {...rest}
       style={[styles.icon, { color, fontSize: size }]}
-      // @ts-expect-error: Text doesn't support this, but it seems to affect TouchableNativeFeedback
       pointerEvents="none"
       selectable={false}
     >
