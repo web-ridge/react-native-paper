@@ -3,7 +3,7 @@ import { Animated, ColorValue, EasingFunction, StyleProp, ViewStyle } from 'reac
 import type { ThemeProp } from '../../types';
 import type { IconSource } from '../Icon';
 import { Props as TouchableRippleProps } from '../TouchableRipple/TouchableRipple';
-export declare type BaseRoute = {
+export type BaseRoute = {
     key: string;
     title?: string;
     focusedIcon?: IconSource;
@@ -17,15 +17,15 @@ export declare type BaseRoute = {
     testID?: string;
     lazy?: boolean;
 };
-declare type NavigationState<Route extends BaseRoute> = {
+type NavigationState<Route extends BaseRoute> = {
     index: number;
     routes: Route[];
 };
-declare type TabPressEvent = {
+type TabPressEvent = {
     defaultPrevented: boolean;
     preventDefault(): void;
 };
-declare type TouchableProps<Route extends BaseRoute> = TouchableRippleProps & {
+type TouchableProps<Route extends BaseRoute> = TouchableRippleProps & {
     key: string;
     route: Route;
     children: React.ReactNode;
@@ -33,7 +33,7 @@ declare type TouchableProps<Route extends BaseRoute> = TouchableRippleProps & {
     centered?: boolean;
     rippleColor?: ColorValue;
 };
-export declare type Props<Route extends BaseRoute> = {
+export type Props<Route extends BaseRoute> = {
     /**
      * Whether the shifting style is used, the active tab icon shifts up to show the label and the inactive tabs won't have a label.
      *
@@ -62,7 +62,7 @@ export declare type Props<Route extends BaseRoute> = {
      * - `title`: title of the route to use as the tab label
      * - `focusedIcon`:  icon to use as the focused tab icon, can be a string, an image source or a react component @renamed Renamed from 'icon' to 'focusedIcon' in v5.x
      * - `unfocusedIcon`:  icon to use as the unfocused tab icon, can be a string, an image source or a react component @supported Available in v5.x with theme version 3
-     * - `color`: color to use as background color for shifting bottom navigation @deprecated In v5.x works only with theme version 2.
+     * - `color`: color to use as background color for shifting bottom navigation @deprecatedProperty In v5.x works only with theme version 2.
      * - `badge`: badge to show on the tab icon, can be `true` to show a dot, `string` or `number` to show text.
      * - `accessibilityLabel`: accessibility label for the tab button
      * - `testID`: test id for the tab button

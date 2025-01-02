@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Animated, LayoutRectangle, ScrollViewProps, StyleProp, ViewStyle } from 'react-native';
 import type { $Omit, InternalTheme, MD3Elevation } from '../../types';
 import { ElevationLevels } from '../../types';
-export declare type Props = {
+export type Props = {
     /**
      * Whether the Menu is currently visible.
      */
@@ -49,6 +49,14 @@ export declare type Props = {
      */
     elevation?: MD3Elevation;
     /**
+     * Mode of the menu's content.
+     * - `elevated` - Surface with a shadow and background color corresponding to set `elevation` value.
+     * - `flat` - Surface without a shadow, with the background color corresponding to set `elevation` value.
+     *
+     * @supported Available in v5.x with theme version 3
+     */
+    mode?: 'flat' | 'elevated';
+    /**
      * @optional
      */
     theme: InternalTheme;
@@ -61,8 +69,8 @@ export declare type Props = {
      */
     testID?: string;
 };
-declare type Layout = $Omit<$Omit<LayoutRectangle, 'x'>, 'y'>;
-declare type State = {
+type Layout = $Omit<$Omit<LayoutRectangle, 'x'>, 'y'>;
+type State = {
     rendered: boolean;
     top: number;
     left: number;
@@ -177,7 +185,7 @@ declare class Menu extends React.Component<Props, State> {
     private keyboardDidHide;
     render(): React.JSX.Element;
 }
-declare const _default: React.ComponentType<Pick<Props, "style" | "children" | "anchor" | "visible" | "elevation" | "testID" | "contentStyle" | "keyboardShouldPersistTaps" | "anchorPosition" | "statusBarHeight" | "onDismiss" | "overlayAccessibilityLabel"> & {
+declare const _default: React.ComponentType<Pick<Props, "style" | "children" | "anchor" | "visible" | "elevation" | "testID" | "mode" | "contentStyle" | "keyboardShouldPersistTaps" | "anchorPosition" | "statusBarHeight" | "onDismiss" | "overlayAccessibilityLabel"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<unknown> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<React.ComponentType<Props> & typeof Menu, {}>;
 export default _default;

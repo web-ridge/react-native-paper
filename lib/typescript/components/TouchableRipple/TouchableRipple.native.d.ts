@@ -2,8 +2,8 @@ import * as React from 'react';
 import { PressableAndroidRippleConfig, StyleProp, ViewStyle, GestureResponderEvent, View, ColorValue, MouseEvent } from 'react-native';
 import type { PressableProps } from './Pressable';
 import type { ThemeProp } from '../../types';
-export declare type MouseEventType = React.MouseEvent | MouseEvent;
-export declare type Props = PressableProps & {
+export type MouseEventType = React.MouseEvent | MouseEvent;
+export type Props = PressableProps & {
     borderless?: boolean;
     background?: PressableAndroidRippleConfig;
     centered?: boolean;

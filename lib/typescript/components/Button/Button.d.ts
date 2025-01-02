@@ -4,7 +4,7 @@ import type { $Omit, ThemeProp } from '../../types';
 import { IconSource } from '../Icon';
 import Surface from '../Surface';
 import { MouseEventType } from '../TouchableRipple/TouchableRipple';
-export declare type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
     /**
      * Mode of the button. You can change the mode to adjust the styling to give it desired emphasis.
      * - `text` - flat button without background or outline, used for the lowest priority actions, especially when presenting multiple options.
@@ -124,6 +124,10 @@ export declare type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> 
      * @optional
      */
     theme?: ThemeProp;
+    /**
+     * Reference for the touchable
+     */
+    touchableRef?: React.RefObject<View>;
     /**
      * testID to be used on tests.
      */

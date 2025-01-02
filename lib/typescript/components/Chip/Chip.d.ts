@@ -4,7 +4,7 @@ import type { $Omit, EllipsizeProp, ThemeProp } from '../../types';
 import type { IconSource } from '../Icon';
 import Surface from '../Surface';
 import { MouseEventType } from '../TouchableRipple/TouchableRipple';
-export declare type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
     /**
      * Mode of the chip.
      * - `flat` - flat chip without outline.
@@ -155,6 +155,6 @@ export declare type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> 
  * export default MyComponent;
  * ```
  */
-declare const Chip: ({ mode, children, icon, avatar, selected, disabled, background, accessibilityLabel, closeIconAccessibilityLabel, onPress, onPressIn, onPressOut, onLongPress, onHoverIn, onHoverOut, delayLongPress, onClose, closeIcon, textStyle, style, theme: themeOverrides, testID, selectedColor, rippleColor: customRippleColor, showSelectedOverlay, showSelectedCheck, ellipsizeMode, compact, elevated, maxFontSizeMultiplier, ...rest }: Props) => React.JSX.Element;
+declare const Chip: ({ mode, children, icon, avatar, selected, disabled, background, accessibilityLabel, accessibilityRole, closeIconAccessibilityLabel, onPress, onPressIn, onPressOut, onLongPress, onHoverIn, onHoverOut, delayLongPress, onClose, closeIcon, textStyle, style, theme: themeOverrides, testID, selectedColor, rippleColor: customRippleColor, showSelectedOverlay, showSelectedCheck, ellipsizeMode, compact, elevated, maxFontSizeMultiplier, ...rest }: Props) => React.JSX.Element;
 export default Chip;
 //# sourceMappingURL=Chip.d.ts.map

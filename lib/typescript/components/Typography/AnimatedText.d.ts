@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Animated, TextStyle } from 'react-native';
 import type { VariantProp } from './types';
 import type { ThemeProp } from '../../types';
-declare type Props<T> = React.ComponentPropsWithRef<typeof Animated.Text> & {
+type Props<T> = React.ComponentPropsWithRef<typeof Animated.Text> & {
     /**
      * Variant defines appropriate text styles for type role and its size.
      * Available variants:

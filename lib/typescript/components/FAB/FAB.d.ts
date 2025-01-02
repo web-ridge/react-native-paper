@@ -4,16 +4,16 @@ import type { $Omit, $RemoveChildren, ThemeProp } from '../../types';
 import { IconSource } from '../Icon';
 import Surface from '../Surface';
 import { MouseEventType } from '../TouchableRipple/TouchableRipple';
-declare type FABSize = 'small' | 'medium' | 'large';
-declare type FABMode = 'flat' | 'elevated';
-declare type IconOrLabel = {
+type FABSize = 'small' | 'medium' | 'large';
+type FABMode = 'flat' | 'elevated';
+type IconOrLabel = {
     icon: IconSource;
     label?: string;
 } | {
     icon?: IconSource;
     label: string;
 };
-export declare type Props = $Omit<$RemoveChildren<typeof Surface>, 'mode'> & {
+export type Props = $Omit<$RemoveChildren<typeof Surface>, 'mode'> & {
     /**
      * Icon to display for the `FAB`. It's optional only if `label` is defined.
      */
