@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 
 import type { PressableProps } from './Pressable';
-import { Pressable } from './Pressable';
+import { Pressable, PressableStateCallbackType } from './Pressable';
 import { getTouchableRippleColors } from './utils';
 import { Settings, SettingsContext } from '../../core/settings';
 import { useInternalTheme } from '../../core/theming';
@@ -36,7 +36,9 @@ export type Props = PressableProps & {
   onPressOut?: (e: GestureResponderEvent) => void;
   rippleColor?: ColorValue;
   underlayColor?: string;
-  children: React.ReactNode;
+  children:
+    | ((state: PressableStateCallbackType) => React.ReactNode)
+    | React.ReactNode;
   style?: StyleProp<ViewStyle>;
   theme?: ThemeProp;
 };
@@ -100,7 +102,11 @@ const TouchableRipple = (
         style={[borderless && styles.overflowHidden, style]}
         android_ripple={androidRipple}
       >
-        {React.Children.only(children)}
+        {(state) =>
+          React.Children.only(
+            typeof children === 'function' ? children(state) : children
+          )
+        }
       </Pressable>
     );
   }
@@ -112,9 +118,9 @@ const TouchableRipple = (
       disabled={disabled}
       style={[borderless && styles.overflowHidden, style]}
     >
-      {({ pressed }) => (
+      {(state) => (
         <>
-          {pressed && rippleEffectEnabled && (
+          {state.pressed && rippleEffectEnabled && (
             <View
               testID="touchable-ripple-underlay"
               style={[
@@ -123,7 +129,9 @@ const TouchableRipple = (
               ]}
             />
           )}
-          {React.Children.only(children)}
+          {React.Children.only(
+            typeof children === 'function' ? children(state) : children
+          )}
         </>
       )}
     </Pressable>

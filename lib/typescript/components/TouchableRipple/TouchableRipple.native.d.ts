@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { PressableAndroidRippleConfig, StyleProp, ViewStyle, GestureResponderEvent, View, ColorValue, MouseEvent } from 'react-native';
 import type { PressableProps } from './Pressable';
+import { PressableStateCallbackType } from './Pressable';
 import type { ThemeProp } from '../../types';
 export type MouseEventType = React.MouseEvent | MouseEvent;
 export type Props = PressableProps & {
@@ -14,7 +15,7 @@ export type Props = PressableProps & {
     onPressOut?: (e: GestureResponderEvent) => void;
     rippleColor?: ColorValue;
     underlayColor?: string;
-    children: React.ReactNode;
+    children: ((state: PressableStateCallbackType) => React.ReactNode) | React.ReactNode;
     style?: StyleProp<ViewStyle>;
     theme?: ThemeProp;
 };
