@@ -23,7 +23,6 @@ import type { $Omit, EllipsizeProp, ThemeProp } from '../../types';
 import hasTouchHandler from '../../utils/hasTouchHandler';
 import type { IconSource } from '../Icon';
 import Icon from '../Icon';
-import MaterialCommunityIcon from '../MaterialCommunityIcon';
 import Surface from '../Surface';
 import TouchableRipple, {
   MouseEventType,
@@ -392,11 +391,10 @@ const Chip = ({
                   theme={theme}
                 />
               ) : (
-                <MaterialCommunityIcon
-                  name="check"
+                <Icon
+                  source="check"
                   color={avatar ? white : iconColor}
                   size={18}
-                  direction="ltr"
                 />
               )}
             </View>
@@ -436,11 +434,10 @@ const Chip = ({
               {closeIcon ? (
                 <Icon source={closeIcon} color={iconColor} size={iconSize} />
               ) : (
-                <MaterialCommunityIcon
-                  name={isV3 ? 'close' : 'close-circle'}
+                <Icon
+                  source={isV3 ? 'close' : 'close-circle'}
                   size={iconSize}
                   color={iconColor}
-                  direction="ltr"
                 />
               )}
             </View>
