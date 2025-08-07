@@ -118,19 +118,19 @@ const Icon = ({
         : source.direction
       : null;
 
-  const s =
+  const S =
     typeof source === 'object' && source.direction && source.source
       ? source.source
       : source;
   const iconColor =
     color || (theme.isV3 ? theme.colors.onSurface : theme.colors.text);
 
-  if (isImageSource(s)) {
+  if (isImageSource(S)) {
     return (
       <Image
         {...rest}
         testID={testID}
-        source={s}
+        source={S}
         style={[
           {
             transform: [{ scaleX: direction === 'rtl' ? -1 : 1 }],
@@ -146,12 +146,12 @@ const Icon = ({
         accessibilityIgnoresInvertColors
       />
     );
-  } else if (typeof s === 'string') {
+  } else if (typeof S === 'string') {
     return (
       <SettingsConsumer>
         {({ icon }) => {
           return icon?.({
-            name: s,
+            name: S,
             color: iconColor,
             size,
             direction,
@@ -160,8 +160,11 @@ const Icon = ({
         }}
       </SettingsConsumer>
     );
-  } else if (typeof s === 'function') {
-    return s({ color: iconColor, size, direction, testID });
+  } else if (typeof S === 'function') {
+    // return s({ color: iconColor, size, direction, testID });
+    return (
+      <S color={iconColor} size={size} direction={direction} testID={testID} />
+    );
   }
 
   return null;

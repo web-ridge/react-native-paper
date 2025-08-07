@@ -54,6 +54,6 @@ export type Props = IconProps & {
  * export default MyComponent;
  * ```
  */
-declare const Icon: ({ source, color, size, theme: themeOverrides, testID, ...rest }: Props) => any;
+declare const Icon: ({ source, color, size, theme: themeOverrides, testID, ...rest }: Props) => React.JSX.Element | null;
 export default Icon;
 //# sourceMappingURL=Icon.d.ts.map
