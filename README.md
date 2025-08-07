@@ -6,6 +6,8 @@
   <a href="https://reactnativepaper.com">reactnativepaper.com</a>
 </p>
 
+RC enabled
+
 ---
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/callstack/react-native-paper.svg)](https://greenkeeper.io/)
