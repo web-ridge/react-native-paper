@@ -1,1 +1,1 @@
-{"version":3,"names":["Pressable","PressableNative"],"sourceRoot":"../../../../src","sources":["components/TouchableRipple/Pressable.tsx"],"mappings":"AAMA,SAASA,SAAS,IAAIC,eAAe,QAAQ,cAAc;;AAE3D;AACA;;AAuBA,OAAO,MAAMD,SAA8C,GACzDC,eAAsB","ignoreList":[]}
+{"version":3,"names":["_reactNative","require","Pressable","exports","PressableNative"],"sourceRoot":"../../../../src","sources":["components/TouchableRipple/Pressable.tsx"],"mappings":"kFAMA,IAAAA,YAAA,CAAAC,OAAA,iBA0BO,GAAM,CAAAC,SAA8C,CAAAC,OAAA,CAAAD,SAAA,CACzDE,sBAAsB","ignoreList":[]}

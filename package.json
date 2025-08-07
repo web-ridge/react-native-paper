@@ -103,7 +103,7 @@
     "typescript": "5.0.4"
   },
   "peerDependencies": {
-    "react": "*",
+    "react": "19",
     "react-native": "*",
     "react-native-safe-area-context": "*",
     "react-native-vector-icons": "*"
@@ -155,7 +155,13 @@
     "output": "lib",
     "targets": [
       "commonjs",
-      "module",
+      [
+        "module",
+        {
+          "esm": true,
+          "configFile": true
+        }
+      ],
       [
         "typescript",
         {
