@@ -659,15 +659,19 @@ class Menu extends React.Component<Props, State> {
                 <Surface
                   mode={mode}
                   pointerEvents={pointerEvents}
-                  style={[
-                    styles.shadowMenuContainer,
-                    shadowMenuContainerStyle,
-                    theme.isV3 && {
-                      backgroundColor:
-                        theme.colors.elevation[ELEVATION_LEVELS_MAP[elevation]],
-                    },
-                    contentStyle,
-                  ]}
+                  style={
+                    [
+                      styles.shadowMenuContainer,
+                      shadowMenuContainerStyle,
+                      theme.isV3 && {
+                        backgroundColor:
+                          theme.colors.elevation[
+                            ELEVATION_LEVELS_MAP[elevation]
+                          ],
+                      },
+                      contentStyle,
+                    ] as any
+                  }
                   {...(theme.isV3 && { elevation })}
                   testID={`${testID}-surface`}
                   theme={theme}
@@ -703,7 +707,7 @@ const styles = StyleSheet.create({
       cursor: 'default',
     }),
     width: '100%',
-  },
+  } as any,
 });
 
 export default withInternalTheme(Menu);

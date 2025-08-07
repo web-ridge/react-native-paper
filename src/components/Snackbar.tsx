@@ -22,7 +22,10 @@ import Text from './Typography/Text';
 import { useInternalTheme } from '../core/theming';
 import type { $Omit, $RemoveChildren, ThemeProp } from '../types';
 
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<
+  React.ComponentPropsWithRef<typeof Surface>,
+  'mode'
+> & {
   /**
    * Whether the Snackbar is currently visible.
    */

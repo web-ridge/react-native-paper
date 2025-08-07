@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleProp, Text as NativeText, TextStyle } from 'react-native';
 import type { VariantProp } from './types';
 import type { ThemeProp } from '../../types';
-export type Props<T> = React.ComponentProps<typeof NativeText> & {
+export type Props<T> = React.ComponentPropsWithRef<typeof NativeText> & {
     /**
      * @supported Available in v5.x with theme version 3
      *
@@ -27,10 +27,8 @@ export type Props<T> = React.ComponentProps<typeof NativeText> & {
 export type TextRef = React.ForwardedRef<{
     setNativeProps(args: Object): void;
 }>;
-type TextComponent<T> = (props: Props<T> & {
-    ref?: React.RefObject<TextRef>;
-}) => JSX.Element;
-declare const Component: TextComponent<never>;
+type TextComponent<T> = (props: Props<T>) => JSX.Element;
+declare const Component: ({ style, variant, theme: initialTheme, ref, ...rest }: Props<string>) => React.JSX.Element;
 export declare const customText: <T>() => TextComponent<T>;
 export default Component;
 //# sourceMappingURL=Text.d.ts.map

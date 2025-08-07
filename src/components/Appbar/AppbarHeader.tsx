@@ -22,7 +22,7 @@ import { useInternalTheme } from '../../core/theming';
 import shadow from '../../styles/shadow';
 import type { ThemeProp } from '../../types';
 
-export type Props = React.ComponentProps<typeof Appbar> & {
+export type Props = React.ComponentPropsWithRef<typeof Appbar> & {
   /**
    * Whether the background color is a dark color. A dark header will render light text and vice-versa.
    */

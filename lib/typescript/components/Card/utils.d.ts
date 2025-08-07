@@ -8,19 +8,19 @@ export declare const getCardCoverStyle: ({ theme, index, total, borderRadiusStyl
     index?: number | undefined;
     total?: number | undefined;
 }) => {
-    borderBottomEndRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderBottomStartRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderEndEndRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderEndStartRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderStartEndRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderStartStartRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderTopEndRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderTopStartRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderRadius: import("react-native").AnimatableNumericValue;
-    borderTopLeftRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderTopRightRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderBottomLeftRadius?: import("react-native").AnimatableNumericValue | undefined;
-    borderBottomRightRadius?: import("react-native").AnimatableNumericValue | undefined;
+    borderBottomEndRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderBottomStartRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderEndEndRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderEndStartRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderStartEndRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderStartStartRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderTopEndRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderTopStartRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderRadius: string | import("react-native").AnimatableNumericValue;
+    borderTopLeftRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderTopRightRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderBottomLeftRadius?: string | import("react-native").AnimatableNumericValue | undefined;
+    borderBottomRightRadius?: string | import("react-native").AnimatableNumericValue | undefined;
 } | {
     borderTopLeftRadius: number;
     borderTopRightRadius: number;

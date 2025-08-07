@@ -3,7 +3,7 @@ import { ColorValue, GestureResponderEvent, StyleProp, ViewStyle } from 'react-n
 import type { $Omit, ThemeProp } from '../../../types';
 import type { IconSource } from '../../Icon';
 import IconButton from '../../IconButton/IconButton';
-export type Props = $Omit<React.ComponentProps<typeof IconButton>, 'icon' | 'theme' | 'color' | 'iconColor'> & {
+export type Props = $Omit<React.ComponentPropsWithRef<typeof IconButton>, 'icon' | 'theme' | 'color' | 'iconColor'> & {
     /**
      * @renamed Renamed from 'name' to 'icon` in v5.x
      * Icon to show.

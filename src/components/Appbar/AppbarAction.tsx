@@ -12,11 +12,10 @@ import type { ThemeProp } from 'src/types';
 
 import { useInternalTheme } from '../../core/theming';
 import { black } from '../../styles/themes/v2/colors';
-import { forwardRef } from '../../utils/forwardRef';
 import type { IconSource } from '../Icon';
 import IconButton from '../IconButton/IconButton';
 
-export type Props = React.ComponentPropsWithoutRef<typeof IconButton> & {
+export type Props = React.ComponentPropsWithRef<typeof IconButton> & {
   /**
    *  Custom color for action icon.
    */
@@ -81,48 +80,44 @@ export type Props = React.ComponentPropsWithoutRef<typeof IconButton> & {
  * export default MyComponent;
  * ```
  */
-const AppbarAction = forwardRef<View, Props>(
-  (
-    {
-      size = 24,
-      color: iconColor,
-      icon,
-      disabled,
-      onPress,
-      accessibilityLabel,
-      isLeading,
-      theme: themeOverrides,
-      rippleColor,
-      ...rest
-    }: Props,
-    ref
-  ) => {
-    const theme = useInternalTheme(themeOverrides);
+const AppbarAction = ({
+  size = 24,
+  color: iconColor,
+  icon,
+  disabled,
+  onPress,
+  accessibilityLabel,
+  isLeading,
+  theme: themeOverrides,
+  rippleColor,
+  ref,
+  ...rest
+}: Props) => {
+  const theme = useInternalTheme(themeOverrides);
 
-    const actionIconColor = iconColor
-      ? iconColor
-      : theme.isV3
-      ? isLeading
-        ? theme.colors.onSurface
-        : theme.colors.onSurfaceVariant
-      : color(black).alpha(0.54).rgb().string();
+  const actionIconColor = iconColor
+    ? iconColor
+    : theme.isV3
+    ? isLeading
+      ? theme.colors.onSurface
+      : theme.colors.onSurfaceVariant
+    : color(black).alpha(0.54).rgb().string();
 
-    return (
-      <IconButton
-        size={size}
-        onPress={onPress}
-        iconColor={actionIconColor}
-        icon={icon}
-        disabled={disabled}
-        accessibilityLabel={accessibilityLabel}
-        animated
-        ref={ref}
-        rippleColor={rippleColor}
-        {...rest}
-      />
-    );
-  }
-);
+  return (
+    <IconButton
+      size={size}
+      onPress={onPress}
+      iconColor={actionIconColor}
+      icon={icon}
+      disabled={disabled}
+      accessibilityLabel={accessibilityLabel}
+      animated
+      ref={ref}
+      rippleColor={rippleColor}
+      {...rest}
+    />
+  );
+};
 
 AppbarAction.displayName = 'Appbar.Action';
 

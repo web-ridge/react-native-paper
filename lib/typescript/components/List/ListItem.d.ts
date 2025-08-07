@@ -97,6 +97,6 @@ export type Props = $RemoveChildren<typeof TouchableRipple> & {
      */
     testID?: string;
 };
-declare const Component: import("../../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const Component: ({ left, right, title, description, onPress, theme: themeOverrides, style, contentStyle, titleStyle, titleNumberOfLines, descriptionNumberOfLines, titleEllipsizeMode, descriptionEllipsizeMode, descriptionStyle, descriptionMaxFontSizeMultiplier, titleMaxFontSizeMultiplier, testID, ...rest }: Props, ref: React.ForwardedRef<View>) => React.JSX.Element;
 export default Component;
 //# sourceMappingURL=ListItem.d.ts.map

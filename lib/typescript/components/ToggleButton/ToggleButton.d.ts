@@ -80,7 +80,7 @@ export type Props = {
  *
  * ```
  */
-declare const ToggleButton: import("../../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const ToggleButton: ({ icon, size, theme: themeOverrides, accessibilityLabel, disabled, style, value, status, onPress, rippleColor, ref, ...rest }: Props) => React.JSX.Element;
 export default ToggleButton;
 export { ToggleButton };
 //# sourceMappingURL=ToggleButton.d.ts.map

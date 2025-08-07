@@ -2,7 +2,6 @@ import type * as React from 'react';
 import type {
   PressableProps as PressableNativeProps,
   StyleProp,
-  View,
   ViewStyle,
 } from 'react-native';
 import { Pressable as PressableNative } from 'react-native';
@@ -28,8 +27,8 @@ export type PressableProps = Omit<
     | StyleProp<ViewStyle>
     | ((state: PressableStateCallbackType) => StyleProp<ViewStyle>)
     | undefined;
+  ref?: any;
 };
 
-export const Pressable: React.ForwardRefExoticComponent<
-  PressableProps & React.RefAttributes<View>
-> = PressableNative as any;
+export const Pressable: React.ComponentType<PressableProps> =
+  PressableNative as any;

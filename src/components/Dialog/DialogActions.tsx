@@ -63,7 +63,7 @@ const DialogActions = (props: Props) => {
                 isV3 && {
                   marginRight: i + 1 === actionsLength ? 0 : 8,
                 },
-                child.props.style,
+                (child.props as any).style,
               ],
             })
           : child

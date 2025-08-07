@@ -5,9 +5,6 @@
       "react-native-paper": [
         "./src/index"
       ],
-      "react-native-paper/react-navigation": [
-        "./src/react-navigation"
-      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -33,6 +30,7 @@
     "target": "esnext"
   },
   "exclude": [
-    "lib/**/*"
+    "lib/**/*",
+    "node_modules",
   ]
 }

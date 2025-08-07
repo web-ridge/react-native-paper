@@ -156,7 +156,11 @@ export const renderAppbarContent = ({
         theme?: ThemeProp;
       } = {
         theme,
-        color: getAppbarColor({ color: child.props.color, isDark, isV3 }),
+        color: getAppbarColor({
+          color: (child.props as any).color,
+          isDark,
+          isV3,
+        }),
       };
 
       // @ts-expect-error: TypeScript complains about the type of type but it doesn't matter
@@ -167,7 +171,7 @@ export const renderAppbarContent = ({
             ? i === 0 && !shouldCenterContent && styles.v3Spacing
             : i !== 0 && styles.v2Spacing,
           shouldCenterContent && styles.centerAlignedContent,
-          child.props.style,
+          (child.props as any).style,
         ];
         props.color;
       }

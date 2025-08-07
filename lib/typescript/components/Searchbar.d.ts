@@ -120,7 +120,6 @@ export type Props = React.ComponentPropsWithRef<typeof TextInput> & {
      */
     theme?: ThemeProp;
 };
-type TextInputHandles = Pick<TextInput, 'setNativeProps' | 'isFocused' | 'clear' | 'blur' | 'focus'>;
 /**
  * Searchbar is a simple input box where users can type search queries.
  *
@@ -145,6 +144,6 @@ type TextInputHandles = Pick<TextInput, 'setNativeProps' | 'isFocused' | 'clear'
 
  * ```
  */
-declare const Searchbar: import("../utils/forwardRef").ForwardRefComponent<TextInputHandles, Props>;
+declare const Searchbar: ({ icon, iconColor: customIconColor, rippleColor: customRippleColor, onIconPress, searchAccessibilityLabel, clearIcon, clearAccessibilityLabel, onClearIconPress, traileringIcon, traileringIconColor, traileringIconAccessibilityLabel, traileringRippleColor: customTraileringRippleColor, onTraileringIconPress, right, mode, showDivider, inputStyle, placeholder, elevation, style, theme: themeOverrides, value, loading, testID, ref, ...rest }: Props) => React.JSX.Element;
 export default Searchbar;
 //# sourceMappingURL=Searchbar.d.ts.map

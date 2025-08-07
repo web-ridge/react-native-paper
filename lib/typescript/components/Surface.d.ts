@@ -34,7 +34,6 @@ export type Props = React.ComponentPropsWithRef<typeof View> & {
      * TestID used for testing purposes
      */
     testID?: string;
-    ref?: React.RefObject<View>;
 };
 /**
  * Surface is a basic container that can give depth to an element with elevation shadow.
@@ -67,6 +66,6 @@ export type Props = React.ComponentPropsWithRef<typeof View> & {
  * });
  * ```
  */
-declare const Surface: import("../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const Surface: ({ elevation, children, theme: overridenTheme, style, testID, mode, ref, ...props }: Props) => React.JSX.Element;
 export default Surface;
 //# sourceMappingURL=Surface.d.ts.map

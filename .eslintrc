@@ -5,9 +5,10 @@
 
   "extends": "@callstack",
 
-  "plugins": ["eslint-plugin-local-rules"],
+  "plugins": [ "react-compiler", "eslint-plugin-local-rules"],
 
   "rules": {
+    "react-compiler/react-compiler": "error",
     "local-rules/no-import-react-forwardref": "error",
     "local-rules/no-react-forwardref-usage": "error",
 

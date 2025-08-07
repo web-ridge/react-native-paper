@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { StyleProp, TextInput as NativeTextInput, TextStyle, ViewStyle } from 'react-native';
-import { Props as TextInputAffixProps } from './Adornment/TextInputAffix';
-import { Props as TextInputIconProps } from './Adornment/TextInputIcon';
 import type { RenderProps, TextInputLabelProp } from './types';
 import type { ThemeProp } from '../../types';
 export type Props = React.ComponentPropsWithRef<typeof NativeTextInput> & {
@@ -150,11 +148,6 @@ export type Props = React.ComponentPropsWithRef<typeof NativeTextInput> & {
      */
     underlineStyle?: StyleProp<ViewStyle>;
 };
-interface CompoundedComponent extends React.ForwardRefExoticComponent<Props & React.RefAttributes<TextInputHandles>> {
-    Icon: React.FunctionComponent<TextInputIconProps>;
-    Affix: React.FunctionComponent<Partial<TextInputAffixProps>>;
-}
-type TextInputHandles = Pick<NativeTextInput, 'focus' | 'clear' | 'blur' | 'isFocused' | 'setNativeProps'>;
 /**
  * A component to allow users to input text.
  *
@@ -180,6 +173,16 @@ type TextInputHandles = Pick<NativeTextInput, 'focus' | 'clear' | 'blur' | 'isFo
  *
  * @extends TextInput props https://reactnative.dev/docs/textinput#props
  */
-declare const TextInput: CompoundedComponent;
+declare const TextInput: {
+    ({ mode, dense, disabled, error: errorProp, multiline, editable, contentStyle, render, theme: themeOverrides, ref, ...rest }: Props): React.JSX.Element;
+    Icon: {
+        ({ icon, onPress, forceTextInputFocus, color: customColor, theme: themeOverrides, rippleColor, ...rest }: import("./Adornment/TextInputIcon").Props): React.JSX.Element;
+        displayName: string;
+    };
+    Affix: {
+        ({ text, textStyle: labelStyle, theme: themeOverrides, onLayout: onTextLayout, onPress, accessibilityLabel, }: import("./Adornment/TextInputAffix").Props): React.JSX.Element;
+        displayName: string;
+    };
+};
 export default TextInput;
 //# sourceMappingURL=TextInput.d.ts.map

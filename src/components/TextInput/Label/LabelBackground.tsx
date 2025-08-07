@@ -62,19 +62,21 @@ const LabelBackground = ({
     <AnimatedText
       key="labelBackground-text"
       testID={`${testID}-label-background`}
-      style={[
-        placeholderStyle,
-        labelStyle,
-        styles.outlinedLabel,
-        {
-          top: topPosition + 1,
-          width: labelLayoutWidth - placeholderStyle.paddingHorizontal,
-          height: labelLayoutHeight,
-          backgroundColor,
-          opacity,
-          transform: labelTextTransform,
-        },
-      ]}
+      style={
+        [
+          placeholderStyle,
+          labelStyle,
+          styles.outlinedLabel,
+          {
+            top: topPosition + 1,
+            width: labelLayoutWidth - placeholderStyle.paddingHorizontal,
+            height: labelLayoutHeight,
+            backgroundColor,
+            opacity,
+            transform: labelTextTransform,
+          },
+        ] as any
+      }
       numberOfLines={1}
       maxFontSizeMultiplier={maxFontSizeMultiplier}
     />,

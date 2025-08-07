@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Animated, GestureResponderEvent, StyleProp, View, ViewStyle } from 'react-native';
+import { Animated, GestureResponderEvent, StyleProp, ViewStyle } from 'react-native';
 import CardActions from './CardActions';
 import CardContent from './CardContent';
 import CardCover from './CardCover';
@@ -19,7 +19,7 @@ type ContainedCardProps = {
     elevation?: never;
 };
 type Mode = 'elevated' | 'outlined' | 'contained';
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<React.ComponentPropsWithRef<typeof Surface>, 'mode'> & {
     /**
      * Mode of the Card.
      * - `elevated` - Card with elevation.
@@ -77,64 +77,7 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
      */
     accessible?: boolean;
 };
-declare const Card: import("../../utils/forwardRef").ForwardRefComponent<View, (OutlinedCardProps | ElevatedCardProps | ContainedCardProps) & $Omit<Omit<import("../Surface").Props, "ref"> & React.RefAttributes<View>, "mode"> & {
-    /**
-     * Mode of the Card.
-     * - `elevated` - Card with elevation.
-     * - `contained` - Card without outline and elevation @supported Available in v5.x with theme version 3
-     * - `outlined` - Card with an outline.
-     */
-    mode?: Mode | undefined;
-    /**
-     * Content of the `Card`.
-     */
-    children: React.ReactNode;
-    /**
-     * Function to execute on long press.
-     */
-    onLongPress?: (() => void) | undefined;
-    /**
-     * Function to execute on press.
-     */
-    onPress?: ((e: GestureResponderEvent) => void) | undefined;
-    /**
-     * Function to execute as soon as the touchable element is pressed and invoked even before onPress.
-     */
-    onPressIn?: ((e: GestureResponderEvent) => void) | undefined;
-    /**
-     * Function to execute as soon as the touch is released even before onPress.
-     */
-    onPressOut?: ((e: GestureResponderEvent) => void) | undefined;
-    /**
-     * The number of milliseconds a user must touch the element before executing `onLongPress`.
-     */
-    delayLongPress?: number | undefined;
-    /**
-     * If true, disable all interactions for this component.
-     */
-    disabled?: boolean | undefined;
-    /**
-     * Changes Card shadow and background on iOS and Android.
-     */
-    elevation?: 0 | 3 | 2 | 1 | 4 | 5 | Animated.Value | undefined;
-    /**
-     * Style of card's inner content.
-     */
-    contentStyle?: StyleProp<ViewStyle>;
-    style?: StyleProp<ViewStyle>;
-    /**
-     * @optional
-     */
-    theme?: ThemeProp | undefined;
-    /**
-     * Pass down testID from card props to touchable
-     */
-    testID?: string | undefined;
-    /**
-     * Pass down accessible from card props to touchable
-     */
-    accessible?: boolean | undefined;
-}> & {
+declare const Card: (({ elevation: cardElevation, delayLongPress, onPress, onLongPress, onPressOut, onPressIn, mode: cardMode, children, style, contentStyle, theme: themeOverrides, testID, accessible, disabled, ref, ...rest }: (OutlinedCardProps | ElevatedCardProps | ContainedCardProps) & Props) => React.JSX.Element) & {
     Content: typeof CardContent;
     Actions: typeof CardActions;
     Cover: typeof CardCover;

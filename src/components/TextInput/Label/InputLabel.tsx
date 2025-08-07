@@ -173,12 +173,14 @@ const InputLabel = (props: InputLabelProps) => {
             variant="bodySmall"
             onLayout={onLayoutAnimatedText}
             onTextLayout={onLabelTextLayout}
-            style={[
-              commonStyles,
-              {
-                color: activeColor,
-              },
-            ]}
+            style={
+              [
+                commonStyles,
+                {
+                  color: activeColor,
+                },
+              ] as any
+            }
             numberOfLines={1}
             maxFontSizeMultiplier={maxFontSizeMultiplier}
             testID={`${testID}-label-active`}
@@ -187,13 +189,15 @@ const InputLabel = (props: InputLabelProps) => {
           </AnimatedText>
           <AnimatedText
             variant={focused ? 'bodyLarge' : 'bodySmall'}
-            style={[
-              commonStyles,
-              {
-                color: textColor,
-                opacity: placeholderOpacity,
-              },
-            ]}
+            style={
+              [
+                commonStyles,
+                {
+                  color: textColor,
+                  opacity: placeholderOpacity,
+                },
+              ] as any
+            }
             numberOfLines={1}
             maxFontSizeMultiplier={maxFontSizeMultiplier}
             testID={`${testID}-label-inactive`}

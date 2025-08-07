@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PressableAndroidRippleConfig, StyleProp, ViewStyle, GestureResponderEvent, View, ColorValue, MouseEvent } from 'react-native';
+import { PressableAndroidRippleConfig, StyleProp, ViewStyle, GestureResponderEvent, ColorValue, MouseEvent } from 'react-native';
 import type { PressableProps } from './Pressable';
 import { PressableStateCallbackType } from './Pressable';
 import type { ThemeProp } from '../../types';
@@ -19,7 +19,10 @@ export type Props = PressableProps & {
     style?: StyleProp<ViewStyle>;
     theme?: ThemeProp;
 };
-declare const _default: import("../../utils/forwardRef").ForwardRefComponent<View, Props> & {
+declare const _default: {
+    ({ style, background, borderless, disabled: disabledProp, rippleColor, underlayColor, children, theme: themeOverrides, ref, ...rest }: Props): React.JSX.Element;
+    supported: boolean;
+} & {
     supported: boolean;
 };
 export default _default;

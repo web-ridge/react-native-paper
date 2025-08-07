@@ -8,7 +8,6 @@ import {
   StyleProp,
   StyleSheet,
   TextInput,
-  TextInputProps,
   TextStyle,
   View,
   ViewStyle,
@@ -24,7 +23,6 @@ import MaterialCommunityIcon from './MaterialCommunityIcon';
 import Surface from './Surface';
 import { useInternalTheme } from '../core/theming';
 import type { ThemeProp } from '../types';
-import { forwardRef } from '../utils/forwardRef';
 
 interface Style {
   marginRight: number;
@@ -147,11 +145,6 @@ export type Props = React.ComponentPropsWithRef<typeof TextInput> & {
   theme?: ThemeProp;
 };
 
-type TextInputHandles = Pick<
-  TextInput,
-  'setNativeProps' | 'isFocused' | 'clear' | 'blur' | 'focus'
->;
-
 /**
  * Searchbar is a simple input box where users can type search queries.
  *
@@ -176,237 +169,234 @@ type TextInputHandles = Pick<
 
  * ```
  */
-const Searchbar = forwardRef<TextInputHandles, Props>(
-  (
-    {
-      icon,
-      iconColor: customIconColor,
-      rippleColor: customRippleColor,
-      onIconPress,
-      searchAccessibilityLabel = 'search',
-      clearIcon,
-      clearAccessibilityLabel = 'clear',
-      onClearIconPress,
-      traileringIcon,
-      traileringIconColor,
-      traileringIconAccessibilityLabel,
-      traileringRippleColor: customTraileringRippleColor,
-      onTraileringIconPress,
-      right,
-      mode = 'bar',
-      showDivider = true,
-      inputStyle,
-      placeholder,
-      elevation = 0,
-      style,
-      theme: themeOverrides,
-      value,
-      loading = false,
-      testID = 'search-bar',
-      ...rest
-    }: Props,
-    ref
-  ) => {
-    const theme = useInternalTheme(themeOverrides);
-    const root = React.useRef<TextInput>(null);
+const Searchbar = ({
+  icon,
+  iconColor: customIconColor,
+  rippleColor: customRippleColor,
+  onIconPress,
+  searchAccessibilityLabel = 'search',
+  clearIcon,
+  clearAccessibilityLabel = 'clear',
+  onClearIconPress,
+  traileringIcon,
+  traileringIconColor,
+  traileringIconAccessibilityLabel,
+  traileringRippleColor: customTraileringRippleColor,
+  onTraileringIconPress,
+  right,
+  mode = 'bar',
+  showDivider = true,
+  inputStyle,
+  placeholder,
+  elevation = 0,
+  style,
+  theme: themeOverrides,
+  value,
+  loading = false,
+  testID = 'search-bar',
+  ref,
+  ...rest
+}: Props) => {
+  const theme = useInternalTheme(themeOverrides);
+  const root = React.useRef<TextInput>(null);
 
-    React.useImperativeHandle(ref, () => {
-      const input = root.current;
+  // @ts-ignore
+  React.useImperativeHandle(ref, () => {
+    const input = root.current;
 
-      if (input) {
-        return {
-          focus: () => input.focus(),
-          clear: () => input.clear(),
-          setNativeProps: (args: TextInputProps) => input.setNativeProps(args),
-          isFocused: () => input.isFocused(),
-          blur: () => input.blur(),
-        };
-      }
-
-      const noop = () => {
-        throw new Error('TextInput is not available');
-      };
-
+    if (input) {
       return {
-        focus: noop,
-        clear: noop,
-        setNativeProps: noop,
-        isFocused: noop,
-        blur: noop,
+        focus: input.focus,
+        clear: input.clear,
+        setNativeProps: input.setNativeProps,
+        isFocused: input.isFocused,
+        blur: input.blur,
+        setSelection: input.setSelection,
+        measure: input.measure,
+        measureInWindow: input.measureInWindow,
+        measureLayout: input.measureLayout,
       };
-    });
+    }
 
-    const handleClearPress = (e: any) => {
-      root.current?.clear();
-      rest.onChangeText?.('');
-      onClearIconPress?.(e);
+    const noop = () => {
+      throw new Error('TextInput is not available');
     };
 
-    const { roundness, dark, isV3, fonts } = theme;
+    return {
+      focus: noop,
+      clear: noop,
+      setNativeProps: noop,
+      isFocused: noop,
+      blur: noop,
+    };
+  });
 
-    const placeholderTextColor = isV3
-      ? theme.colors.onSurface
-      : theme.colors?.placeholder;
-    const textColor = isV3 ? theme.colors.onSurfaceVariant : theme.colors.text;
-    const md2IconColor = dark
-      ? textColor
-      : color(textColor).alpha(0.54).rgb().string();
-    const iconColor =
-      customIconColor || (isV3 ? theme.colors.onSurfaceVariant : md2IconColor);
-    const rippleColor =
-      customRippleColor || color(textColor).alpha(0.32).rgb().string();
-    const traileringRippleColor =
-      customTraileringRippleColor ||
-      color(textColor).alpha(0.32).rgb().string();
+  const handleClearPress = (e: any) => {
+    root.current?.clear();
+    rest.onChangeText?.('');
+    onClearIconPress?.(e);
+  };
 
-    const font = isV3
-      ? {
-          ...fonts.bodyLarge,
-          lineHeight: Platform.select({
-            ios: 0,
-            default: fonts.bodyLarge.lineHeight,
-          }),
+  const { roundness, dark, isV3, fonts } = theme;
+
+  const placeholderTextColor = isV3
+    ? theme.colors.onSurface
+    : theme.colors?.placeholder;
+  const textColor = isV3 ? theme.colors.onSurfaceVariant : theme.colors.text;
+  const md2IconColor = dark
+    ? textColor
+    : color(textColor).alpha(0.54).rgb().string();
+  const iconColor =
+    customIconColor || (isV3 ? theme.colors.onSurfaceVariant : md2IconColor);
+  const rippleColor =
+    customRippleColor || color(textColor).alpha(0.32).rgb().string();
+  const traileringRippleColor =
+    customTraileringRippleColor || color(textColor).alpha(0.32).rgb().string();
+
+  const font = isV3
+    ? {
+        ...fonts.bodyLarge,
+        lineHeight: Platform.select({
+          ios: 0,
+          default: fonts.bodyLarge.lineHeight,
+        }),
+      }
+    : theme.fonts.regular;
+
+  const isBarMode = isV3 && mode === 'bar';
+  const shouldRenderTraileringIcon =
+    isBarMode && traileringIcon && !loading && (!value || right !== undefined);
+
+  return (
+    <Surface
+      style={[
+        { borderRadius: roundness },
+        !isV3 && styles.elevation,
+        isV3 && {
+          backgroundColor: theme.colors.elevation.level3,
+          borderRadius: roundness * (isBarMode ? 7 : 0),
+        },
+        styles.container,
+        style,
+      ]}
+      testID={`${testID}-container`}
+      {...(theme.isV3 && { elevation })}
+      theme={theme}
+    >
+      <IconButton
+        accessibilityRole="button"
+        borderless
+        rippleColor={rippleColor}
+        onPress={onIconPress}
+        iconColor={iconColor}
+        icon={
+          icon ||
+          (({ size, color }) => (
+            <MaterialCommunityIcon
+              name="magnify"
+              color={color}
+              size={size}
+              direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
+            />
+          ))
         }
-      : theme.fonts.regular;
-
-    const isBarMode = isV3 && mode === 'bar';
-    const shouldRenderTraileringIcon =
-      isBarMode &&
-      traileringIcon &&
-      !loading &&
-      (!value || right !== undefined);
-
-    return (
-      <Surface
-        style={[
-          { borderRadius: roundness },
-          !isV3 && styles.elevation,
-          isV3 && {
-            backgroundColor: theme.colors.elevation.level3,
-            borderRadius: roundness * (isBarMode ? 7 : 0),
-          },
-          styles.container,
-          style,
-        ]}
-        testID={`${testID}-container`}
-        {...(theme.isV3 && { elevation })}
         theme={theme}
-      >
+        accessibilityLabel={searchAccessibilityLabel}
+        testID={`${testID}-icon`}
+      />
+      <TextInput
+        style={[
+          styles.input,
+          {
+            color: textColor,
+            ...font,
+            ...Platform.select({ web: { outline: 'none' } }),
+          },
+          isV3 && (isBarMode ? styles.barModeInput : styles.viewModeInput),
+          inputStyle,
+        ]}
+        placeholder={placeholder || ''}
+        placeholderTextColor={placeholderTextColor}
+        selectionColor={theme.colors?.primary}
+        underlineColorAndroid="transparent"
+        returnKeyType="search"
+        keyboardAppearance={dark ? 'dark' : 'light'}
+        accessibilityRole="search"
+        ref={root}
+        value={value}
+        testID={testID}
+        {...rest}
+      />
+      {loading ? (
+        <ActivityIndicator
+          testID="activity-indicator"
+          style={isV3 ? styles.v3Loader : styles.loader}
+        />
+      ) : (
+        // Clear icon should be always rendered within Searchbar – it's transparent,
+        // without touch events, when there is no value. It's done to avoid issues
+        // with the abruptly stopping ripple effect and changing bar width on web,
+        // when clearing the value.
+        <View
+          pointerEvents={value ? 'auto' : 'none'}
+          testID={`${testID}-icon-wrapper`}
+          style={[
+            isV3 && !value && styles.v3ClearIcon,
+            isV3 && right !== undefined && styles.v3ClearIconHidden,
+          ]}
+        >
+          <IconButton
+            borderless
+            accessibilityLabel={clearAccessibilityLabel}
+            iconColor={value ? iconColor : 'rgba(255, 255, 255, 0)'}
+            rippleColor={rippleColor}
+            onPress={handleClearPress}
+            icon={
+              clearIcon ||
+              (({ size, color }) => (
+                <MaterialCommunityIcon
+                  name={isV3 ? 'close' : 'close-circle-outline'}
+                  color={color}
+                  size={size}
+                  direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
+                />
+              ))
+            }
+            testID={`${testID}-clear-icon`}
+            accessibilityRole="button"
+            theme={theme}
+          />
+        </View>
+      )}
+      {shouldRenderTraileringIcon ? (
         <IconButton
           accessibilityRole="button"
           borderless
-          rippleColor={rippleColor}
-          onPress={onIconPress}
-          iconColor={iconColor}
-          icon={
-            icon ||
-            (({ size, color }) => (
-              <MaterialCommunityIcon
-                name="magnify"
-                color={color}
-                size={size}
-                direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
-              />
-            ))
-          }
-          theme={theme}
-          accessibilityLabel={searchAccessibilityLabel}
-          testID={`${testID}-icon`}
+          onPress={onTraileringIconPress}
+          iconColor={traileringIconColor || theme.colors.onSurfaceVariant}
+          rippleColor={traileringRippleColor}
+          icon={traileringIcon}
+          accessibilityLabel={traileringIconAccessibilityLabel}
+          testID={`${testID}-trailering-icon`}
         />
-        <TextInput
+      ) : null}
+      {isBarMode &&
+        right?.({ color: textColor, style: styles.rightStyle, testID })}
+      {isV3 && !isBarMode && showDivider && (
+        <Divider
+          bold
           style={[
-            styles.input,
+            styles.divider,
             {
-              color: textColor,
-              ...font,
-              ...Platform.select({ web: { outline: 'none' } }),
+              backgroundColor: theme.colors.outline,
             },
-            isV3 && (isBarMode ? styles.barModeInput : styles.viewModeInput),
-            inputStyle,
           ]}
-          placeholder={placeholder || ''}
-          placeholderTextColor={placeholderTextColor}
-          selectionColor={theme.colors?.primary}
-          underlineColorAndroid="transparent"
-          returnKeyType="search"
-          keyboardAppearance={dark ? 'dark' : 'light'}
-          accessibilityRole="search"
-          ref={root}
-          value={value}
-          testID={testID}
-          {...rest}
+          testID={`${testID}-divider`}
         />
-        {loading ? (
-          <ActivityIndicator
-            testID="activity-indicator"
-            style={isV3 ? styles.v3Loader : styles.loader}
-          />
-        ) : (
-          // Clear icon should be always rendered within Searchbar – it's transparent,
-          // without touch events, when there is no value. It's done to avoid issues
-          // with the abruptly stopping ripple effect and changing bar width on web,
-          // when clearing the value.
-          <View
-            pointerEvents={value ? 'auto' : 'none'}
-            testID={`${testID}-icon-wrapper`}
-            style={[
-              isV3 && !value && styles.v3ClearIcon,
-              isV3 && right !== undefined && styles.v3ClearIconHidden,
-            ]}
-          >
-            <IconButton
-              borderless
-              accessibilityLabel={clearAccessibilityLabel}
-              iconColor={value ? iconColor : 'rgba(255, 255, 255, 0)'}
-              rippleColor={rippleColor}
-              onPress={handleClearPress}
-              icon={
-                clearIcon ||
-                (({ size, color }) => (
-                  <MaterialCommunityIcon
-                    name={isV3 ? 'close' : 'close-circle-outline'}
-                    color={color}
-                    size={size}
-                    direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
-                  />
-                ))
-              }
-              testID={`${testID}-clear-icon`}
-              accessibilityRole="button"
-              theme={theme}
-            />
-          </View>
-        )}
-        {shouldRenderTraileringIcon ? (
-          <IconButton
-            accessibilityRole="button"
-            borderless
-            onPress={onTraileringIconPress}
-            iconColor={traileringIconColor || theme.colors.onSurfaceVariant}
-            rippleColor={traileringRippleColor}
-            icon={traileringIcon}
-            accessibilityLabel={traileringIconAccessibilityLabel}
-            testID={`${testID}-trailering-icon`}
-          />
-        ) : null}
-        {isBarMode &&
-          right?.({ color: textColor, style: styles.rightStyle, testID })}
-        {isV3 && !isBarMode && showDivider && (
-          <Divider
-            bold
-            style={[
-              styles.divider,
-              {
-                backgroundColor: theme.colors.outline,
-              },
-            ]}
-            testID={`${testID}-divider`}
-          />
-        )}
-      </Surface>
-    );
-  }
-);
+      )}
+    </Surface>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {

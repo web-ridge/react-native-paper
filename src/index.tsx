@@ -28,13 +28,10 @@ export * from './components/FAB/AnimatedFAB';
 
 export { default as Badge } from './components/Badge';
 export { default as ActivityIndicator } from './components/ActivityIndicator';
-export { default as Banner } from './components/Banner';
-export { default as BottomNavigation } from './components/BottomNavigation/BottomNavigation';
 export { default as Button } from './components/Button/Button';
 export { default as Card } from './components/Card/Card';
 export { default as Checkbox } from './components/Checkbox';
 export { default as Chip } from './components/Chip/Chip';
-export { default as DataTable } from './components/DataTable/DataTable';
 export { default as Dialog } from './components/Dialog/Dialog';
 export { default as Divider } from './components/Divider';
 export { default as FAB } from './components/FAB';
@@ -80,10 +77,6 @@ export type { Props as AvatarImageProps } from './components/Avatar/AvatarImage'
 export type { Props as AvatarTextProps } from './components/Avatar/AvatarText';
 export type { Props as BadgeProps } from './components/Badge';
 export type { Props as BannerProps } from './components/Banner';
-export type {
-  Props as BottomNavigationProps,
-  BaseRoute as BottomNavigationRoute,
-} from './components/BottomNavigation/BottomNavigation';
 export type { Props as ButtonProps } from './components/Button/Button';
 export type { Props as CardProps } from './components/Card/Card';
 export type { Props as CardActionsProps } from './components/Card/CardActions';
@@ -95,12 +88,6 @@ export type { Props as CheckboxAndroidProps } from './components/Checkbox/Checkb
 export type { Props as CheckboxIOSProps } from './components/Checkbox/CheckboxIOS';
 export type { Props as CheckboxItemProps } from './components/Checkbox/CheckboxItem';
 export type { Props as ChipProps } from './components/Chip/Chip';
-export type { Props as DataTableProps } from './components/DataTable/DataTable';
-export type { Props as DataTableCellProps } from './components/DataTable/DataTableCell';
-export type { Props as DataTableHeaderProps } from './components/DataTable/DataTableHeader';
-export type { Props as DataTablePaginationProps } from './components/DataTable/DataTablePagination';
-export type { Props as DataTableRowProps } from './components/DataTable/DataTableRow';
-export type { Props as DataTableTitleProps } from './components/DataTable/DataTableTitle';
 export type { Props as DialogProps } from './components/Dialog/Dialog';
 export type { Props as DialogActionsProps } from './components/Dialog/DialogActions';
 export type { Props as DialogContentProps } from './components/Dialog/DialogContent';
@@ -153,12 +140,6 @@ export type { Props as TextProps } from './components/Typography/Text';
 export type { Props as SegmentedButtonsProps } from './components/SegmentedButtons/SegmentedButtons';
 export type { Props as ListImageProps } from './components/List/ListImage';
 export type { Props as TooltipProps } from './components/Tooltip/Tooltip';
-export type {
-  MaterialBottomTabNavigationEventMap,
-  MaterialBottomTabNavigationOptions,
-  MaterialBottomTabNavigationProp,
-  MaterialBottomTabScreenProps,
-} from './react-navigation';
 
 export type {
   MD2Theme,

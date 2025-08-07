@@ -34,6 +34,6 @@ export declare const modeTextVariant: {
     readonly large: "headlineMedium";
     readonly 'center-aligned': "titleLarge";
 };
-export declare const renderAppbarContent: ({ children, isDark, shouldCenterContent, isV3, renderOnly, renderExcept, mode, theme, }: RenderAppbarContentProps) => (string | number | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode>)[];
+export declare const renderAppbarContent: ({ children, isDark, shouldCenterContent, isV3, renderOnly, renderExcept, mode, theme, }: RenderAppbarContentProps) => (string | number | bigint | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined>)[];
 export {};
 //# sourceMappingURL=utils.d.ts.map

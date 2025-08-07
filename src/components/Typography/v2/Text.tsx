@@ -9,14 +9,14 @@ import {
 import type { MD2Theme } from 'src/types';
 
 import { useInternalTheme } from '../../../core/theming';
-import { forwardRef } from '../../../utils/forwardRef';
 
-type Props = React.ComponentProps<typeof NativeText> & {
+type Props = React.ComponentPropsWithRef<typeof NativeText> & {
   style?: StyleProp<TextStyle>;
   /**
    * @optional
    */
   theme?: MD2Theme;
+  ref?: any;
 };
 
 // @component-group Typography
@@ -26,10 +26,7 @@ type Props = React.ComponentProps<typeof NativeText> & {
  *
  * @extends Text props https://reactnative.dev/docs/text#props
  */
-const Text: React.ForwardRefRenderFunction<{}, Props> = (
-  { style, theme: overrideTheme, ...rest }: Props,
-  ref
-) => {
+const Text = ({ style, theme: overrideTheme, ref, ...rest }: Props) => {
   const root = React.useRef<NativeText | null>(null);
   const theme = useInternalTheme(overrideTheme);
 
@@ -59,4 +56,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default forwardRef(Text);
+export default Text;

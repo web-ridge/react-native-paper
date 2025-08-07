@@ -3,7 +3,7 @@ import { Text, StyleSheet } from 'react-native';
 
 import StyledText from './StyledText';
 
-export type Props = React.ComponentProps<typeof Text> & {
+export type Props = React.ComponentPropsWithRef<typeof Text> & {
   children: React.ReactNode;
 };
 

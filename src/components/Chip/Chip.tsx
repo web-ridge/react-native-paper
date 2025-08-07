@@ -29,7 +29,10 @@ import TouchableRipple, {
 } from '../TouchableRipple/TouchableRipple';
 import Text from '../Typography/Text';
 
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<
+  React.ComponentPropsWithRef<typeof Surface>,
+  'mode'
+> & {
   /**
    * Mode of the chip.
    * - `flat` - flat chip without outline.
@@ -311,9 +314,10 @@ const Chip = ({
         styles.container,
         isV3 &&
           (isOutlined ? styles.md3OutlineContainer : styles.md3FlatContainer),
-        !theme.isV3 && {
-          elevation: elevationStyle,
-        },
+        !theme.isV3 &&
+          ({
+            elevation: elevationStyle,
+          } as any),
         {
           backgroundColor: selected ? selectedBackgroundColor : backgroundColor,
           borderColor,
@@ -358,7 +362,7 @@ const Chip = ({
             >
               {React.isValidElement(avatar)
                 ? React.cloneElement(avatar as React.ReactElement<any>, {
-                    style: [styles.avatar, avatar.props.style],
+                    style: [styles.avatar, (avatar.props as any).style],
                   })
                 : avatar}
             </View>

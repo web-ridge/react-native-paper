@@ -17,7 +17,7 @@ import { ICON_SIZE } from '../constants';
 import { getConstants } from '../helpers';
 
 export type Props = $Omit<
-  React.ComponentProps<typeof IconButton>,
+  React.ComponentPropsWithRef<typeof IconButton>,
   'icon' | 'theme' | 'color' | 'iconColor'
 > & {
   /**

@@ -1,5 +1,5 @@
 import type * as React from 'react';
-import type { PressableProps as PressableNativeProps, StyleProp, View, ViewStyle } from 'react-native';
+import type { PressableProps as PressableNativeProps, StyleProp, ViewStyle } from 'react-native';
 export type PressableStateCallbackType = {
     hovered: boolean;
     pressed: boolean;
@@ -8,6 +8,7 @@ export type PressableStateCallbackType = {
 export type PressableProps = Omit<PressableNativeProps, 'children' | 'style'> & {
     children: React.ReactNode | ((state: PressableStateCallbackType) => React.ReactNode) | undefined;
     style?: StyleProp<ViewStyle> | ((state: PressableStateCallbackType) => StyleProp<ViewStyle>) | undefined;
+    ref?: any;
 };
-export declare const Pressable: React.ForwardRefExoticComponent<PressableProps & React.RefAttributes<View>>;
+export declare const Pressable: React.ComponentType<PressableProps>;
 //# sourceMappingURL=Pressable.d.ts.map

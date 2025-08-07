@@ -16,7 +16,6 @@ import { getToggleButtonColor } from './utils';
 import { useInternalTheme } from '../../core/theming';
 import { black, white } from '../../styles/themes/v2/colors';
 import type { ThemeProp } from '../../types';
-import { forwardRef } from '../../utils/forwardRef';
 import type { IconSource } from '../Icon';
 import IconButton from '../IconButton/IconButton';
 
@@ -99,60 +98,56 @@ export type Props = {
  *
  * ```
  */
-const ToggleButton = forwardRef<View, Props>(
-  (
-    {
-      icon,
-      size,
-      theme: themeOverrides,
-      accessibilityLabel,
-      disabled,
-      style,
-      value,
-      status,
-      onPress,
-      rippleColor,
-      ...rest
-    }: Props,
-    ref
-  ) => {
-    const theme = useInternalTheme(themeOverrides);
-    const borderRadius = theme.roundness;
+const ToggleButton = ({
+  icon,
+  size,
+  theme: themeOverrides,
+  accessibilityLabel,
+  disabled,
+  style,
+  value,
+  status,
+  onPress,
+  rippleColor,
+  ref,
+  ...rest
+}: Props) => {
+  const theme = useInternalTheme(themeOverrides);
+  const borderRadius = theme.roundness;
 
-    return (
-      <ToggleButtonGroupContext.Consumer>
-        {(
-          context: { value: string | null; onValueChange: Function } | null
-        ) => {
-          const checked: boolean | null =
-            (context && context.value === value) || status === 'checked';
+  return (
+    <ToggleButtonGroupContext.Consumer>
+      {(context: { value: string | null; onValueChange: Function } | null) => {
+        const checked: boolean | null =
+          (context && context.value === value) || status === 'checked';
 
-          const backgroundColor = getToggleButtonColor({ theme, checked });
-          const borderColor = theme.isV3
-            ? theme.colors.outline
-            : color(theme.dark ? white : black)
-                .alpha(0.29)
-                .rgb()
-                .string();
+        const backgroundColor = getToggleButtonColor({ theme, checked });
+        const borderColor = theme.isV3
+          ? theme.colors.outline
+          : color(theme.dark ? white : black)
+              .alpha(0.29)
+              .rgb()
+              .string();
 
-          return (
-            <IconButton
-              borderless={false}
-              icon={icon}
-              onPress={(e?: GestureResponderEvent | string) => {
-                if (onPress) {
-                  onPress(e);
-                }
+        return (
+          <IconButton
+            borderless={false}
+            icon={icon}
+            onPress={(e?: GestureResponderEvent | string) => {
+              if (onPress) {
+                onPress(e);
+              }
 
-                if (context) {
-                  context.onValueChange(!checked ? value : null);
-                }
-              }}
-              size={size}
-              accessibilityLabel={accessibilityLabel}
-              accessibilityState={{ disabled, selected: checked }}
-              disabled={disabled}
-              style={[
+              if (context) {
+                context.onValueChange(!checked ? value : null);
+              }
+            }}
+            size={size}
+            accessibilityLabel={accessibilityLabel}
+            accessibilityState={{ disabled, selected: checked }}
+            disabled={disabled}
+            style={
+              [
                 styles.content,
                 {
                   backgroundColor,
@@ -160,18 +155,18 @@ const ToggleButton = forwardRef<View, Props>(
                   borderColor,
                 },
                 style,
-              ]}
-              ref={ref}
-              theme={theme}
-              rippleColor={rippleColor}
-              {...rest}
-            />
-          );
-        }}
-      </ToggleButtonGroupContext.Consumer>
-    );
-  }
-);
+              ] as any
+            }
+            ref={ref}
+            theme={theme}
+            rippleColor={rippleColor}
+            {...rest}
+          />
+        );
+      }}
+    </ToggleButtonGroupContext.Consumer>
+  );
+};
 
 const styles = StyleSheet.create({
   content: {

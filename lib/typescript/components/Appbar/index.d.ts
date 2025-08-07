@@ -4,8 +4,14 @@ declare const Appbar: (({ children, dark, style, mode, elevated, safeAreaInsets,
         ({ color: titleColor, subtitle, subtitleStyle, onPress, disabled, style, titleRef, titleStyle, title, titleMaxFontSizeMultiplier, mode, theme: themeOverrides, testID, ...rest }: import("./AppbarContent").Props): import("react").JSX.Element;
         displayName: string;
     };
-    Action: import("../../utils/forwardRef").ForwardRefComponent<import("react-native").View, import("./AppbarAction").Props>;
-    BackAction: import("../../utils/forwardRef").ForwardRefComponent<import("react-native").View, import("./AppbarBackAction").Props>;
+    Action: {
+        ({ size, color: iconColor, icon, disabled, onPress, accessibilityLabel, isLeading, theme: themeOverrides, rippleColor, ref, ...rest }: import("./AppbarAction").Props): import("react").JSX.Element;
+        displayName: string;
+    };
+    BackAction: {
+        ({ accessibilityLabel, ref, ...rest }: import("./AppbarBackAction").Props): import("react").JSX.Element;
+        displayName: string;
+    };
     Header: {
         ({ statusBarHeight, style, dark, mode, elevated, theme: themeOverrides, testID, ...rest }: import("./AppbarHeader").Props): import("react").JSX.Element;
         displayName: string;

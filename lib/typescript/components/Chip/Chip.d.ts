@@ -4,7 +4,7 @@ import type { $Omit, EllipsizeProp, ThemeProp } from '../../types';
 import type { IconSource } from '../Icon';
 import Surface from '../Surface';
 import { MouseEventType } from '../TouchableRipple/TouchableRipple';
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<React.ComponentPropsWithRef<typeof Surface>, 'mode'> & {
     /**
      * Mode of the chip.
      * - `flat` - flat chip without outline.

@@ -474,33 +474,35 @@ const AnimatedFAB = ({
           numberOfLines={1}
           onTextLayout={isIOS ? onTextLayout : undefined}
           ellipsizeMode={'tail'}
-          style={[
-            {
-              [isAnimatedFromRight || isRTL ? 'right' : 'left']: isIconStatic
-                ? textWidth - SIZE + borderRadius / (isV3 ? 1 : 2)
-                : borderRadius,
-            },
-            {
-              minWidth: textWidth,
-              top: -SIZE / 2 - textHeight / 2,
-              opacity: animFAB.interpolate({
-                inputRange: propForDirection([distance, 0.7 * distance, 0]),
-                outputRange: propForDirection([1, 0, 0]),
-              }) as unknown as number,
-              // TODO: check
-              transform: [
-                {
-                  translateX: animFAB.interpolate({
-                    inputRange: propForDirection([distance, 0]),
-                    outputRange: propForDirection([0, SIZE]),
-                  }),
-                },
-              ],
-            },
-            styles.label,
-            uppercase && styles.uppercaseLabel,
-            textStyle,
-          ]}
+          style={
+            [
+              {
+                [isAnimatedFromRight || isRTL ? 'right' : 'left']: isIconStatic
+                  ? textWidth - SIZE + borderRadius / (isV3 ? 1 : 2)
+                  : borderRadius,
+              },
+              {
+                minWidth: textWidth,
+                top: -SIZE / 2 - textHeight / 2,
+                opacity: animFAB.interpolate({
+                  inputRange: propForDirection([distance, 0.7 * distance, 0]),
+                  outputRange: propForDirection([1, 0, 0]),
+                }) as unknown as number,
+                // TODO: check
+                transform: [
+                  {
+                    translateX: animFAB.interpolate({
+                      inputRange: propForDirection([distance, 0]),
+                      outputRange: propForDirection([0, SIZE]),
+                    }),
+                  },
+                ],
+              },
+              styles.label,
+              uppercase && styles.uppercaseLabel,
+              textStyle,
+            ] as any
+          }
           theme={theme}
           testID={`${testID}-text`}
           maxFontSizeMultiplier={labelMaxFontSizeMultiplier}
@@ -520,11 +522,13 @@ const AnimatedFAB = ({
             numberOfLines={1}
             onTextLayout={onTextLayout}
             ellipsizeMode={'tail'}
-            style={[
-              styles.label,
-              uppercase && styles.uppercaseLabel,
-              textStyle,
-            ]}
+            style={
+              [
+                styles.label,
+                uppercase && styles.uppercaseLabel,
+                textStyle,
+              ] as any
+            }
             theme={theme}
           >
             {label}

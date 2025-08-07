@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { GestureResponderEvent, StyleProp, TextStyle, View, ViewStyle } from 'react-native';
 import type { $RemoveChildren, ThemeProp } from '../../types';
-import { TextRef } from '../Typography/Text';
 type TitleString = {
     title: string;
     titleStyle?: StyleProp<TextStyle>;
@@ -22,7 +21,7 @@ export type Props = $RemoveChildren<typeof View> & {
     /**
      * Reference for the title.
      */
-    titleRef?: React.RefObject<TextRef>;
+    titleRef?: React.RefObject<any>;
     /**
      * @deprecated Deprecated in v5.x
      * Text for the subtitle.

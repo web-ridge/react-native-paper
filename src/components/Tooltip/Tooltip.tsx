@@ -84,7 +84,8 @@ const Tooltip = ({
   });
   const showTooltipTimer = React.useRef<NodeJS.Timeout[]>([]);
   const hideTooltipTimer = React.useRef<NodeJS.Timeout[]>([]);
-  const childrenWrapperRef = React.useRef() as React.MutableRefObject<View>;
+  //@ts-expect-error
+  const childrenWrapperRef = React.useRef(null) as React.MutableRefObject<View>;
   const touched = React.useRef(false);
 
   React.useEffect(() => {
@@ -158,8 +159,8 @@ const Tooltip = ({
       if (touched.current) {
         return null;
       } else {
-        if (children.props.disabled) return null;
-        return children.props.onPress?.();
+        if ((children.props as any).disabled) return null;
+        return (children.props as any).onPress?.();
       }
     }, [children.props]),
     onLongPress: () => handleTouchStart(),
@@ -170,11 +171,11 @@ const Tooltip = ({
   const webPressProps = {
     onHoverIn: () => {
       handleTouchStart();
-      children.props.onHoverIn?.();
+      (children.props as any).onHoverIn?.();
     },
     onHoverOut: () => {
       handleTouchEnd();
-      children.props.onHoverOut?.();
+      (children.props as any).onHoverOut?.();
     },
   };
 
@@ -190,7 +191,10 @@ const Tooltip = ({
                 backgroundColor: theme.isV3
                   ? theme.colors.onSurface
                   : theme.colors.tooltip,
-                ...getTooltipPosition(measurement as Measurement, children),
+                ...getTooltipPosition(
+                  measurement as Measurement,
+                  children as any
+                ),
                 borderRadius: theme.roundness,
                 ...(measurement.measured ? styles.visible : styles.hidden),
               },

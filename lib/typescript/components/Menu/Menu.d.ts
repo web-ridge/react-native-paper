@@ -185,7 +185,7 @@ declare class Menu extends React.Component<Props, State> {
     private keyboardDidHide;
     render(): React.JSX.Element;
 }
-declare const _default: React.ComponentType<Pick<Props, "style" | "children" | "anchor" | "visible" | "elevation" | "testID" | "mode" | "contentStyle" | "keyboardShouldPersistTaps" | "anchorPosition" | "statusBarHeight" | "onDismiss" | "overlayAccessibilityLabel"> & {
+declare const _default: React.ComponentType<Pick<Props, "style" | "children" | "anchor" | "visible" | "elevation" | "testID" | "mode" | "contentStyle" | "keyboardShouldPersistTaps" | "overlayAccessibilityLabel" | "onDismiss" | "anchorPosition" | "statusBarHeight"> & {
     theme?: import("@callstack/react-theme-provider").$DeepPartial<unknown> | undefined;
 }> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<React.ComponentType<Props> & typeof Menu, {}>;
 export default _default;

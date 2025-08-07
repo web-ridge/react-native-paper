@@ -18,7 +18,6 @@ import color from 'color';
 import { ButtonMode, getButtonColors } from './utils';
 import { useInternalTheme } from '../../core/theming';
 import type { $Omit, ThemeProp } from '../../types';
-import { forwardRef } from '../../utils/forwardRef';
 import hasTouchHandler from '../../utils/hasTouchHandler';
 import { splitStyles } from '../../utils/splitStyles';
 import ActivityIndicator from '../ActivityIndicator';
@@ -29,7 +28,10 @@ import TouchableRipple, {
 } from '../TouchableRipple/TouchableRipple';
 import Text from '../Typography/Text';
 
-export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
+export type Props = $Omit<
+  React.ComponentPropsWithRef<typeof Surface>,
+  'mode'
+> & {
   /**
    * Mode of the button. You can change the mode to adjust the styling to give it desired emphasis.
    * - `text` - flat button without background or outline, used for the lowest priority actions, especially when presenting multiple options.
@@ -177,42 +179,40 @@ export type Props = $Omit<React.ComponentProps<typeof Surface>, 'mode'> & {
  * export default MyComponent;
  * ```
  */
-const Button = (
-  {
-    disabled,
-    compact,
-    mode = 'text',
-    dark,
-    loading,
-    icon,
-    buttonColor: customButtonColor,
-    textColor: customTextColor,
-    rippleColor: customRippleColor,
-    children,
-    accessibilityLabel,
-    accessibilityHint,
-    accessibilityRole = 'button',
-    onPress,
-    onPressIn,
-    onPressOut,
-    onLongPress,
-    onHoverIn,
-    onHoverOut,
-    delayLongPress,
-    style,
-    theme: themeOverrides,
-    uppercase: uppercaseProp,
-    contentStyle,
-    labelStyle,
-    testID = 'button',
-    accessible,
-    background,
-    maxFontSizeMultiplier,
-    touchableRef,
-    ...rest
-  }: Props,
-  ref: React.ForwardedRef<View>
-) => {
+const Button = ({
+  disabled,
+  compact,
+  mode = 'text',
+  dark,
+  loading,
+  icon,
+  buttonColor: customButtonColor,
+  textColor: customTextColor,
+  rippleColor: customRippleColor,
+  children,
+  accessibilityLabel,
+  accessibilityHint,
+  accessibilityRole = 'button',
+  onPress,
+  onPressIn,
+  onPressOut,
+  onLongPress,
+  onHoverIn,
+  onHoverOut,
+  delayLongPress,
+  style,
+  theme: themeOverrides,
+  uppercase: uppercaseProp,
+  contentStyle,
+  labelStyle,
+  testID = 'button',
+  accessible,
+  background,
+  maxFontSizeMultiplier,
+  touchableRef,
+  ref,
+  ...rest
+}: Props) => {
   const theme = useInternalTheme(themeOverrides);
   const isMode = React.useCallback(
     (modeToCompare: ButtonMode) => {
@@ -344,7 +344,7 @@ const Button = (
           buttonStyle,
           style,
           !isV3 && !disabled && { elevation },
-        ] as ViewStyle
+        ] as any
       }
       {...(isV3 && { elevation: elevation })}
     >
@@ -505,4 +505,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default forwardRef(Button);
+export default Button;

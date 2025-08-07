@@ -169,7 +169,7 @@ export type Props = $Omit<$RemoveChildren<typeof Surface>, 'mode'> & {
  * export default MyComponent;
  * ```
  */
-declare const FAB: import("../../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const FAB: ({ icon, label, background, accessibilityLabel, accessibilityState, animated, color: customColor, rippleColor: customRippleColor, disabled, onPress, onPressIn, onPressOut, onHoverIn, onHoverOut, onLongPress, delayLongPress, theme: themeOverrides, style, visible, uppercase: uppercaseProp, loading, testID, size, customSize, mode, variant, labelMaxFontSizeMultiplier, ref, ...rest }: Props) => React.JSX.Element;
 export default FAB;
 export { FAB };
 //# sourceMappingURL=FAB.d.ts.map

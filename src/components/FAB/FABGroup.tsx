@@ -398,19 +398,21 @@ const FABGroup = ({
                       accessibilityHint={it.accessibilityHint}
                       importantForAccessibility="no-hide-descendants"
                       accessibilityElementsHidden={true}
-                      style={[
-                        styles.containerStyle,
-                        {
-                          transform: [
-                            isV3
-                              ? { translateY: labelTranslations[i] }
-                              : { scale: scales[i] },
-                          ],
-                          opacity: opacities[i],
-                        },
-                        isV3 && styles.v3ContainerStyle,
-                        it.containerStyle,
-                      ]}
+                      style={
+                        [
+                          styles.containerStyle,
+                          {
+                            transform: [
+                              isV3
+                                ? { translateY: labelTranslations[i] }
+                                : { scale: scales[i] },
+                            ],
+                            opacity: opacities[i],
+                          },
+                          isV3 && styles.v3ContainerStyle,
+                          it.containerStyle,
+                        ] as any
+                      }
                     >
                       <Text
                         variant="titleMedium"
@@ -428,15 +430,17 @@ const FABGroup = ({
                   size={size}
                   icon={it.icon}
                   color={it.color}
-                  style={[
-                    {
-                      transform: [{ scale: scales[i] }],
-                      opacity: opacities[i],
-                      backgroundColor: stackedFABBackgroundColor,
-                    },
-                    isV3 && { transform: [{ translateY: translations[i] }] },
-                    it.style,
-                  ]}
+                  style={
+                    [
+                      {
+                        transform: [{ scale: scales[i] }],
+                        opacity: opacities[i],
+                        backgroundColor: stackedFABBackgroundColor,
+                      },
+                      isV3 && { transform: [{ translateY: translations[i] }] },
+                      it.style,
+                    ] as any
+                  }
                   accessibilityElementsHidden={true}
                   theme={theme}
                   onPress={(e) => {
@@ -473,7 +477,7 @@ const FABGroup = ({
           accessibilityLabel={accessibilityLabel}
           accessibilityRole="button"
           accessibilityState={{ expanded: open }}
-          style={[styles.fab, fabStyle]}
+          style={[styles.fab, fabStyle as any]}
           theme={theme}
           visible={visible}
           label={label}

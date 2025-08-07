@@ -17,7 +17,6 @@ import { getTouchableRippleColors } from './utils';
 import { Settings, SettingsContext } from '../../core/settings';
 import { useInternalTheme } from '../../core/theming';
 import type { ThemeProp } from '../../types';
-import { forwardRef } from '../../utils/forwardRef';
 import hasTouchHandler from '../../utils/hasTouchHandler';
 
 export type Props = PressableProps & {
@@ -312,6 +311,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const Component = forwardRef(TouchableRipple);
+const Component = TouchableRipple;
 
 export default Component as typeof Component & { supported: boolean };

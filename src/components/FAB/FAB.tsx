@@ -14,7 +14,6 @@ import {
 import { getExtendedFabStyle, getFABColors, getFabStyle } from './utils';
 import { useInternalTheme } from '../../core/theming';
 import type { $Omit, $RemoveChildren, ThemeProp } from '../../types';
-import { forwardRef } from '../../utils/forwardRef';
 import ActivityIndicator from '../ActivityIndicator';
 import CrossFadeIcon from '../CrossFadeIcon';
 import Icon, { IconSource } from '../Icon';
@@ -198,179 +197,175 @@ export type Props = $Omit<$RemoveChildren<typeof Surface>, 'mode'> & {
  * export default MyComponent;
  * ```
  */
-const FAB = forwardRef<View, Props>(
-  (
-    {
-      icon,
-      label,
-      background,
-      accessibilityLabel = label,
-      accessibilityState,
-      animated = true,
-      color: customColor,
-      rippleColor: customRippleColor,
-      disabled,
-      onPress,
-      onPressIn,
-      onPressOut,
-      onHoverIn,
-      onHoverOut,
-      onLongPress,
-      delayLongPress,
-      theme: themeOverrides,
-      style,
-      visible = true,
-      uppercase: uppercaseProp,
-      loading,
-      testID = 'fab',
-      size = 'medium',
-      customSize,
-      mode = 'elevated',
-      variant = 'primary',
-      labelMaxFontSizeMultiplier,
-      ...rest
-    }: Props,
-    ref
-  ) => {
-    const theme = useInternalTheme(themeOverrides);
-    const uppercase = uppercaseProp ?? !theme.isV3;
-    const { current: visibility } = React.useRef<Animated.Value>(
-      new Animated.Value(visible ? 1 : 0)
-    );
-    const { isV3, animation } = theme;
-    const { scale } = animation;
+const FAB = ({
+  icon,
+  label,
+  background,
+  accessibilityLabel = label,
+  accessibilityState,
+  animated = true,
+  color: customColor,
+  rippleColor: customRippleColor,
+  disabled,
+  onPress,
+  onPressIn,
+  onPressOut,
+  onHoverIn,
+  onHoverOut,
+  onLongPress,
+  delayLongPress,
+  theme: themeOverrides,
+  style,
+  visible = true,
+  uppercase: uppercaseProp,
+  loading,
+  testID = 'fab',
+  size = 'medium',
+  customSize,
+  mode = 'elevated',
+  variant = 'primary',
+  labelMaxFontSizeMultiplier,
+  ref,
+  ...rest
+}: Props) => {
+  const theme = useInternalTheme(themeOverrides);
+  const uppercase = uppercaseProp ?? !theme.isV3;
+  const { current: visibility } = React.useRef<Animated.Value>(
+    new Animated.Value(visible ? 1 : 0)
+  );
+  const { isV3, animation } = theme;
+  const { scale } = animation;
 
-    React.useEffect(() => {
-      if (visible) {
-        Animated.timing(visibility, {
-          toValue: 1,
-          duration: 200 * scale,
-          useNativeDriver: true,
-        }).start();
-      } else {
-        Animated.timing(visibility, {
-          toValue: 0,
-          duration: 150 * scale,
-          useNativeDriver: true,
-        }).start();
-      }
-    }, [visible, scale, visibility]);
+  React.useEffect(() => {
+    if (visible) {
+      Animated.timing(visibility, {
+        toValue: 1,
+        duration: 200 * scale,
+        useNativeDriver: true,
+      }).start();
+    } else {
+      Animated.timing(visibility, {
+        toValue: 0,
+        duration: 150 * scale,
+        useNativeDriver: true,
+      }).start();
+    }
+  }, [visible, scale, visibility]);
 
-    const IconComponent = animated ? CrossFadeIcon : Icon;
+  const IconComponent = animated ? CrossFadeIcon : Icon;
 
-    const fabStyle = getFabStyle({ customSize, size, theme });
+  const fabStyle = getFabStyle({ customSize, size, theme });
 
-    const {
-      borderRadius = fabStyle.borderRadius,
-      backgroundColor: customBackgroundColor,
-    } = (StyleSheet.flatten(style) || {}) as ViewStyle;
+  const {
+    borderRadius = fabStyle.borderRadius,
+    backgroundColor: customBackgroundColor,
+  } = (StyleSheet.flatten(style) || {}) as ViewStyle;
 
-    const { backgroundColor, foregroundColor, rippleColor } = getFABColors({
-      theme,
-      variant,
-      disabled,
-      customColor,
-      customBackgroundColor,
-      customRippleColor,
-    });
+  const { backgroundColor, foregroundColor, rippleColor } = getFABColors({
+    theme,
+    variant,
+    disabled,
+    customColor,
+    customBackgroundColor,
+    customRippleColor,
+  });
 
-    const isLargeSize = size === 'large';
-    const isFlatMode = mode === 'flat';
-    const iconSize = isLargeSize ? 36 : 24;
-    const loadingIndicatorSize = isLargeSize ? 24 : 18;
-    const font = isV3 ? theme.fonts.labelLarge : theme.fonts.medium;
+  const isLargeSize = size === 'large';
+  const isFlatMode = mode === 'flat';
+  const iconSize = isLargeSize ? 36 : 24;
+  const loadingIndicatorSize = isLargeSize ? 24 : 18;
+  const font = isV3 ? theme.fonts.labelLarge : theme.fonts.medium;
 
-    const extendedStyle = getExtendedFabStyle({ customSize, theme });
-    const textStyle = {
-      color: foregroundColor,
-      ...font,
-    };
+  const extendedStyle = getExtendedFabStyle({ customSize, theme });
+  const textStyle = {
+    color: foregroundColor,
+    ...font,
+  };
 
-    const md3Elevation = isFlatMode || disabled ? 0 : 3;
+  const md3Elevation = isFlatMode || disabled ? 0 : 3;
 
-    const newAccessibilityState = { ...accessibilityState, disabled };
+  const newAccessibilityState = { ...accessibilityState, disabled };
 
-    return (
-      <Surface
-        ref={ref}
+  return (
+    <Surface
+      ref={ref}
+      {...rest}
+      style={[
+        {
+          borderRadius,
+          backgroundColor,
+          opacity: visibility,
+          transform: [
+            {
+              scale: visibility,
+            },
+          ],
+        },
+        !isV3 && styles.elevated,
+        !isV3 && disabled && styles.disabled,
+        style,
+      ]}
+      pointerEvents={visible ? 'auto' : 'none'}
+      testID={`${testID}-container`}
+      {...(isV3 && { elevation: md3Elevation })}
+    >
+      <TouchableRipple
+        borderless
+        background={background}
+        onPress={onPress}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onHoverIn={onHoverIn}
+        onHoverOut={onHoverOut}
+        onLongPress={onLongPress}
+        delayLongPress={delayLongPress}
+        rippleColor={rippleColor}
+        disabled={disabled}
+        accessibilityLabel={accessibilityLabel}
+        accessibilityRole="button"
+        accessibilityState={newAccessibilityState}
+        testID={testID}
+        style={{ borderRadius }}
         {...rest}
-        style={[
-          {
-            borderRadius,
-            backgroundColor,
-            opacity: visibility,
-            transform: [
-              {
-                scale: visibility,
-              },
-            ],
-          },
-          !isV3 && styles.elevated,
-          !isV3 && disabled && styles.disabled,
-          style,
-        ]}
-        pointerEvents={visible ? 'auto' : 'none'}
-        testID={`${testID}-container`}
-        {...(isV3 && { elevation: md3Elevation })}
       >
-        <TouchableRipple
-          borderless
-          background={background}
-          onPress={onPress}
-          onPressIn={onPressIn}
-          onPressOut={onPressOut}
-          onHoverIn={onHoverIn}
-          onHoverOut={onHoverOut}
-          onLongPress={onLongPress}
-          delayLongPress={delayLongPress}
-          rippleColor={rippleColor}
-          disabled={disabled}
-          accessibilityLabel={accessibilityLabel}
-          accessibilityRole="button"
-          accessibilityState={newAccessibilityState}
-          testID={testID}
-          style={{ borderRadius }}
-          {...rest}
+        <View
+          style={[styles.content, label ? extendedStyle : fabStyle]}
+          testID={`${testID}-content`}
+          pointerEvents="none"
         >
-          <View
-            style={[styles.content, label ? extendedStyle : fabStyle]}
-            testID={`${testID}-content`}
-            pointerEvents="none"
-          >
-            {icon && loading !== true ? (
-              <IconComponent
-                source={icon}
-                size={customSize ? customSize / 2 : iconSize}
-                color={foregroundColor}
-              />
-            ) : null}
-            {loading ? (
-              <ActivityIndicator
-                size={customSize ? customSize / 2 : loadingIndicatorSize}
-                color={foregroundColor}
-              />
-            ) : null}
-            {label ? (
-              <Text
-                variant="labelLarge"
-                selectable={false}
-                testID={`${testID}-text`}
-                style={[
-                  styles.label,
-                  uppercase && styles.uppercaseLabel,
-                  textStyle,
-                ]}
-                maxFontSizeMultiplier={labelMaxFontSizeMultiplier}
-              >
-                {label}
-              </Text>
-            ) : null}
-          </View>
-        </TouchableRipple>
-      </Surface>
-    );
-  }
-);
+          {icon && loading !== true ? (
+            <IconComponent
+              source={icon}
+              size={customSize ? customSize / 2 : iconSize}
+              color={foregroundColor}
+            />
+          ) : null}
+          {loading ? (
+            <ActivityIndicator
+              size={customSize ? customSize / 2 : loadingIndicatorSize}
+              color={foregroundColor}
+            />
+          ) : null}
+          {label ? (
+            <Text
+              variant="labelLarge"
+              selectable={false}
+              testID={`${testID}-text`}
+              style={[
+                styles.label,
+                uppercase && styles.uppercaseLabel,
+                textStyle,
+              ]}
+              maxFontSizeMultiplier={labelMaxFontSizeMultiplier}
+            >
+              {label}
+            </Text>
+          ) : null}
+        </View>
+      </TouchableRipple>
+    </Surface>
+  );
+};
 
 const styles = StyleSheet.create({
   elevated: {

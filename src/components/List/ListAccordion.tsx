@@ -258,7 +258,11 @@ const ListAccordion = ({
             {left
               ? left({
                   color: isExpanded ? theme.colors?.primary : descriptionColor,
-                  style: getLeftStyles(alignToTop, description, theme.isV3),
+                  style: getLeftStyles(
+                    alignToTop,
+                    description as any,
+                    theme.isV3
+                  ),
                 })
               : null}
             <View
@@ -321,13 +325,13 @@ const ListAccordion = ({
             if (
               left &&
               React.isValidElement(child) &&
-              !child.props.left &&
-              !child.props.right
+              !(child.props as any).left &&
+              !(child.props as any).right
             ) {
               return React.cloneElement(child as React.ReactElement<any>, {
                 style: [
                   theme.isV3 ? styles.childV3 : styles.child,
-                  child.props.style,
+                  (child.props as any).style,
                 ],
                 theme,
               });

@@ -2,7 +2,7 @@ import * as React from 'react';
 import type { Animated, GestureResponderEvent, StyleProp, View, ViewStyle } from 'react-native';
 import type { $Omit } from './../../types';
 import AppbarAction from './AppbarAction';
-export type Props = $Omit<React.ComponentPropsWithoutRef<typeof AppbarAction>, 'icon'> & {
+export type Props = $Omit<React.ComponentPropsWithRef<typeof AppbarAction>, 'icon'> & {
     /**
      *  Custom color for back icon.
      */
@@ -43,7 +43,10 @@ export type Props = $Omit<React.ComponentPropsWithoutRef<typeof AppbarAction>, '
  * export default MyComponent;
  * ```
  */
-declare const AppbarBackAction: import("../../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const AppbarBackAction: {
+    ({ accessibilityLabel, ref, ...rest }: Props): React.JSX.Element;
+    displayName: string;
+};
 export default AppbarBackAction;
 export { AppbarBackAction };
 //# sourceMappingURL=AppbarBackAction.d.ts.map

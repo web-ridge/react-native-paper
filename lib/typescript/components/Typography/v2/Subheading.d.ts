@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, TextStyle, StyleProp } from 'react-native';
-export type Props = React.ComponentProps<typeof Text> & {
+export type Props = React.ComponentPropsWithRef<typeof Text> & {
     style?: StyleProp<TextStyle>;
     children: React.ReactNode;
 };

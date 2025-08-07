@@ -15,7 +15,6 @@ import color from 'color';
 import { Style, getLeftStyles, getRightStyles } from './utils';
 import { useInternalTheme } from '../../core/theming';
 import type { $RemoveChildren, EllipsizeProp, ThemeProp } from '../../types';
-import { forwardRef } from '../../utils/forwardRef';
 import TouchableRipple from '../TouchableRipple/TouchableRipple';
 import Text from '../Typography/Text';
 
@@ -242,7 +241,7 @@ const ListItem = (
         {left
           ? left({
               color: descriptionColor,
-              style: getLeftStyles(alignToTop, description, theme.isV3),
+              style: getLeftStyles(alignToTop, description as any, theme.isV3),
             })
           : null}
         <View
@@ -262,7 +261,7 @@ const ListItem = (
         {right
           ? right({
               color: descriptionColor,
-              style: getRightStyles(alignToTop, description, theme.isV3),
+              style: getRightStyles(alignToTop, description as any, theme.isV3),
             })
           : null}
       </View>
@@ -270,8 +269,7 @@ const ListItem = (
   );
 };
 
-const Component = forwardRef(ListItem);
-Component.displayName = 'List.Item';
+const Component = ListItem;
 
 const styles = StyleSheet.create({
   container: {

@@ -54,7 +54,13 @@ export type Props = PressableProps & {
      */
     theme?: ThemeProp;
 };
-declare const _default: import("../../utils/forwardRef").ForwardRefComponent<View, Props> & {
+declare const _default: {
+    ({ style, background: _background, borderless, disabled: disabledProp, rippleColor, underlayColor: _underlayColor, children, theme: themeOverrides, ...rest }: Props, ref: React.ForwardedRef<View>): React.JSX.Element;
+    /**
+     * Whether ripple effect is supported.
+     */
+    supported: boolean;
+} & {
     supported: boolean;
 };
 export default _default;

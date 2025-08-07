@@ -70,14 +70,6 @@
       "path": "lib/module/components/ActivityIndicator",
       "name": "default"
     },
-    "Banner": {
-      "path": "lib/module/components/Banner",
-      "name": "default"
-    },
-    "BottomNavigation": {
-      "path": "lib/module/components/BottomNavigation/BottomNavigation",
-      "name": "default"
-    },
     "Button": {
       "path": "lib/module/components/Button/Button",
       "name": "default"
@@ -92,10 +84,6 @@
     },
     "Chip": {
       "path": "lib/module/components/Chip/Chip",
-      "name": "default"
-    },
-    "DataTable": {
-      "path": "lib/module/components/DataTable/DataTable",
       "name": "default"
     },
     "Dialog": {
@@ -262,14 +250,6 @@
       "path": "lib/module/components/Banner",
       "name": "Props"
     },
-    "BottomNavigationProps": {
-      "path": "lib/module/components/BottomNavigation/BottomNavigation",
-      "name": "Props"
-    },
-    "BottomNavigationRoute": {
-      "path": "lib/module/components/BottomNavigation/BottomNavigation",
-      "name": "BaseRoute"
-    },
     "ButtonProps": {
       "path": "lib/module/components/Button/Button",
       "name": "Props"
@@ -312,30 +292,6 @@
     },
     "ChipProps": {
       "path": "lib/module/components/Chip/Chip",
-      "name": "Props"
-    },
-    "DataTableProps": {
-      "path": "lib/module/components/DataTable/DataTable",
-      "name": "Props"
-    },
-    "DataTableCellProps": {
-      "path": "lib/module/components/DataTable/DataTableCell",
-      "name": "Props"
-    },
-    "DataTableHeaderProps": {
-      "path": "lib/module/components/DataTable/DataTableHeader",
-      "name": "Props"
-    },
-    "DataTablePaginationProps": {
-      "path": "lib/module/components/DataTable/DataTablePagination",
-      "name": "Props"
-    },
-    "DataTableRowProps": {
-      "path": "lib/module/components/DataTable/DataTableRow",
-      "name": "Props"
-    },
-    "DataTableTitleProps": {
-      "path": "lib/module/components/DataTable/DataTableTitle",
       "name": "Props"
     },
     "DialogProps": {
@@ -545,22 +501,6 @@
     "TooltipProps": {
       "path": "lib/module/components/Tooltip/Tooltip",
       "name": "Props"
-    },
-    "MaterialBottomTabNavigationEventMap": {
-      "path": "lib/module/react-navigation",
-      "name": "MaterialBottomTabNavigationEventMap"
-    },
-    "MaterialBottomTabNavigationOptions": {
-      "path": "lib/module/react-navigation",
-      "name": "MaterialBottomTabNavigationOptions"
-    },
-    "MaterialBottomTabNavigationProp": {
-      "path": "lib/module/react-navigation",
-      "name": "MaterialBottomTabNavigationProp"
-    },
-    "MaterialBottomTabScreenProps": {
-      "path": "lib/module/react-navigation",
-      "name": "MaterialBottomTabScreenProps"
     },
     "MD2Theme": {
       "path": "lib/module/types",

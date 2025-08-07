@@ -159,7 +159,7 @@ export type MD3ElevationColors = {
     [key in keyof typeof ElevationLevels]: string;
 };
 export type $Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
-export type $RemoveChildren<T extends React.ComponentType<any>> = $Omit<React.ComponentPropsWithoutRef<T>, 'children'>;
+export type $RemoveChildren<T extends React.ComponentType<any>> = $Omit<React.ComponentPropsWithRef<T>, 'children'>;
 export type EllipsizeProp = 'head' | 'middle' | 'tail' | 'clip';
 export type NavigationTheme = {
     dark: boolean;

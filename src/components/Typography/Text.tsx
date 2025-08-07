@@ -12,9 +12,8 @@ import type { VariantProp } from './types';
 import StyledText from './v2/StyledText';
 import { useInternalTheme } from '../../core/theming';
 import type { ThemeProp } from '../../types';
-import { forwardRef } from '../../utils/forwardRef';
 
-export type Props<T> = React.ComponentProps<typeof NativeText> & {
+export type Props<T> = React.ComponentPropsWithRef<typeof NativeText> & {
   /**
    * @supported Available in v5.x with theme version 3
    *
@@ -80,15 +79,19 @@ export type TextRef = React.ForwardedRef<{
  *
  * @extends Text props https://reactnative.dev/docs/text#props
  */
-const Text = (
-  { style, variant, theme: initialTheme, ...rest }: Props<string>,
-  ref: TextRef
-) => {
+const Text = ({
+  style,
+  variant,
+  theme: initialTheme,
+  ref,
+  ...rest
+}: Props<string>) => {
   const root = React.useRef<NativeText | null>(null);
   // FIXME: destructure it in TS 4.6+
   const theme = useInternalTheme(initialTheme);
   const writingDirection = I18nManager.getConstants().isRTL ? 'rtl' : 'ltr';
 
+  // @ts-ignore
   React.useImperativeHandle(ref, () => ({
     setNativeProps: (args: Object) => root.current?.setNativeProps(args),
   }));
@@ -103,7 +106,7 @@ const Text = (
         rest.children.type === AnimatedText ||
         rest.children.type === StyledText)
     ) {
-      const { props } = rest.children;
+      const props = rest.children.props as any;
 
       // Context:   Some components have the built-in `Text` component with a predefined variant,
       //            that also accepts `children` as a `React.Node`. This can result in a situation,
@@ -173,11 +176,9 @@ const styles = StyleSheet.create({
   },
 });
 
-type TextComponent<T> = (
-  props: Props<T> & { ref?: React.RefObject<TextRef> }
-) => JSX.Element;
+type TextComponent<T> = (props: Props<T>) => JSX.Element;
 
-const Component = forwardRef(Text) as TextComponent<never>;
+const Component = Text;
 
 export const customText = <T,>() => Component as unknown as TextComponent<T>;
 

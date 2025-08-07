@@ -18,7 +18,7 @@ import { modeTextVariant } from './utils';
 import { useInternalTheme } from '../../core/theming';
 import { white } from '../../styles/themes/v2/colors';
 import type { $RemoveChildren, MD3TypescaleKey, ThemeProp } from '../../types';
-import Text, { TextRef } from '../Typography/Text';
+import Text from '../Typography/Text';
 
 type TitleString = {
   title: string;
@@ -41,7 +41,7 @@ export type Props = $RemoveChildren<typeof View> & {
   /**
    * Reference for the title.
    */
-  titleRef?: React.RefObject<TextRef>;
+  titleRef?: React.RefObject<any>;
   /**
    * @deprecated Deprecated in v5.x
    * Text for the subtitle.

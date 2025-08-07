@@ -7,7 +7,7 @@ import type { ThemeProp } from 'src/types';
 import Text from './Text';
 import { useInternalTheme } from '../../../core/theming';
 
-type Props = React.ComponentProps<typeof Text> & {
+type Props = React.ComponentPropsWithRef<typeof Text> & {
   alpha?: number;
   family: 'regular' | 'medium' | 'light' | 'thin';
   style?: StyleProp<TextStyle>;

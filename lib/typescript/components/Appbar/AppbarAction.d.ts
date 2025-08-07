@@ -3,7 +3,7 @@ import type { Animated, ColorValue, StyleProp, View, ViewStyle } from 'react-nat
 import type { ThemeProp } from 'src/types';
 import type { IconSource } from '../Icon';
 import IconButton from '../IconButton/IconButton';
-export type Props = React.ComponentPropsWithoutRef<typeof IconButton> & {
+export type Props = React.ComponentPropsWithRef<typeof IconButton> & {
     /**
      *  Custom color for action icon.
      */
@@ -67,7 +67,10 @@ export type Props = React.ComponentPropsWithoutRef<typeof IconButton> & {
  * export default MyComponent;
  * ```
  */
-declare const AppbarAction: import("../../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const AppbarAction: {
+    ({ size, color: iconColor, icon, disabled, onPress, accessibilityLabel, isLeading, theme: themeOverrides, rippleColor, ref, ...rest }: Props): React.JSX.Element;
+    displayName: string;
+};
 export default AppbarAction;
 export { AppbarAction };
 //# sourceMappingURL=AppbarAction.d.ts.map

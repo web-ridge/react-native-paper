@@ -7,7 +7,7 @@ import type { ThemeProp } from 'src/types';
 import { useInternalTheme } from '../../core/theming';
 import Text from '../Typography/Text';
 
-export type Props = React.ComponentProps<typeof Text> & {
+export type Props = React.ComponentPropsWithRef<typeof Text> & {
   /**
    * @optional
    */

@@ -93,7 +93,7 @@ const HelperText = ({
     new Animated.Value(visible ? 1 : 0)
   );
 
-  let { current: textHeight } = React.useRef<number>(0);
+  let textHeightRef = React.useRef<number>(0);
 
   const { scale } = theme.animation;
 
@@ -119,7 +119,7 @@ const HelperText = ({
 
   const handleTextLayout = (e: LayoutChangeEvent) => {
     onLayout?.(e);
-    textHeight = e.nativeEvent.layout.height;
+    textHeightRef.current = e.nativeEvent.layout.height;
   };
 
   const textColor = getTextColor({ theme, disabled, type });
@@ -127,26 +127,28 @@ const HelperText = ({
   return (
     <AnimatedText
       onLayout={handleTextLayout}
-      style={[
-        styles.text,
-        padding !== 'none' ? styles.padding : {},
-        {
-          color: textColor,
-          opacity: shown,
-          transform:
-            visible && type === 'error'
-              ? [
-                  {
-                    translateY: shown.interpolate({
-                      inputRange: [0, 1],
-                      outputRange: [-textHeight / 2, 0],
-                    }),
-                  },
-                ]
-              : [],
-        },
-        style,
-      ]}
+      style={
+        [
+          styles.text,
+          padding !== 'none' ? styles.padding : {},
+          {
+            color: textColor,
+            opacity: shown,
+            transform:
+              visible && type === 'error'
+                ? [
+                    {
+                      translateY: shown.interpolate({
+                        inputRange: [0, 1],
+                        outputRange: [-textHeightRef.current / 2, 0],
+                      }),
+                    },
+                  ]
+                : [],
+          },
+          style,
+        ] as any
+      }
       maxFontSizeMultiplier={maxFontSizeMultiplier}
       {...rest}
     >

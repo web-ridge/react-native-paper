@@ -89,6 +89,6 @@ export type Props = $RemoveChildren<typeof TouchableRipple> & {
  *
  * @extends TouchableRipple props https://callstack.github.io/react-native-paper/docs/components/TouchableRipple
  */
-declare const IconButton: import("../../utils/forwardRef").ForwardRefComponent<View, Props>;
+declare const IconButton: ({ icon, iconColor: customIconColor, containerColor: customContainerColor, rippleColor: customRippleColor, size, accessibilityLabel, disabled, onPress, selected, animated, mode, style, theme: themeOverrides, testID, loading, ref, ...rest }: Props) => React.JSX.Element;
 export default IconButton;
 //# sourceMappingURL=IconButton.d.ts.map

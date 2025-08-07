@@ -168,8 +168,7 @@ const Banner = ({
         useNativeDriver: false,
       }).start(hideCallback);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visible, position, scale]);
+  }, [visible, position, scale, hideCallback, showCallback]);
 
   const handleLayout = ({ nativeEvent }: LayoutChangeEvent) => {
     const { height } = nativeEvent.layout;
