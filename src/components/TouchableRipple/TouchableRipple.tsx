@@ -5,7 +5,6 @@ import {
   Platform,
   StyleProp,
   StyleSheet,
-  View,
   ViewStyle,
 } from 'react-native';
 
@@ -102,20 +101,18 @@ export type Props = PressableProps & {
  *
  * @extends Pressable props https://reactnative.dev/docs/Pressable#props
  */
-const TouchableRipple = (
-  {
-    style,
-    background: _background,
-    borderless = false,
-    disabled: disabledProp,
-    rippleColor,
-    underlayColor: _underlayColor,
-    children,
-    theme: themeOverrides,
-    ...rest
-  }: Props,
-  ref: React.ForwardedRef<View>
-) => {
+const TouchableRipple = ({
+  style,
+  background: _background,
+  borderless = false,
+  disabled: disabledProp,
+  rippleColor,
+  underlayColor: _underlayColor,
+  children,
+  theme: themeOverrides,
+  ref,
+  ...rest
+}: Props) => {
   const theme = useInternalTheme(themeOverrides);
   const { calculatedRippleColor } = getTouchableRippleColors({
     theme,

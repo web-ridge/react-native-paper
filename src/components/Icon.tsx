@@ -149,14 +149,17 @@ const Icon = ({
   } else if (typeof S === 'string') {
     return (
       <SettingsConsumer>
-        {({ icon }) => {
-          return icon?.({
-            name: S,
-            color: iconColor,
-            size,
-            direction,
-            testID,
-          });
+        {({ icon: Icon }) => {
+          return (
+            // @ts-ignore
+            <Icon
+              name={S}
+              color={iconColor}
+              size={size}
+              direction={direction}
+              testID={testID}
+            />
+          );
         }}
       </SettingsConsumer>
     );

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GestureResponderEvent, StyleProp, TextStyle, View, ViewStyle } from 'react-native';
+import { GestureResponderEvent, StyleProp, TextStyle, ViewStyle } from 'react-native';
 import { Style } from './utils';
 import type { $RemoveChildren, EllipsizeProp, ThemeProp } from '../../types';
 import TouchableRipple from '../TouchableRipple/TouchableRipple';
@@ -97,6 +97,6 @@ export type Props = $RemoveChildren<typeof TouchableRipple> & {
      */
     testID?: string;
 };
-declare const Component: ({ left, right, title, description, onPress, theme: themeOverrides, style, contentStyle, titleStyle, titleNumberOfLines, descriptionNumberOfLines, titleEllipsizeMode, descriptionEllipsizeMode, descriptionStyle, descriptionMaxFontSizeMultiplier, titleMaxFontSizeMultiplier, testID, ...rest }: Props, ref: React.ForwardedRef<View>) => React.JSX.Element;
+declare const Component: ({ left, right, title, description, onPress, theme: themeOverrides, style, contentStyle, titleStyle, titleNumberOfLines, descriptionNumberOfLines, titleEllipsizeMode, descriptionEllipsizeMode, descriptionStyle, descriptionMaxFontSizeMultiplier, titleMaxFontSizeMultiplier, testID, ref, ...rest }: Props) => React.JSX.Element;
 export default Component;
 //# sourceMappingURL=ListItem.d.ts.map

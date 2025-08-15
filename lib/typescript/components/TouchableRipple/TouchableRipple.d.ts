@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ColorValue, GestureResponderEvent, StyleProp, View, ViewStyle } from 'react-native';
+import { ColorValue, GestureResponderEvent, StyleProp, ViewStyle } from 'react-native';
 import type { PressableProps, PressableStateCallbackType } from './Pressable';
 import type { ThemeProp } from '../../types';
 export type Props = PressableProps & {
@@ -55,7 +55,7 @@ export type Props = PressableProps & {
     theme?: ThemeProp;
 };
 declare const _default: {
-    ({ style, background: _background, borderless, disabled: disabledProp, rippleColor, underlayColor: _underlayColor, children, theme: themeOverrides, ...rest }: Props, ref: React.ForwardedRef<View>): React.JSX.Element;
+    ({ style, background: _background, borderless, disabled: disabledProp, rippleColor, underlayColor: _underlayColor, children, theme: themeOverrides, ref, ...rest }: Props): React.JSX.Element;
     /**
      * Whether ripple effect is supported.
      */
