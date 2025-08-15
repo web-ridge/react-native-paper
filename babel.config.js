@@ -12,7 +12,12 @@ module.exports = {
             if (event.kind === 'CompileSuccess') {
               console.log('✔ Compiled:', filename);
             } else {
-              console.warn('ℹ Compilation error in:', filename, event.reason);
+              console.warn(
+                'ℹ Compilation error in:',
+                filename,
+                event.reason,
+                event.stack
+              );
             }
           },
         },
