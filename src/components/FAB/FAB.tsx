@@ -289,7 +289,6 @@ const FAB = ({
   return (
     <Surface
       ref={ref}
-      {...rest}
       style={[
         {
           borderRadius,
